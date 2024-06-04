@@ -2,32 +2,152 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+    --accent: #ff7300;
+    --black: #000000;
+    --white: #ffffff;
+    --textHead: #1A1A1A;
+    --textBody: #2A2A2A;
+    --body: #f1f1f1
+    --off-white: #EEEEEE
+    --gray-1: #E7E7E7
+    --gray-2: #d4d4d4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@import "./fonts.css";
+@import "./style.css";
+@import "./service.css";
+@import "./hamburger.css";
+
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100vw;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+    font-family: 'Aeonik';
+    color: #2A2A2A;
+    letter-spacing: 0.5px;
+    font-kerning: none;
+    text-rendering: geometricPrecision;
+    background-color: var(--white);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Lenis CSS Start */
+html.lenis, html.lenis body {
+    height: auto;
 }
+  
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+  
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+  
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+  
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+/* Lenis CSS END */
+
+
+/* Header CSS Start */
+.three_canvas{
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    pointer-events: none !important;
+    z-index: 99999 !important;
+}
+/* Header CSS END */
+
+/* Main CSS Start */
+.link-transition{
+    transition: all 1.2s cubic-bezier(.19,1,.22,1);
+}
+
+.container {
+    width: 85%;
+    max-width: 85%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.title-h1{
+    font-size: 9.9vw;
+    font-family: 'SpaceGrotesk';
+    color: var(--textHead);
+    line-height: 1;
+    text-transform: uppercase;
+}
+.text-190{
+    font-size: 9.9vw;
+}
+.text-140{
+    font-size: 7.3vw;
+}
+.text-120{
+    font-size: 6.25vw;
+}
+.text-96{
+    font-size: 5vw;
+}
+.text-76{
+    font-size: 3.95vw;
+}
+.text-48{
+    font-size: 2.5vw;
+}
+.text-44{
+    font-size: 2.3vw;
+}
+.text-24{
+    font-size: 1.25vw;
+    line-height: 1.2;
+}
+.text-22{
+    font-size: 1.15vw;
+    line-height: 1.2;
+}
+.text-20{
+    font-size: 1.05vw;
+}
+
+.aeonik{
+    font-family: 'Aeonik';
+}
+.space-grotesk{
+    font-family: 'SpaceGrotesk';
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Main CSS end */
+
+/* Testimonial SwiperCSS Start */
+.mySwiper{
+    width: 65%;
+    position: unset !important;
+    margin: 0 !important;
+}
+.mySwiper .swiper-pagination{
+    font-size: 1.3vw;
+    position: absolute;
+    top: 25.5%;
+    right: 25.1%;
+}
+/* Testimonial SwiperCSS END */
+
+
+

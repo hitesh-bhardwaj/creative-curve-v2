@@ -1,0 +1,295 @@
+:root {
+    --leftMargin: 4.15vw;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --leftMargin: 30px
+    }
+}
+/* Push Carousel Start */
+.pushCarousel .h3>span {
+    overflow: hidden;
+    display: block
+}
+
+.pushCarousel .h3 span span {
+    display: block;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%)
+}
+
+.pushCarousel .puces {
+    position: absolute;
+    top: calc(100vh - 136px - var(--leftMargin));
+    right: var(--leftMargin);
+    background: #FBFBFB;
+    height: 66px;
+    border-radius: 33px;
+    padding: 0 3px;
+    z-index: 2;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.pushCarousel .puces li {
+    width: 48px;
+    height: 48px;
+    margin: 0 6px;
+    cursor: pointer;
+    position: relative
+}
+
+.pushCarousel .puces li::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #1E1C21;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100%
+}
+
+.pushCarousel .puces li+li::after {
+    content: "";
+    width: 34px;
+    height: 1px;
+    background: rgba(30,28,33,0.15);
+    position: absolute;
+    right: calc(100% - 11px);
+    top: 50%
+}
+
+.pushCarousel .puces li div {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    border: 1px solid rgba(30,28,33,0.15);
+    opacity: 0;
+    transition: 0.2s
+}
+
+.pushCarousel .puces li.passe div {
+    opacity: 1
+}
+
+.pushCarousel .puces .bubble {
+    padding: 6px;
+    position: absolute;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: calc(100% - 6px);
+    background: #FBFBFB;
+    border-radius: 100%;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    pointer-events: none
+}
+
+.pushCarousel .puces .bubble .cercle {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px solid rgba(30,28,33,0.15);
+    -webkit-transform: translate(0, calc(50% - 24px));
+    transform: translate(0, calc(50% - 24px));
+    background: #FBFBFB;
+    justify-content: center;
+    transition: 0.5s
+}
+
+.pushCarousel .puces .bubble::before {
+    content: "";
+    z-index: 1;
+    background: #FBFBFB;
+    position: absolute;
+    top: 50%;
+    width: calc(100% + 6px);
+    left: -3px;
+    height: 1px;
+    z-index: -1
+}
+
+.pushCarousel .puces .bubble .lesImgs {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: nowrap;
+    transition: 0.5s cubic-bezier(0.9, 0, 0.1, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.pushCarousel .puces .bubble .lesImgs img {
+    white-space: nowrap;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px
+}
+
+.pushCarousel .puces .bubble.gros .cercle {
+    border: 1px solid rgba(30,28,33,0)
+}
+
+.pushCarousel .puces .bubble.gros .lesImgs {
+    -webkit-transform: scale(1.45);
+    transform: scale(1.45)
+}
+
+.pushCarousel .numSlide {
+    line-height: 66px;
+    position: absolute;
+    top: calc(100vh - 136px - var(--leftMargin) + 11px);
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.pushCarousel .numSlide::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    background: #1E1C21;
+    border-radius: 100%
+}
+
+.pushCarousel .numTotalSlide {
+    padding: 0 0 0 18px
+}
+
+.pushCarousel .leCarou {
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.pushCarousel .leCarou .innerImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pushCarousel .leCarou .innerImg:not(:first-child) {
+    -webkit-transform: translateY(calc(100vh));
+    transform: translateY(calc(100vh));
+    overflow: hidden
+}
+
+.pushCarousel .leCarou .innerImg:not(:first-child) .img {
+    -webkit-transform: translateY(calc(-100vh));
+    transform: translateY(calc(-100vh))
+}
+
+.pushCarousel .leCarou .innerImg .img {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.pushCarousel .leCarou .innerImg .img img {
+    height: 100%;
+}
+
+.pushCarousel .entree:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0
+}
+
+@media (max-width: 768px) {
+    .pushCarousel {
+        margin:0
+    }
+
+    .pushCarousel>.wrap {
+        width: 100vw
+    }
+
+    .pushCarousel .innerCarou {
+        margin: 0
+    }
+
+    .pushCarousel .imgs {
+        display: none
+    }
+
+    .pushCarousel .gauche {
+        margin: 0;
+        padding: 140px 0;
+        width: 100vw
+    }
+
+    .pushCarousel .parentEntree {
+        display: flex;
+        padding: 0 30px;
+        width: 100vw;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden
+    }
+
+    .pushCarousel .parentEntree::-webkit-scrollbar {
+        display: none
+    }
+
+    .pushCarousel .entree {
+        flex: 0 0 var(--wrapper);
+        background: #E6EFCF;
+        border-radius: 6px;
+        padding: 74px 30px 70px;
+        white-space: initial
+    }
+
+    .pushCarousel .entree:not(:first-child) {
+        position: relative;
+        top: auto;
+        left: auto;
+        opacity: 1
+    }
+
+    .pushCarousel .entree+.entree {
+        margin: 0 0 0 15px
+    }
+
+    .pushCarousel .entree h3 {
+        font-size: 26px;
+        line-height: 30px;
+        max-width: 50%
+    }
+
+    .pushCarousel .numSlide {
+        line-height: initial;
+        margin: 44px auto 136px;
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+/* Push Carousel End */

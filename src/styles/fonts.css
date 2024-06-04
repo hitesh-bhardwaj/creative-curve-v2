@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "SpaceGrotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/SpaceGrotesk-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Aeonik-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Aeonik";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/Aeonik-Medium.woff") format("woff");
+  }
