@@ -1,3 +1,5 @@
+const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -29,6 +31,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 5s linear infinite',
         'spin-slow-reverse': 'spin-reverse 5s linear infinite',
+        'scale-up': 'scale 0.5s ease-out',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
@@ -36,6 +39,11 @@ module.exports = {
         'spin-slow': {
           'from': { transform: 'rotate(0deg)' },
           'to': { transform: 'rotate(-360deg)' },
+        },
+        'scale': {
+          '0': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' },
         },
         "accordion-down": {
           from: { height: "0" },

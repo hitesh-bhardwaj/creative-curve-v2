@@ -1,3 +1,4 @@
+'use client'
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { Fluid } from "../lib";

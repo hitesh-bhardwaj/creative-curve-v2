@@ -12,6 +12,18 @@
     --off-white: #EEEEEE
     --gray-1: #E7E7E7
     --gray-2: #d4d4d4;
+    --20: 1.05vw;
+    --22: 1.15vw;
+    --24: 1.25vw;
+    --26: 1.35vw;
+    --30: 1.55vw;
+    --44: 2.3vw;
+    --48: 2.5vw;
+    --76: 3.95vw;
+    --96: 5vw;
+    --120: 6.25vw;
+    --140: 7.3vw;
+    --190: 9.9vw;
 }
 
 @import "./fonts.css";
@@ -82,43 +94,46 @@ html.lenis, html.lenis body {
     padding-right: 0;
 }
 .title-h1{
-    font-size: 9.9vw;
+    font-size: var(--190);
     font-family: 'SpaceGrotesk';
     color: var(--textHead);
     line-height: 1;
     text-transform: uppercase;
 }
 .text-190{
-    font-size: 9.9vw;
+    font-size: var(--190);
 }
 .text-140{
-    font-size: 7.3vw;
+    font-size: var(--140);
 }
 .text-120{
-    font-size: 6.25vw;
+    font-size: var(--120);
 }
 .text-96{
-    font-size: 5vw;
+    font-size: var(--96);
 }
 .text-76{
-    font-size: 3.95vw;
+    font-size: var(--76);
 }
 .text-48{
-    font-size: 2.5vw;
+    font-size: var(--48);
 }
 .text-44{
-    font-size: 2.3vw;
+    font-size: var(--44);
+}
+.text-30{
+    font-size: var(--30);
 }
 .text-24{
-    font-size: 1.25vw;
-    line-height: 1.2;
+    font-size: var(--24);
+    line-height: 1.3;
 }
 .text-22{
-    font-size: 1.15vw;
-    line-height: 1.2;
+    font-size: var(--22);
+    line-height: 1.3;
 }
 .text-20{
-    font-size: 1.05vw;
+    font-size: var(--20);
 }
 
 .aeonik{
@@ -132,6 +147,12 @@ html.lenis, html.lenis body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.cat-button.active {
+    background-color: #1a1a1a;
+    color: #fff;
+    animation: none !important;
 }
 /* Main CSS end */
 
