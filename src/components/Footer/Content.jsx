@@ -1,7 +1,12 @@
+
 import Image from "next/image"
 import Link from "next/link"
 
+
+
 const Content = () => {
+    
+   
     return( 
         <>
             <div className="container pt-[4%] pb-[2%] footer-container">
@@ -140,7 +145,7 @@ const Content = () => {
                         </div>
 
                         <div className="col-span-12 w-[105%] -ml-[2.5%]">
-                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim">
+                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative" id="text-anim">
                                 Creative Curve
                             </div>
                         </div>

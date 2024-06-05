@@ -1,6 +1,13 @@
-import Content from "./Content";
 
+import Content from "./Content";
+ import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger)
 export default function Footer() {
+    
+ 
 
     return (
         <>

@@ -32,14 +32,14 @@ function Hero() {
         })
         .from(brands.current, {
             duration: 1,
-            yPercent: 100,
-            delay: -0.5,
+            xPercent: 100,
+            delay:-0.5,
             ease: "power3.out"
 
         })
         .from(worldwide.current, {
             duration: 1,
-            yPercent: 100,
+            xPercent: -100,
             delay: -0.5,
             ease: "power3.out"
         })
@@ -79,7 +79,7 @@ function Hero() {
                     <div className="text-center w-full">
                     <h1 className="title-h1">
                         <div className="text-24 aeonik text-left ml-[5vw]  text-anim overflow-hidden">
-                            <span ref={small} className="w-[110%] relative leading-10 after:absolute after:top-1/2 after:ml-2 after:-translate-y-1/2 after:bg-current after:h-[1.5px] after:w-[1.5vw]">
+                            <span ref={small} className="w-[110%] relative leading-10 after:absolute after:top-1/2 after:ml-2 after:-translate-y-1/2 after:bg-current after:h-[1.5px] after:w-[1.5vw] block">
                                 We Creative Curve 
                             </span>
                         </div>
@@ -87,10 +87,10 @@ function Hero() {
                             <span ref={we} > We</span><span ref={transform}> Transform</span>
                         </div>
                         <div className="w-full text-right pr-[5vw] text-anim overflow-hidden">
-                            <span ref={brands}> Brands</span>
+                            <span ref={brands} className="block"> Brands</span>
                         </div>
-                        <div className="text-anim overflow-hidden">
-                            <span ref={worldwide}> Worldwide</span>
+                        <div className="text-anim overflow-hidden ">
+                            <span ref={worldwide} className="block"> Worldwide</span>
                         </div>
                     </h1>
                     <p className="text-20 uppercase absolute top-1/2 -translate-y-[30%] w-[34vw] hero-content text-right ml-[3vw] para-anim">

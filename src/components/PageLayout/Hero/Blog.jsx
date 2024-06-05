@@ -40,10 +40,15 @@ export default function Blog() {
 
                     <div className="w-[55%]">
                         <p className="text-24 mb-[1vw] fadeUp">Our Blogs</p>
-                        <h2 className="text-96 leading-[1.2] space-grotesk mb-[1vw] heading-anim">
+                        <h2 className="text-96 leading-[1.1] space-grotesk mb-[1vw] heading-anim">
+                            <span className="block overflow-hidden">
                             Dive Into Our
-                            <br />
+                                </span>
+                            
+                            <span className="block overflow-hidden">
                             Creative Musings
+                            </span>
+                            
                         </h2>                    
                         <p className="text-22 w-[65%] mb-[2vw] para-animations">
                             <span>

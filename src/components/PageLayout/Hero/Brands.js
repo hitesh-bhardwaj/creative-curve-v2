@@ -84,10 +84,13 @@ function Brands() {
         <div className="container">
           <div className="w-[55%]">
             <p className="text-24 mb-[1vw] fadeUp text-white">Our Clients</p>
-            <h2 className="text-96 leading-[1.2] space-grotesk mb-[1vw] heading-anim text-white">
-              They Choose Us
-              <br />
+            <h2 className="text-96 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white">
+              <span className="block overflow-hidden">They Choose Us</span>
+              
+              <span className="block overflow-hidden">
               And We Delivered!
+              </span>
+              
             </h2>
             <p className="text-22 w-[65%] mb-[2vw] text-white para-animations">
               <span>
