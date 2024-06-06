@@ -5,7 +5,7 @@ const BlogCard = ({ title, category, img, link }) => {
         <div className="col-span-1 blog-card h-full">
             <Link href={link} className="w-full relative h-fit group/blog">
                 <div className="h-[40vw] w-full rounded-[1.5vw] overflow-hidden">
-                    <img src={img} alt={title} className="w-full h-[40vw] group-hover/blog:scale-[1.1] object-cover transition-all duration-300"/>
+                    <img src={img} alt={title} className="w-full h-full group-hover/blog:scale-[1.1] object-cover transition-all duration-300"/>
                 </div>
                 <h5 className="text-48 leading-[1.2] aeonik text-textHead mt-[1.2vw]">{title}</h5>
                 <p className="text-[1.4vw] space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-10 left-10">{category}</p>
