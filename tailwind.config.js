@@ -14,11 +14,14 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      
     },
     extend: {
+      screens: {
+        
+        'mobile':{'max':'540px'},
+        'tablet':{'min':'541px','max':'1024px'}
+      },
       colors: {
         'accent': '#ff7300',
         'textHead': '#1A1A1A',

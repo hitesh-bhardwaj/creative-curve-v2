@@ -13,10 +13,10 @@ export default function Footer() {
         <>
             <footer 
                 id="footer" 
-                className="relative h-[49vw] bg-black"
+                className="relative h-[49vw] mobile:h-[130vh] bg-black"
                 style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
             >
-                <div className='fixed bottom-0 h-[50vw] w-full'>
+                <div className='fixed bottom-0 h-[50vw] w-full mobile:static mobile:py-[10%]'>
                     <Content />
                 </div>
             </footer>

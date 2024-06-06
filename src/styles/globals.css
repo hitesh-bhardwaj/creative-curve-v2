@@ -170,5 +170,65 @@ html.lenis, html.lenis body {
 }
 /* Testimonial SwiperCSS END */
 
-
+@media  screen and (max-width:540px) {
+    :root{
+        --accent: #ff7300;
+        --black: #000000;
+        --white: #ffffff;
+        --textHead: #1A1A1A;
+        --textBody: #2A2A2A;
+        --body: #f1f1f1
+        --off-white: #EEEEEE
+        --gray-1: #E7E7E7
+        --gray-2: #d4d4d4;
+        --20: 4vw;
+        --22: 4vw;
+        --24: 5vw;
+        --26: 6vw;
+        --30: 1.55vw;
+        --44: 6vw;
+        --48: 7vw;
+        --76: 6vw;
+        --96: 10vw;
+        --120: 12vw;
+        --140: 12.5vw;
+        --190: 14vw;
+    }
+    .text-190{
+        font-size: var(--190);
+    }
+    .text-140{
+        font-size: var(--140);
+    }
+    .text-120{
+        font-size: var(--120);
+    }
+    .text-96{
+        font-size: var(--96);
+    }
+    .text-76{
+        font-size: var(--76);
+    }
+    .text-48{
+        font-size: var(--48);
+    }
+    .text-44{
+        font-size: var(--44);
+    }
+    .text-30{
+        font-size: var(--30);
+    }
+    .text-24{
+        font-size: var(--24);
+        line-height: 1.1;
+    }
+    .text-22{
+        font-size: var(--22);
+        line-height: 1.1;
+    }
+    .text-20{
+        font-size: var(--20);
+    }
+    
+}
 

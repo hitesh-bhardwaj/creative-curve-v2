@@ -39,7 +39,7 @@ const Showreel = () => {
     return (
         <>
             <section ref={container} id="showreel" className="bg-black">
-                <div className="h-screen w-screen relative flex items-center justify-center">
+                <div className="h-screen w-screen relative flex items-center justify-center mobile:h-[100vh]">
                     <div ref={video} className="overflow-hidden w-full h-full absolute">
                         <video 
                             autoPlay
@@ -59,7 +59,7 @@ const Showreel = () => {
                             Reel
                         </h4>
                     </div>
-                    <div className="absolute z-10 bottom-[2.5%] text-white text-22">
+                    <div className="absolute z-10 bottom-[2.5%] text-white text-22 mobile:bottom-[10%]">
                         <p>
                             Our work is best experienced in motion. <br /> Don’t forget to put on your headphones.
                         </p>

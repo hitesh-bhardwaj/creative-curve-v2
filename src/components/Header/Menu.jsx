@@ -67,14 +67,14 @@ export default function Menu({ menuOpen }) {
     <>
       <nav
         ref={menuRef}
-        className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path ${menuOpen ? "open" : ""}`}>
+        className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] ${menuOpen ? "open" : ""}`}>
         <div className="px-[3vw] pb-[3vw] pt-[4vw]">
           <ul className="flex flex-col justify-center items-start h-full gap-[0.5vw] pb-[2vw]">
             {["HOME", "ABOUT", "SERVICES", "PORTFOLIO", "Blogs", "Contact"].map(
               (text, index) => (
                 <li
                   key={index}
-                  className="text-[1.35vw] w-full text-black"
+                  className="text-[1.35vw] w-full text-black mobile:text-[7vw]"
                   ref={(el) => (linksRef.current[index] = el)}
                 >
                   <MenuLink link={`/${text.toLowerCase()}`} linkText={text} />
@@ -83,7 +83,7 @@ export default function Menu({ menuOpen }) {
             )}
           </ul>
 
-          <div className="text-[1vw]">
+          <div className="text-[1vw] mobile:text-[3.5vw]">
             <Link
               ref={emailRef}
               href="mailto:info@creative-curve.co.in"
@@ -143,7 +143,7 @@ export default function Menu({ menuOpen }) {
               <Link
                 key={index}
                 href={icon.href}
-                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links"
+                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links mobile:w-[5vw]"
               >
                 <Image
                   src={icon.src}

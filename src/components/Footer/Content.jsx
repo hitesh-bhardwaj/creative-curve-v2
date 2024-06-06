@@ -9,16 +9,16 @@ const Content = () => {
    
     return( 
         <>
-            <div className="container pt-[4%] pb-[2%] footer-container">
-                    <div className="grid grid-cols-12">
+            <div className="container pt-[4%] pb-[2%] footer-container h-full">
+                    <div className="grid grid-cols-12 mobile:flex mobile:flex-col">
                         {/* CTA */}
                         <div className="col-span-12 border-b-[0.5px] mb-[5vw]">
                             <Link href="#" className="relative group flex py-[0.6vw] justify-between items-center w-full hover:px-5 transition-all duration-300 ease-out">
-                                <h5 className="text-96 space-grotesk text-white relative z-20">
-                                    Let's Talk
+                                <h5 className="text-96 space-grotesk text-white relative z-20 mobile:text-[8vw]">
+                                    Let's Talk!
                                 </h5>
-                                <div className="rounded-full relative z-20 border border-white flex justify-center items-center h-[6vw] w-[6vw]">
-                                    <span className="w-[2vw] h-[2vw] block overflow-hidden scale-[0.8]">
+                                <div className="rounded-full relative z-20 border border-white flex justify-center items-center h-[6vw] w-[6vw] mobile:h-[10vw] mobile:w-[10vw] mobile:border-[0.1vw]">
+                                    <span className="w-[2vw] h-[2vw] block overflow-hidden scale-[0.8] mobile:w-[5vw] mobile:h-[5vw]">
                                         <div className="w-[100%] flex -translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-out">
                                             <Image
                                                 className="w-full h-full group-hover:scale-100 scale-0 transition-all duration-300 ease-out"
@@ -41,11 +41,11 @@ const Content = () => {
                             </Link>
                         </div>
 
-                        <div className="lg:col-span-2 col-span-12">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw]">
+                        <div className="lg:col-span-2 col-span-12 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[2vh] mobile:mt-[4vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
                                 Get In Touch
                             </h6>
-                            <ul className="text-white space-y-[1.5vw] text-[1.25vw]">
+                            <ul className="text-white space-y-[1.5vw] text-[1.25vw] mobile:text-[5vw] mobile:w-full mobile:items-center mobile:flex mobile:flex-col mobile:gap-[2vh]">
                                 <li className="">
                                     <Link href="tel:9810007195" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="+91 981 000 7195" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
@@ -63,33 +63,33 @@ const Content = () => {
                             </ul>
                         </div>
 
-                        <div className="col-span-2 col-start-10">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw]">
+                        <div className="col-span-2 col-start-10 mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:mt-[4vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
                                 Company
                             </h6>
-                            <ul className="text-white space-y-[1vw] text-[1.25vw]">
-                                <li className="">
+                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
+                                <li className="mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="About Us" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             About Us
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className=" mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Contact" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Contact
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className=" mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Services" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Services
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className=" mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Blog" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Blog
@@ -99,33 +99,33 @@ const Content = () => {
                             </ul>
                         </div>
 
-                        <div className="col-span-1">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw]">
+                        <div className="col-span-1 mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:mt-[5vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
                                 Follow Us
                             </h6>
-                            <ul className="text-white space-y-[1vw] text-[1.25vw]">
-                                <li className="">
+                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
+                                <li className="mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Facebook" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Facebook
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className="mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Twitter" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Twitter
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className="mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Linkedin" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Linkedin
                                         </span>
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className="mobile:flex mobile:justify-center">
                                     <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Instagram" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Instagram
@@ -135,17 +135,17 @@ const Content = () => {
                             </ul>
                         </div>
 
-                        <div className="col-span-12 flex justify-between items-center my-[4vw] text-gray-1">
-                            <p>
+                        <div className="col-span-12 flex justify-between items-center my-[4vw] text-gray-1 mobile:mt-[5vh]">
+                            <p className="mobile:text-[3vw]">
                                 © 2024 | Alrights reserved by Creative Curve
                             </p>
-                            <p>
+                            <p className="mobile:text-[3vw]">
                                 By: <Link href="https://weareenigma.com" className="ul-c">Enigma</Link>
                             </p>
                         </div>
 
                         <div className="col-span-12 w-[105%] -ml-[2.5%]">
-                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative" id="text-anim">
+                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative mobile:text-[23vw] mobile:text-center" id="text-anim">
                                 Creative Curve
                             </div>
                         </div>

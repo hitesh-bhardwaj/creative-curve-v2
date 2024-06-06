@@ -22,9 +22,9 @@ export default function Header() {
     return (
         <>
             <header className="fixed top-0 left-0 w-full z-[999]">
-                <div className="w-[100%] px-[3%] my-[2%]">
+                <div className="w-[100%] px-[3%] my-[2%] mobile:px-[5%] mobile:my-[5%]">
                     <div className="flex justify-between items-center">
-                        <div className="w-[4.5vw]">
+                        <div className="w-[4.5vw] mobile:w-[8vh]">
                             <Link href="/">
                                 <img
                                     src="/logo.png"
@@ -36,11 +36,11 @@ export default function Header() {
                             </Link>
                         </div>
 
-                        <div className="w-[3.5vw] h-[3.5vw] relative">
+                        <div className="w-[3.5vw] h-[3.5vw]  mobile:w-[12vw] mobile:h-[12vw] relative ">
                             
                             <button
                                 aria-label="Open Menu"
-                                className={`menu-btn cursor-pointer overflow-hidden h-[3.5vw] fixed z-[999] w-[3.5vw] ${menuOpen ? "open" : ""}`}
+                                className={`menu-btn cursor-pointer overflow-hidden h-[3.5vw] fixed z-[999] w-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] ${menuOpen ? "open" : ""}`}
                                 disabled={buttonDisabled}
                                 onClick={handleMenuButtonClick}
                             >

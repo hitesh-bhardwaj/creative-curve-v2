@@ -81,14 +81,14 @@ function BrandsWhite() {
     <>
       <section ref={brands} className="pt-[10%] pb-[10%]" id="brands">
         <div className="container">
-          <div className="w-[55%]">
+          <div className="w-[55%] mobile:w-full">
             <p className="text-24 mb-[1vw] fadeUp ">Our Clients</p>
             <h2 className="text-96 text-textHead leading-[1.2] mb-[1vw] heading-anim ">
               They Choose Us
               <br />
               And We Delivered!
             </h2>
-            <p className="text-22 w-[65%] mb-[2vw] para-animations">
+            <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%]">
               <span>
                 We forge meaningful connections that translate into tangible
                 results. Our marketing solutions are crafted with a deep
