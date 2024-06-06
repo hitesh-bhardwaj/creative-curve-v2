@@ -3,13 +3,13 @@ import styles from '@/styles/blog.module.css';
 const Article = () => {
     return (
         <>
-            <div id='article' className={`w-[75%] ${styles.blog}`}>
+            <div id='article' className={`w-[75%] mobile:w-full mobile:pt-[15%] ${styles.blog}`}>
                 <p>Branding has taken on a whole new meaning in today's digital world. With global consumers more connected than ever, brands must adapt and take advantage of digital channels to build awareness, connect with customers, and stay competitive. As a leading branding agency, Creative Curve has gleaned powerful insights into modern branding in the digital age.</p>
-                <h2>The Importance of Digital Branding</h2>
+                <h2 className='mobile:pt-[10%]'>The Importance of Digital Branding</h2>
                 <div className={styles.imgContainer}>
                     <img className='cover' src='/images/blogs/blog-detail-1.png' alt='Blog Image'/>
                 </div>
-                <p>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
+                <p className='mobile:pt-[10%]'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
                 <ul>
                     <li><strong>Global reach and visibility: </strong>Brands can rapidly scale beyond physical and geographic limitations using digital channels like social media and pay-per-click ads. This expanded reach exposes brands to new markets and opportunities.</li>
                     <li><strong>Hyper-targeting: </strong>Digital platforms provide rich consumer data and advanced targeting capabilities. Brands can zero in on niche audiences that are more likely to resonate with their messaging.</li>
@@ -38,7 +38,7 @@ const Article = () => {
                 <div className={styles.imgContainer}>
                     <img className='cover' src='/images/blogs/blog-detail-2.png' alt='Blog Image'/>
                 </div>
-                <p>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
+                <p className='mobile:mt-[10%]'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
                 <ul>
                     <li><strong>Global reach and visibility: </strong>Brands can rapidly scale beyond physical and geographic limitations using digital channels like social media and pay-per-click ads. This expanded reach exposes brands to new markets and opportunities.</li>
                     <li><strong>Hyper-targeting: </strong>Digital platforms provide rich consumer data and advanced targeting capabilities. Brands can zero in on niche audiences that are more likely to resonate with their messaging.</li>

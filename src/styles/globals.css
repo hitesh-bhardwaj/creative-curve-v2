@@ -183,15 +183,15 @@ html.lenis, html.lenis body {
         --gray-2: #d4d4d4;
         --20: 4vw;
         --22: 4vw;
-        --24: 5vw;
+        --24: 4.5vw;
         --26: 6vw;
-        --30: 1.55vw;
+        --30: 5vw;
         --44: 6vw;
-        --48: 7vw;
-        --76: 6vw;
-        --96: 10vw;
-        --120: 12vw;
-        --140: 12.5vw;
+        --48: 5.5vw;
+        --76: 6.5vw;
+        --96: 9.5vw;
+        --120: 11vw;
+        --140: 11vw;
         --190: 14vw;
     }
     .text-190{
@@ -229,6 +229,25 @@ html.lenis, html.lenis body {
     .text-20{
         font-size: var(--20);
     }
+    .mySwiper{
+        width: 95%;
+        position: unset !important;
+        margin: 0 !important;
+    }
+    .mySwiper .swiper-pagination{
+        font-size: 4vw;
+        position: absolute;
+        top: 11%;
+        right: 14%;
+    }
+    .mySwiper button{
+        width: 7vw;
+        height: 7vw;
+        color: white;
+        background-color: black;
+        padding: 1.5vw;
+    }
+   
     
 }
 

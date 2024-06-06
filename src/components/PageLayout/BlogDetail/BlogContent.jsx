@@ -27,7 +27,7 @@ const BlogContent = () => {
         <>
             <section id="second-section" className="bg-black text-white">
                 <div className="container py-[8%]">
-                    <div className="w-full h-full flex justify-between items-start">
+                    <div className="w-full h-full flex justify-between items-start mobile:flex-col">
                         <AuthorInfo />
                         <Article />
                     </div>

@@ -2,19 +2,19 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
     return (
         <>
             <section id="second-section" className="bg-black text-white">
-                <div className="container pt-[8%] pb-[8%]">
-                    <div className="flex justify-between items-start">
+                <div className="container pt-[8%] pb-[8%] mobile:py-[20%]">
+                    <div className="flex justify-between items-start mobile:flex-col">
                         <h2 className="overview text-76 space-grotesk uppercase leading-[1.2]">
                             <span>
                                 Overview
                             </span>
                         </h2>
-                        <div className="w-[55%] space-y-[2vw]">
-                            <p className="text-[2.08vw] leading-[1.3]">
+                        <div className="w-[55%] space-y-[2vw] mobile:w-full mobile:mt-[4vh]">
+                            <p className="text-[2.08vw] leading-[1.3] mobile:text-[4vw]">
                                 {content1}
                             </p>
                             {content2 && (
-                                <p className="text-[2.08vw] leading-[1.3]">
+                                <p className="text-[2.08vw] leading-[1.3] mobile:text-[4vw]">
                                     {content2}
                                 </p>
                             )}
@@ -22,7 +22,7 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
                     </div>
 
                     {videoSrc && (
-                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden">
+                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:mt-[15%]">
                             <video className="w-full h-full cover" loading="lazy" loop poster={videoPoster}>
                                 <source src={videoSrc} type="video/mp4" />
                                 Your browser does not support the video tag.

@@ -145,7 +145,7 @@ const Content = () => {
                         </div>
 
                         <div className="col-span-12 w-[105%] -ml-[2.5%]">
-                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative mobile:text-[23vw] mobile:text-center" id="text-anim">
+                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative mobile:text-[23vw] mobile:text-center mobile:leading-[1]" id="text-anim">
                                 Creative Curve
                             </div>
                         </div>

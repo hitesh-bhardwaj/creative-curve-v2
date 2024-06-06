@@ -40,14 +40,14 @@ const Showreel = () => {
         <>
             <section ref={container} id="showreel" className="bg-black">
                 <div className="h-screen w-screen relative flex items-center justify-center mobile:h-[100vh]">
-                    <div ref={video} className="overflow-hidden w-full h-full absolute">
+                    <div ref={video} className="overflow-hidden w-full h-full absolute mobile:h-[100vh]">
                         <video 
                             autoPlay
                             muted
                             loop
                             playsInline
                             loading="lazy"
-                            className="w-full h-full aspect-video">
+                            className="w-full h-full aspect-video mobile:object-cover">
                             <source src="/showreel.mp4" type="video/mp4" />
                         </video>
                     </div>

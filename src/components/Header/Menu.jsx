@@ -68,7 +68,7 @@ export default function Menu({ menuOpen }) {
       <nav
         ref={menuRef}
         className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] ${menuOpen ? "open" : ""}`}>
-        <div className="px-[3vw] pb-[3vw] pt-[4vw]">
+        <div className="px-[3vw] pb-[3vw] pt-[4vw] mobile:px-[8vw] mobile:pt-[12vw] mobile:pb-[10vw]">
           <ul className="flex flex-col justify-center items-start h-full gap-[0.5vw] pb-[2vw]">
             {["HOME", "ABOUT", "SERVICES", "PORTFOLIO", "Blogs", "Contact"].map(
               (text, index) => (
@@ -83,7 +83,7 @@ export default function Menu({ menuOpen }) {
             )}
           </ul>
 
-          <div className="text-[1vw] mobile:text-[3.5vw]">
+          <div className="text-[1vw] mobile:text-[4vw]">
             <Link
               ref={emailRef}
               href="mailto:info@creative-curve.co.in"
@@ -95,17 +95,17 @@ export default function Menu({ menuOpen }) {
               >
                 info@creative-curve.co.in
               </span>
-              <div className="w-[1vw] h-fit text-black overflow-hidden">
-                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out">
+              <div className="w-[1vw] h-fit text-black overflow-hidden mobile:w-[5vw] mobile:h-[5vw]">
+                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
                   <Image
-                    className="w-[0.8vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
                     src="/images/icons/arrow-right.svg"
                     alt="Arrow Right"
                     width={30}
                     height={30}
                   />
                   <Image
-                    className="w-[0.8vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
                     src="/images/icons/arrow-right.svg"
                     alt="Arrow Right"
                     width={30}
@@ -117,7 +117,7 @@ export default function Menu({ menuOpen }) {
             </Link>
           </div>
 
-          <div className="flex w-[90%] justify-between items-center mt-[1.8vw]">
+          <div className="flex w-[90%] justify-between items-center mt-[1.8vw] mobile:mt-[5vw]">
             {[
               {
                 href: "https://facebook.com",
@@ -143,7 +143,7 @@ export default function Menu({ menuOpen }) {
               <Link
                 key={index}
                 href={icon.href}
-                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links mobile:w-[5vw]"
+                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links mobile:w-[7vw]"
               >
                 <Image
                   src={icon.src}

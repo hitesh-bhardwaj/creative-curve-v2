@@ -6,7 +6,7 @@ export default function PortfolioDetail({}) {
     return (
         <main>
             <Hero 
-                heading={"PACS - INDIA"}
+                heading={"PACS INDIA"}
                 subheading={"Primary Agricultural Credit Societies are the grass root level arms of the short-term co-operative credit structure."}
                 imgSrc={"/images/projects/pacs-india/hero.png"}
             />

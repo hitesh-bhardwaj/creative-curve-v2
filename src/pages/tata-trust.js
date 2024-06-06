@@ -17,8 +17,8 @@ export default function PortfolioDetail({}) {
 
             <section>
                 <div className="container py-[10%]">
-                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50">
-                        <video className="w-full h-full cover" loading="lazy" loop poster="/images/projects/tata-trust/video-cover.png">
+                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50 mobile:h-[90vh]">
+                        <video className="w-full h-full cover " loading="lazy" loop poster="/images/projects/tata-trust/video-cover.png">
                             <source src="/images/projects/tata-trust/video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>

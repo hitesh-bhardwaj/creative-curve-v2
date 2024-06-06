@@ -307,9 +307,9 @@ const ServiceCarousel = () => {
   return (
     <>
       <div ref={carouselRef} className="parentCarou mt-[8vw]">
-        <div className="pushCarousel">
+        <div className="pushCarousel mobile:hidden">
           <div className="flex justify-between innerCarou">
-            <div className="w-[40%] pt-[5vw] flex justify-between relative">
+            <div className="w-[40%] pt-[5vw] flex justify-between relative mobile:w-full">
               <div className="relative parentEntree">
                 <div className="entree current space-y-[2vw]">
                   <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">

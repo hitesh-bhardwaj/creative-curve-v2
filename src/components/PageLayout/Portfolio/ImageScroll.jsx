@@ -71,9 +71,9 @@ const ImageScroll = () => {
     return (
         <>
             <section ref={container} className="">
-                <div className="container py-[10%] relative h-screen w-full flex justify-center items-center overflow-hidden">
+                <div className="container py-[10%] relative h-screen w-full flex justify-center items-center overflow-hidden ">
                     <div className="relative z-10">
-                        <h4 ref={text} className="aeonik text-textHead text-96 leading-[1.1] text-center">
+                        <h4 ref={text} className="aeonik text-textHead text-96 leading-[1.1] text-center mobile:text-start mobile:text-[12vw]">
                             <span>
                                 Creative Curve has grown into a global powerhouse, recognized for its unique blend of innovation and expertise.
                             </span>
@@ -82,7 +82,7 @@ const ImageScroll = () => {
                 </div>
                     <Image 
                         ref={img1}
-                        className="w-[15vw] absolute left-0"
+                        className="w-[15vw] absolute left-0 mobile:w-[40vw] mobile:left-[50%] "
                         src="/images/projects/scroll-1.png"
                         alt="Scroll Image"
                         width={500}
@@ -90,7 +90,7 @@ const ImageScroll = () => {
                     />
                     <Image 
                         ref={img2}
-                        className="w-[20vw] absolute right-1/3"
+                        className="w-[20vw] absolute right-1/3 mobile:w-[40vw] mobile:left-[5%]"
                         src="/images/projects/scroll-2.png"
                         alt="Scroll Image"
                         width={500}
@@ -98,7 +98,7 @@ const ImageScroll = () => {
                     />
                     <Image 
                         ref={img3}
-                        className="w-[15vw] absolute right-[10%]"    
+                        className="w-[15vw] absolute right-[10%] mobile:w-[40vw]"    
                         src="/images/projects/scroll-3.png"
                         alt="Scroll Image"
                         width={500}
@@ -106,7 +106,7 @@ const ImageScroll = () => {
                     />
                     <Image 
                         ref={img4}
-                        className="w-[19vw] absolute left-[15%]"
+                        className="w-[19vw] absolute left-[15%] mobile:w-[40vw] mobile:hidden"
                         src="/images/projects/scroll-4.png"
                         alt="Scroll Image"
                         width={500}

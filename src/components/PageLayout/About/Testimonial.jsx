@@ -36,7 +36,7 @@ const Testimonial = () => {
   return (
     <>
       <section id="testimonial">
-        <div className="container relative pt-[5%] pb-[10%]">
+        <div className="container relative pt-[5%] pb-[10%] mobile:pt-[10%] mobile:pb-[20%]">
           <Swiper
             speed={1000}
             pagination={{ type: "fraction" }}
@@ -50,82 +50,82 @@ const Testimonial = () => {
             modules={[Pagination, Autoplay, Parallax]}
             className="mySwiper"
           >
-            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%]">
+            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%] mobile:top-[11%] mobile:gap-[10vw] mobile:right-[5%]">
                 <PrevButton />
                 <NextButton />
             </div>
             <SwiperSlide>
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
                     </div>
-                    <p className="text-48" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                    <p className="text-48 mobile:text-[4.5vw]" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
                         When we approached Creative Curve to revamp our brand identity, we were blown away by their innovative designs and attention to detail. Their team transformed our vision into a visual masterpiece, setting us apart in our industry. Truly the best in the business!
                     </p>
-                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
                     </div>
-                    <p className="text-48" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                    <p className="text-48 mobile:text-[4.5vw]" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
                         When we approached Creative Curve to revamp our brand identity, we were blown away by their innovative designs and attention to detail. Their team transformed our vision into a visual masterpiece, setting us apart in our industry. Truly the best in the business!
                     </p>
-                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
                     </div>
-                    <p className="text-48" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                    <p className="text-48 mobile:text-[4.5vw]" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
                         When we approached Creative Curve to revamp our brand identity, we were blown away by their innovative designs and attention to detail. Their team transformed our vision into a visual masterpiece, setting us apart in our industry. Truly the best in the business!
                     </p>
-                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
                     </div>
-                    <p className="text-48" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                    <p className="text-48 mobile:text-[4.5vw]" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
                         When we approached Creative Curve to revamp our brand identity, we were blown away by their innovative designs and attention to detail. Their team transformed our vision into a visual masterpiece, setting us apart in our industry. Truly the best in the business!
                     </p>
-                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
-                        <Image className="h-auto w-[2vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw] mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
+                        <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
                     </div>
-                    <p className="text-48" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
+                    <p className="text-48 mobile:text-[4.5vw]" data-swiper-parallax="-200" data-swiper-parallax-duration="600">
                         When we approached Creative Curve to revamp our brand identity, we were blown away by their innovative designs and attention to detail. Their team transformed our vision into a visual masterpiece, setting us apart in our industry. Truly the best in the business!
                     </p>
-                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>

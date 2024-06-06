@@ -258,7 +258,7 @@
 
     .pushCarousel .entree {
         flex: 0 0 var(--wrapper);
-        background: #E6EFCF;
+        background: black;
         border-radius: 6px;
         padding: 74px 30px 70px;
         white-space: initial

@@ -150,7 +150,7 @@ export default function ContactForm () {
         </div>
 
         {/* Submit button */}
-        <Button className="rounded-full text-[1.1vw] uppercase text-white font-[400] aeonik px-[2vw] py-[1vw] h-full" type="submit" disabled={submitting}>
+        <Button className="rounded-full text-[1.1vw] uppercase text-white font-[400] aeonik px-[2vw] py-[1vw] h-full mobile:text-[3vw] mobile:px-[4vw] mobile:py-[2vw]" type="submit" disabled={submitting}>
             {submitting ? 'sending...' : 'send message'}
         </Button>
         {submissionError && <p className="text-red-500">{submissionError}</p>}
