@@ -1,3 +1,5 @@
+import VideoPlayer from "../VideoPlayer"
+
 const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
     return (
         <>
@@ -23,10 +25,10 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
 
                     {videoSrc && (
                         <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:mt-[15%]">
-                            <video className="w-full h-full cover" loading="lazy" loop poster={videoPoster}>
-                                <source src={videoSrc} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
+                            <VideoPlayer 
+                                src={videoSrc}
+                                poster={videoPoster}
+                            />
                         </div>
                     )}
                 </div>

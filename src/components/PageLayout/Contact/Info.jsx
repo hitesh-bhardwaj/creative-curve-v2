@@ -31,10 +31,9 @@ const Info = () => {
                         </div>
                     </div>
 
-                    <div data-scroll-prevent className="h-[50vh] w-full mobile:h-[70vh]">
-                        <iframe data-scroll-prevent className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.079754562661!2d77.37042431488638!3d28.627371691065694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550a3a6d601%3A0x690d8b3ffd0857e1!2sCreative+Curve+Communication+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1516274485667" 
-                        frameBorder="0" />
-
+                    <div className="h-[50vh] w-full">
+                        <iframe className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.079754562661!2d77.37042431488638!3d28.627371691065694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550a3a6d601%3A0x690d8b3ffd0857e1!2sCreative+Curve+Communication+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1516274485667" 
+                        frameborder="0" />
                     </div>
                 </div>
             </section>

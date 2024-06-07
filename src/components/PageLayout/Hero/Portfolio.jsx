@@ -109,7 +109,7 @@ function Portfolio() {
 
     return (
         <>
-            <section ref={pinContainer} className="py-[10%] bg-zinc-900 relative mobile:py-[15%]" id="second-section">
+            <section ref={pinContainer} className="py-[10%] bg-black relative mobile:py-[15%]" id="second-section">
                 <div className="container grid grid-cols-11 items-center gap-y-[3vw] mobile:flex mobile:flex-col">
                     <div ref={pin} className="text-white absolute top-[10%] w-[45%] mobile:w-full mobile:static" >
                         <p className="text-24 mb-[1vw] fadeUp mobile:font-light">Our Portfolio</p>
@@ -129,7 +129,7 @@ function Portfolio() {
                     </div>
 
                     <Link href="#" className="col-span-5 col-start-7">
-                        <div data-parallax-img className="h-[45vw] overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[10vh]" >
+                        <div data-cursor-color="#f0f0f0" data-cursor-text="Discover" data-cursor-size="100px" data-parallax-img className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[10vh]" >
                             <Image 
                                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg1 parallaximg"
                                 src="/images/home/wwf.png"
@@ -143,7 +143,7 @@ function Portfolio() {
                         </div>
                     </Link>
                     <Link href="#" className="col-span-5">
-                        <div data-parallax-img className="h-[45vw] overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
+                        <div data-cursor-color="#f0f0f0" data-cursor-text="Discover" data-cursor-size="100px" data-parallax-img className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
                             <Image 
                                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg2 parallaximg"
                                 src="/images/home/bharti.png"
@@ -157,7 +157,7 @@ function Portfolio() {
                         </div>
                     </Link>
                     <Link href="#" className="col-span-5 col-start-7">
-                        <div data-parallax-img className="h-[35vw] overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
+                        <div data-cursor-color="#f0f0f0" data-cursor-text="Discover" data-cursor-size="100px" data-parallax-img className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
                             <Image 
                                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg3 parallaximg"
                                 src="/images/home/wfp.png"
@@ -171,7 +171,7 @@ function Portfolio() {
                         </div>
                     </Link>
                     <Link href="#" className="col-span-5">
-                        <div data-parallax-img className="h-[35vw] overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
+                        <div data-cursor-color="#f0f0f0" data-cursor-text="Discover" data-cursor-size="100px" data-parallax-img className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
                             <Image 
                                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg4 parallaximg"
                                 src="/images/home/unicef.png"
@@ -185,7 +185,7 @@ function Portfolio() {
                         </div>
                     </Link>
                     <Link href="#" className="col-span-5 col-start-7">
-                        <div data-parallax-img className="h-[45vw] overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
+                        <div data-cursor-color="#f0f0f0" data-cursor-text="Discover" data-cursor-size="100px" data-parallax-img className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]">
                             <Image 
                                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg"
                                 src="/images/home/stc.png"

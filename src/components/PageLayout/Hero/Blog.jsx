@@ -71,7 +71,7 @@ export default function Blog() {
 
                     {/* <!-- Blog Grid --> */}
                         <div className="flex items-center justify-between gap-x-[2vw] pt-[8vw] mobile:flex-col" ref={trigger}>
-                            <div className="w-1/3 blog-item-1 mobile:w-full mobile:mt-[8vh]" ref={item1}>
+                            <div data-cursor-color="#f0f0f0" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full mobile:mt-[8vh]" ref={item1}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
@@ -87,7 +87,7 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div className="w-1/3 blog-item-2 mobile:w-full mobile:mt-[5vh]" ref={item2}>
+                            <div data-cursor-color="#f0f0f0" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-2 mobile:w-full mobile:mt-[5vh]" ref={item2}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
@@ -103,7 +103,7 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div className="w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh]" ref={item3}>
+                            <div data-cursor-color="#f0f0f0" data-cursor-text="Read More" data-cursor-size="100px" className="cursor-none w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh]" ref={item3}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">

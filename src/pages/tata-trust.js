@@ -1,7 +1,11 @@
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
+import VideoPlayer from "@/components/PageLayout/VideoPlayer";
 
 export default function PortfolioDetail({}) {
+
+    const videoUrl = "https://res.cloudinary.com/djfyshazn/video/upload/v1717666930/tata-portfolio_qr2j8i.mp4";
+
     return (
         <main>
             <Hero 
@@ -17,11 +21,11 @@ export default function PortfolioDetail({}) {
 
             <section>
                 <div className="container py-[10%]">
-                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50 mobile:h-[90vh]">
-                        <video className="w-full h-full cover " loading="lazy" loop poster="/images/projects/tata-trust/video-cover.png">
-                            <source src="/images/projects/tata-trust/video.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50">
+                        <VideoPlayer 
+                            src={videoUrl}
+                            poster={"/images/projects/tata-trust/video-cover.png"}
+                        />
                     </div>
                 </div>
             </section>

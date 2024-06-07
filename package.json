@@ -30,6 +30,7 @@
     "next": "14.2.3",
     "next-share": "^0.27.0",
     "react": "^18.2.0",
+    "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-email": "^2.1.4",
     "react-hook-form": "^7.51.5",

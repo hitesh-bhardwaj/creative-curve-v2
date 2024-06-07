@@ -1,3 +1,5 @@
+import ScrollButton from "../About/ScrollButton"
+
 const PageHero = () => {
     return (
         <>
@@ -14,9 +16,7 @@ const PageHero = () => {
                         </div>
 
                         <div className="w-full flex items-center justify-center absolute bottom-[10%]">
-                            <div className="uppercase text-24 text-textBody">
-                                <span className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out">Scroll Down</span>
-                            </div>
+                            <ScrollButton />
                         </div>
                     </div>
                 </div>

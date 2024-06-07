@@ -3,6 +3,9 @@ import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Storyboard2 from "@/components/PageLayout/PortfolioDetail/Stroyboard2";
 
 export default function PortfolioDetail({}) {
+
+    const videoUrl = "https://res.cloudinary.com/djfyshazn/video/upload/v1717667565/msf-portfolio_glwhmw.mp4";
+
     return (
         <main>
             <Hero 
@@ -15,7 +18,7 @@ export default function PortfolioDetail({}) {
                 content1={"With more than 40 years of field experience as an emergency and humanitarian aid organisation, and as part of our need to reflect critically on our actions and improve our ways of working, several reflection centres have been set up within MSF."}
                 content2={"Their role is mainly to reflect and challenge the organisation on past humanitarian and medical actions, draw lessons-learned and ways forward for future operations."}
                 videoPoster={"/images/projects/msf/video-cover.png"}
-                videoSrc={"/images/projects/video.mp4"}
+                videoSrc={videoUrl}
             />
 
             <Storyboard2

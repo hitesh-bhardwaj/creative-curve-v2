@@ -4,6 +4,9 @@ import Branding from "@/components/PageLayout/PortfolioDetail/Branding";
 import Events from "@/components/PageLayout/PortfolioDetail/Events";
 
 export default function PortfolioDetail({}) {
+
+    const videoUrl = "https://res.cloudinary.com/djfyshazn/video/upload/v1717666886/jhpiego-portfolio_a1lefg.mp4";
+
     return (
         <main>
             <Hero 
@@ -18,7 +21,7 @@ export default function PortfolioDetail({}) {
 
             <Branding 
                 className={"bg-black text-white"}
-                videoSrc={"/images/projects/jhpiego/video.mp4"}
+                videoSrc={videoUrl}
                 videoPoster={"/images/projects/jhpiego/video-cover.png"}
                 img2={"/images/projects/jhpiego/brand-2.png"}
                 img3={"/images/projects/jhpiego/brand-3.png"}

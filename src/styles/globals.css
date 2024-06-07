@@ -68,6 +68,16 @@ html.lenis, html.lenis body {
 }
 /* Lenis CSS END */
 
+/* Cursor Css */
+.c-cursor {
+    top: -5% !important;
+    left: -3.5% !important;
+    opacity: 0.9 !important;
+    backdrop-filter: blur(50px) !important;
+}
+.c-cursor__inner {
+    color: #000000 !important;
+}
 
 /* Header CSS Start */
 .three_canvas{
@@ -247,7 +257,5 @@ html.lenis, html.lenis body {
         background-color: black;
         padding: 1.5vw;
     }
-   
-    
 }
 

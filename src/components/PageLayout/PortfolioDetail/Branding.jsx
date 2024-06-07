@@ -1,4 +1,5 @@
 import Image from "next/image"
+import VideoPlayer from "../VideoPlayer"
 
 const Branding = ({ className, videoSrc, videoPoster, img1, img2, img3 }) => {
     return (
@@ -32,11 +33,11 @@ const Branding = ({ className, videoSrc, videoPoster, img1, img2, img3 }) => {
                             </div>
                         )}
                         {videoSrc && (
-                            <div className="col-span-2 rounded-[40px] overflow-hidden mobile:h-[80vh] mobile:rounded-[20px] ">
-                                <video className="w-full h-full cover" loading="lazy" loop poster={videoPoster}>
-                                    <source src={videoSrc} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
+                            <div className="col-span-2 rounded-[40px] overflow-hidden">
+                                <VideoPlayer 
+                                    src={videoSrc}
+                                    poster={videoPoster}
+                                />
                             </div>
                         )}
                         {img2 && (

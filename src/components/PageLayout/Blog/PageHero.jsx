@@ -1,3 +1,5 @@
+import ScrollButton from "../About/ScrollButton"
+
 const PageHero = () => {
     return (
         <>
@@ -10,10 +12,8 @@ const PageHero = () => {
                             <span className="uppercase">Collection<br/> Insights</span>
                         </h1>
 
-                        <div className="flex justify-between w-full mt-[6%] mobile:flex-col">
-                            <div className="uppercase text-24 text-textBody mobile:order-2 mobile:absolute mobile:bottom-[20%] mobile:left-[30%]">
-                                <span className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out">Scroll Down</span>
-                            </div>
+                        <div className="flex justify-between w-full mt-[6%]">
+                            <ScrollButton />
 
                             <p className="text-24 text-textBody text-right w-[21vw] mobile:w-[80%] mobile:text-start mobile:order-1">
                                 <span>
