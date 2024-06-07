@@ -39,6 +39,42 @@ export default function Blog() {
         }
         
     });
+    useGSAP(() => {
+        if(globalThis.innerWidth<541){
+            // const parallaxImgs = document.querySelectorAll(".parallaxIMG");
+        
+            // parallaxImgs.forEach((parallaxImg) => {
+            //   gsap.to(parallaxImg, {
+            //     yPercent: 10,
+            //     scrollTrigger: {
+            //       trigger: parallaxImg,
+            //       start: "20% bottom",
+            //       end: "bottom top",
+            //       scrub: true,
+            //       // markers: true
+            //     },
+            //   });
+            // });
+    
+        }else{
+            const parallaximgs = document.querySelectorAll(".parallaxImg");
+        
+            parallaximgs.forEach((parallaximg) => {
+              gsap.to(parallaximg, {
+                yPercent: 10,
+                scrollTrigger: {
+                  trigger: parallaximg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }
+       
+      });
 
     return(
         <>
@@ -75,7 +111,7 @@ export default function Blog() {
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-1.png" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-1.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-5%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
@@ -91,7 +127,7 @@ export default function Blog() {
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-2.png" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-2.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-5%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
@@ -107,7 +143,7 @@ export default function Blog() {
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-3.png" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-3.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-10%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">

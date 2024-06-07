@@ -24,7 +24,7 @@ const WhyUs = () => {
                                     We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
                                 </p>
                             </div>
-                            <div className="w-full space-y-[2vw] mobile:hidden">
+                            <div className="w-full space-y-[2vw] mobile:hidden mobile:flex">
                                 <div className="">
                                     <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%]">
                                         <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['+'] after:top-[10%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw]">
@@ -62,7 +62,7 @@ const WhyUs = () => {
                         </div>
                         <div className="w-full space-y-[2vw] mobile:order-3 hidden mobile:block mobile:mt-[10%]">
                                 <div className="">
-                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%]">
+                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[6%]">
                                         <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['+'] after:top-[10%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw]">
                                             <span>5</span>
                                             <span>0</span>
@@ -75,10 +75,11 @@ const WhyUs = () => {
                                 </div>
 
                                 <div className="">
-                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%]">
+                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[6%] mobile:pt-[4%]">
                                     <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['%'] after:top-[20%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:text-[3vw] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw] mobile:after:h-[5vw]">
                                             <span>9</span>
                                             <span>9</span>
+                                            <span>.9</span>
                                         </h4>
                                         <p className="text-24 w-[7vw] mobile:w-[25vw]">Satisfied <br /> Customers</p>
                                     </div>

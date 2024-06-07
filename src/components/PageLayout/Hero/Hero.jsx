@@ -70,15 +70,30 @@ function Hero() {
   }, []);
 
   useGSAP(()=> {
+    if(globalThis.innerWidth<541){
       gsap.to(".hero-container", {
-          scrollTrigger: {
-              trigger: "#hero",
-              scrub: true,
-              start: "top top",
-              end: "bottom top",
-          },
-          yPercent: 50,
-      })
+        scrollTrigger: {
+            trigger: "#hero",
+            scrub: true,
+            start: "top top",
+            end: "bottom top",
+        },
+        yPercent: 30,
+    })
+
+    }else{
+      gsap.to(".hero-container", {
+        scrollTrigger: {
+            trigger: "#hero",
+            scrub: true,
+            start: "top top",
+            end: "bottom top",
+        },
+        yPercent: 50,
+    })
+
+    }
+     
   })
 
   return (

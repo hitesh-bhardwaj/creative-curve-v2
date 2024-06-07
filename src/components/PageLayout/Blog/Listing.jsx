@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import BlogCard from './BlogCard';
 
+
 const Listing = () => {
     const [blogs, setBlogs] = useState([]);
     const [activeCategory, setActiveCategory] = useState('All');
     const categories = ["All", "Branding", "UI Design", "UX Design", "Insights"];
+  
 
     useEffect(() => {
         fetch('/images/blogs/blogdata.json')

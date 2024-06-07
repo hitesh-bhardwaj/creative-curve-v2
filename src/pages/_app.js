@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
       </ReactLenis>
 
-      {showWebGL && <WebGl_Canvas />}
+      {/* {showWebGL && <WebGl_Canvas />} */}
     </>
   );
 }

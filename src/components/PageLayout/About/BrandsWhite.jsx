@@ -2,14 +2,17 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import SplitType from "split-type";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP);
+
 
 function BrandsWhite() {
     const firstText = useRef(null);
     const secondText = useRef(null);
     const thirdText = useRef(null);
     const slider = useRef(null);
+    
     let xPercent = 0;
     let direction = -1;
   
@@ -76,20 +79,61 @@ function BrandsWhite() {
         requestAnimationFrame(animate2);
         xPercent2 += 0.1 * direction2;
       };
+      useGSAP(()=>{
+        const text = new SplitType('.para-animation', { types: 'words, chars' });
+        const headText = new SplitType('.about-brand-head',{types:"words,chars"})
+        const head = document.querySelectorAll(".about-brand-head .word .char")
+      const para = document.querySelectorAll(".para-animation .word .char")
+      const tl = gsap.timeline({
+        scrollTrigger:{
+          trigger:brands.current,
+        }
+      });
+      tl.from(head,{
+          yPercent:100,
+          delay:1,
+          stagger:0.04,
+          duration:0.5,
+          ease:"power4.out",
+          
+
+      })
+      .from(para, {
+        filter: "blur(10px)",
+        opacity: 0,
+        duration: 0.6,
+        yPercent: 100,
+        stagger: 0.01,
+        delay: -1,
+        ease: "power3.out",
+        
+        
+      
+    })
+    tl.from(".about-brand-small",{
+      yPercent:-100,
+      duration:0.6,
+      delay:-0.59
+      
+    })
+
+      })
+      
 
   return (
     <>
-      <section ref={brands} className="pt-[10%] pb-[10%]" id="brands">
+      <section ref={brands} className="pt-[10%] pb-[10%] mobile:pt-[30%] mobile:pb-[20%]" id="brands">
         <div className="container">
-          <div className="w-[55%] mobile:w-full">
-            <p className="text-24 mb-[1vw] fadeUp ">Our Clients</p>
-            <h2 className="text-96 text-textHead leading-[1.2] mb-[1vw] heading-anim ">
-              They Choose Us
-              <br />
-              And We Delivered!
+          <div className="w-[55%] mobile:w-full overflow-hidden">
+            <p className="text-24 mb-[1vw] fadeUp about-brand-small ">Our Clients</p>
+            <h2 className="text-96 text-textHead leading-[1.2] mb-[1vw] heading-anim overflow-hidden ">
+              <span className="block about-brand-head overflow-hidden"> They Choose Us</span>
+              
+               <span className="block about-brand-head overflow-hidden">And We Delivered!
+                </span>
             </h2>
-            <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%]">
-              <span>
+            <p className="text-22 w-[65%] mb-[2vw] para-animation mobile:w-[90%] para-anim">
+              <span className="block para-anim">
                 We forge meaningful connections that translate into tangible
                 results. Our marketing solutions are crafted with a deep
                 understanding.

@@ -1,8 +1,14 @@
 import Link from "next/link"
 import React, { useEffect, useState } from 'react';
+import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 const RelatedArticles = () => {
     const [blogs, setBlogs] = useState([]);
+    
 
     useEffect(() => {
         fetch('/images/blogs/blogdata.json')
@@ -14,14 +20,15 @@ const RelatedArticles = () => {
     const filteredBlogs = blogs.slice(0, 3);
 
     const BlogCard = ({ title, category, img, link }) => {
+        
         return (
             <div className="col-span-1 blog-card h-full mobile:mt-[3vh]">
                 <Link href={link} className="w-full relative h-fit group/blog">
                     <div className="h-[28vw] w-full rounded-[1vw] overflow-hidden mobile:h-[80vw] mobile:rounded-[10px]">
-                        <img src={img} alt={title} className="w-full h-full group-hover/blog:scale-[1.05] object-cover transition-all duration-300"/>
+                        <img src={img} alt={title} className="w-full h-full group-hover/blog:scale-[1.05] object-cover transition-all duration-300 "/>
                     </div>
                     <h5 className="text-30 leading-[1.2] aeonik text-textHead mt-[1.2vw] mobile:mt-[2vh]">{title}</h5>
-                    <p className="text-20 space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-8 left-8 mobile:top-3 mobile:left-3">{category}</p>
+                    <p className="text-20 space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-8 left-8 mobile:top-3 mobile:left-3 mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[2vw]">{category}</p>
                     <p className="uppercase flex items-center group gap-[10px] mt-[1vw] mobile:mt-[2vh]">
                         <span className="text-24 relative after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-textHead after:transition-all after:duration-300 after:ease-out hover:after:scale-x-0 mobile:text-[4vw]">
                             Read More
@@ -47,10 +54,28 @@ const RelatedArticles = () => {
                             <span>Articles</span>
                         </h2>
 
-                        <Link href="#" className="border mb-3 h-fit block w-fit border-textHead py-[1vw] text-24 px-[2.5vw] rounded-full fadeUp mobile:mt-[4vh] mobile:py-[2vw] mobile:text-[4vw]">
+                        <Link href="#" className="border mb-3 h-fit block w-fit border-textHead py-[1vw] text-24 px-[2.5vw] rounded-full fadeUp mobile:mt-[4vh] mobile:py-[2vw] mobile:px-[4vw] mobile:text-[3.5vw] mobile:flex mobile:gap-[3vw]">
                             <span className="uppercase">
                                 ALL BLOGS
                             </span>
+                            <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[4vw] mobile:h-[4vw] mobile:block hidden">
+                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
+                  <Image
+                    className="w-[0.8vw] mobile:w-[4vw] mobile:h-[4vw]"
+                    src="/images/icons/arrow-right-home.svg"
+                    alt="Arrow Right"
+                    width={30}
+                    height={30}
+                  />
+                  <Image
+                    className="w-[0.8vw] mobile:w-[4vw] mobile:h-[4vw]"
+                    src="/images/icons/arrow-right-home.svg"
+                    alt="Arrow Right"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+              </div>
                         </Link>
                     </div>
 

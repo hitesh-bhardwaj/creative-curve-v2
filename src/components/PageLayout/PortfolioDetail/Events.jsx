@@ -1,6 +1,46 @@
 import Image from "next/image"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Events = ({ className, img1, img2, img3, img4, img5 }) => {
+    useGSAP(() => {
+        if(globalThis.innerWidth<541){
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 15,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }else{
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 10,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }
+       
+      });
     return (
         <>
             <section id="second-section" className={`${className}`}>
@@ -23,57 +63,57 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
 
                     <div className="w-full h-full grid grid-cols-8 gap-[3vw] items-end mobile:flex mobile:flex-col">
                         {img1 && (
-                            <div className="col-span-5 h-[60vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[10%] mobile:border-2 mobile:border-black">
+                            <div className="col-span-5 h-[60vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[8%] mobile:border-2 mobile:border-black mobile:h-[22vh]">
                                 <Image 
                                     loading="lazy"
                                     src={img1}
                                     alt="StoryBoard Image"
                                     fill
-                                    className="cover"
+                                    className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                 />
                             </div>
                         )}
                         {img2 && (
-                            <div className="col-span-3 -mt-[25%] h-[80vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[70vh] mobile:rounded-[20px] mobile:mt-[10%] mobile:border-2 mobile:border-black">
+                            <div className="col-span-3 -mt-[25%] h-[80vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[22vh] mobile:rounded-[20px] mobile:mt-[5%] mobile:border-2 mobile:border-black">
                                 <Image 
                                     loading="lazy"
                                     src={img2}
                                     alt="StoryBoard Image"
                                     fill
-                                    className="cover"
+                                    className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                 />
                             </div>
                         )}
                         {img3 && (
-                            <div className="col-span-8 h-[85vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[10%] mobile:border-black mobile:border-2">
+                            <div className="col-span-8 h-[85vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh]">
                                 <Image 
                                     loading="lazy"
                                     src={img3}
                                     alt="StoryBoard Image"
                                     fill
-                                    className="cover"
+                                    className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                 />
                             </div>
                         )}
                         {img4 && (
-                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:mt-[10%] mobile:border-black">
+                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:hidden">
                                 <Image 
                                     loading="lazy"
                                     src={img4}
                                     alt="StoryBoard Image"
                                     fill
-                                    className="cover"
+                                    className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                 />
                             </div>
                         )}
                         {img5 && (
-                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:w-full mobile:mt-[10%] mobile:border-black mobile:border-2">
+                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:w-full mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh]">
                                 <Image 
                                     loading="lazy"
                                     src={img5}
                                     alt="StoryBoard Image"
                                     fill
-                                    className="cover"
+                                    className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                 />
                             </div>
                         )}

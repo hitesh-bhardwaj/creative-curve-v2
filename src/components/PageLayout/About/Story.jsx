@@ -106,18 +106,36 @@ const Story = () => {
     });
 
     useGSAP(() => {
-        gsap.fromTo(document.querySelector("body"), {
-            backgroundColor: "#000",
-        },{
-            backgroundColor: "#fff",
-            scrollTrigger: {
-                trigger: ".story-container",
-                start: "95% 50%",
-                end: "bottom 50%",
-                markers: false,
-                scrub: true,
-            },
-        });
+        if(globalThis.innerWidth<541){
+            gsap.fromTo(document.querySelector("body"), {
+                backgroundColor: "#000",
+            },{
+                backgroundColor: "#fff",
+                scrollTrigger: {
+                    trigger: ".story-container",
+                    start: "85% 50%",
+                    end: "95% 50%",
+                    
+                    scrub: true,
+                },
+            });
+
+        }else{
+            gsap.fromTo(document.querySelector("body"), {
+                backgroundColor: "#000",
+            },{
+                backgroundColor: "#fff",
+                scrollTrigger: {
+                    trigger: ".story-container",
+                    start: "95% 50%",
+                    end: "bottom 50%",
+                    
+                    scrub: true,
+                },
+            });
+
+        }
+        
     });
 
     return (

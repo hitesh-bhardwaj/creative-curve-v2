@@ -1,6 +1,46 @@
 import Image from "next/image"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
+    useGSAP(() => {
+        if(globalThis.innerWidth<541){
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 15,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }else{
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 10,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }
+       
+      });
     return (
         <>
             <section id="second-section" className={`${className}`}>
@@ -16,59 +56,59 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                         </p>
                     </div>
 
-                    <div className="w-full h-full gap-x-[3vw] gap-y-[5vw] grid grid-col-2 mobile:flex mobile:flex-col mobile:gap-[4vh] mobile:mt-[4vh]">
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                    <div className="w-full h-full gap-x-[3vw] gap-y-[5vw] grid grid-col-2 mobile:flex mobile:flex-col mobile:gap-[3vh] mobile:mt-[4vh]">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img1}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[50vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img2}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[40vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img3}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img4}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[23vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img5}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[70vh] mobile:rounded-[20px]">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[22vh] mobile:rounded-[20px] mobile:border-2">
                             <Image 
                                 loading="lazy"
                                 src={img6}
                                 alt="StoryBoard Image"
                                 fill
-                                className="cover"
+                                className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
                     </div>

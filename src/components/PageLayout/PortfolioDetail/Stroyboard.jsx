@@ -17,7 +17,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                     </div>
 
                     <div className="w-full h-full space-y-[7vw]">
-                        <div className="w-full h-[90vh] relative mobile:h-[70vh] ">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] ">
                             <Image 
                                 loading="lazy"
                                 src={img1}
@@ -26,7 +26,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-left"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[70vh] mobile:pt-[4vh]">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh]">
                             <Image 
                                 loading="lazy"
                                 src={img2}
@@ -35,7 +35,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-left"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[70vh] mobile:pt-[4vh]">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh]">
                             <Image 
                                 loading="lazy"
                                 src={img3}
@@ -44,7 +44,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-center"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[70vh] mobile:pt-[4vh]">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh]">
                             <Image 
                                 loading="lazy"
                                 src={img4}

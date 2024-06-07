@@ -21,7 +21,7 @@ export default function PortfolioDetail({}) {
 
             <section>
                 <div className="container py-[10%]">
-                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50">
+                    <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50 mobile:rounded-[15px]">
                         <VideoPlayer 
                             src={videoUrl}
                             poster={"/images/projects/tata-trust/video-cover.png"}

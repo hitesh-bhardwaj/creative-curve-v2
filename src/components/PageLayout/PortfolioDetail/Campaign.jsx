@@ -1,6 +1,46 @@
 import Image from "next/image"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, content2 }) => {
+    useGSAP(() => {
+        if(globalThis.innerWidth<541){
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 15,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }else{
+            const parallaxImgs = document.querySelectorAll(".parallaximg");
+        
+            parallaxImgs.forEach((parallaxImg) => {
+              gsap.to(parallaxImg, {
+                yPercent: 10,
+                scrollTrigger: {
+                  trigger: parallaxImg,
+                  start: "20% bottom",
+                  end: "bottom top",
+                  scrub: true,
+                  // markers: true
+                },
+              });
+            });
+    
+        }
+       
+      });
     return (
         <>
             <section id="campaign" className={`${className}`}>
@@ -18,11 +58,11 @@ const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, co
                     <div className="mt-[5vw] mobile:flex mobile:flex-col mobile:mt-[15vw]">
                         <h4 className="text-76 uppercase space-grotesk text-right mb-[1vw]">{title}</h4>
                         <div className="grid grid-cols-6 gap-y-[6vw] mobile:flex mobile:flex-col">
-                            <div className="col-span-6 relative h-[46.5vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:rounded-[20px]">
-                                <Image className="cover mobile:object-cover " src={img1} alt="Unicef Campaign Image" fill loading="lazy"/>
+                            <div className="col-span-6 relative h-[46.5vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2">
+                                <Image className="cover mobile:object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] " src={img1} alt="Unicef Campaign Image" fill loading="lazy"/>
                             </div>
-                            <div className="col-span-4 relative h-[35vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:rounded-[20px] mobile:mt-[4vh]">
-                                <Image className="cover" src={img2} alt="Unicef Campaign Image" fill loading="lazy"/>
+                            <div className="col-span-4 relative h-[35vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[25vh] mobile:rounded-[20px] mobile:mt-[2vh] mobile:border-2">
+                                <Image className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]" src={img2} alt="Unicef Campaign Image" fill loading="lazy"/>
                             </div>
                             <div className="col-span-2 flex items-center pl-[22%] mobile:pl-0 mobile:my-[5%]">
                                 <p className="text-24">
@@ -34,8 +74,8 @@ const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, co
                                     {content2}
                                 </p>
                             </div>
-                            <div className="col-span-4 relative h-[35vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:rounded-[20px] mobile:mt-[4vh]">
-                                <Image className="cover" src={img3} alt="Unicef Campaign Image" fill loading="lazy"/>
+                            <div className="col-span-4 relative h-[35vw] border-4 border-black rounded-[40px] overflow-hidden mobile:h-[25vh] mobile:rounded-[20px] mobile:mt-[2vh] mobile:border-2">
+                                <Image className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]" src={img3} alt="Unicef Campaign Image" fill loading="lazy"/>
                             </div>
                             <h4 className=" space-grotesk hidden mobile:block text-96 w-[70%] leading-[1.1] my-[10%]">Discover UNICEF's Work For Every Child, Everywhere</h4>
                         </div>

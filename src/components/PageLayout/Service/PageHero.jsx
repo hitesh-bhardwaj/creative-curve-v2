@@ -5,7 +5,7 @@ const PageHero = () => {
         <>
             <section id="hero">
                 <div className="container h-[85vh] mobile:relative">
-                    <div className="flex flex-col justify-center h-full w-full items-start mobile:justify-start mobile:mt-[40%]">
+                    <div className="flex flex-col justify-center h-full w-full items-start mobile:justify-start mobile:mt-[50%]">
                         <h1 className="text-140 tracking-[1px] leading-[1.1] space-grotesk text-textHead ">
                             <span className="text-76">We Create</span>
                             <br/>

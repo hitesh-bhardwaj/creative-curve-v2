@@ -203,25 +203,25 @@ export default function Services() {
                           </div>
                           <div className="ser-info-group mobile:text-white mobile:mt-[2vh]">
                             <ul className="service-item-list">
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Brand & Visual Identity
                               </li>
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Creative Advertisement
                               </li>
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Periodicals & Annual Reports
-                              </li>
-                              <li className="text-24">
+                              </li> 
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Digital Design
                               </li>
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Print & Collateral Design
                               </li>
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Illustrations & Artwork
                               </li>
-                              <li className="text-24">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Packaging & Label Design
                               </li>
                             </ul>
@@ -289,23 +289,23 @@ export default function Services() {
                           </div>
                           <div className="ser-info-group mobile:text-white mobile:mt-[2vh]">
                             <ul className="service-item-list">
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Media Relations & Outreach
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Crisis Communication & Management
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">Event PR & Launches</li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">Event PR & Launches</li>
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Influencer Collaborations
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Reputation Building & Management
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Press Release Crafting & Distribution
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Media Training & Workshops
                               </li>
                             </ul>
@@ -371,25 +371,25 @@ export default function Services() {
                           </div>
                           <div className="ser-info-group mobile:text-white mobile:mt-[2vh]">
                             <ul className="service-item-list">
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Brand & Corporate Films
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Product Explainer Videos
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Podcasts & Audio Content
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Event Coverage & Live Streaming
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Animation & Motion Graphics
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Sound Design & Voiceovers
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Interactive Video Content
                               </li>
                             </ul>
@@ -455,25 +455,25 @@ export default function Services() {
                           </div>
                           <div className="ser-info-group mobile:text-white mobile:mt-[2vh]">
                             <ul className="service-item-list">
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Search Engine Optimization (SEO)
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Paid Media & PPC Campaigns
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Social Media Management & Strategy
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Content Marketing & Blogging
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Email Marketing Campaigns
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Affiliate & Influencer Marketing
                               </li>
-                              <li className="text-24 mobile:text-[4vw]">
+                              <li className="text-22 mobile:py-[0.5vw]">
                                 Analytics & Performance Tracking
                               </li>
                             </ul>
