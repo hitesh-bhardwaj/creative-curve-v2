@@ -1,11 +1,12 @@
-
 import Image from "next/image"
 import Link from "next/link"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
+import splitInLine from "@/utils";
+import { useEffect, useRef } from "react"
 
-
-
-const Content = () => {
-    
+const Content = ({children}) => {
    
     return( 
         <>
@@ -145,9 +146,7 @@ const Content = () => {
                         </div>
 
                         <div className="col-span-12 w-[105%] -ml-[2.5%]">
-                            <div className="space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] heading-anim overflow-hidden creative mobile:text-[23vw] mobile:text-center mobile:leading-[1]" id="text-anim">
-                                Creative Curve
-                            </div>
+                            {children}
                         </div>
                     </div>
                 </div>

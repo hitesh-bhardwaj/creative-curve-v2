@@ -141,7 +141,7 @@ export default function Services() {
               Our Services
             </p>
             <div className="relative w-[65%] mobile:w-full">
-              <h2 className="text-140 leading-[1.2] space-grotesk heading-anim service-head mobile:flex mobile:flex-col  mobile:text-[10vw] mobile:mt-[2vh]">
+              <h2 className="text-140 leading-[1] space-grotesk heading-anim service-head mobile:flex mobile:flex-col  mobile:text-[10vw] mobile:mt-[2vh]">
                 <span className="overflow-hidden block mobile:leading-[1.1]">
                   Marketing
                 </span>{" "}

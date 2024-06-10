@@ -1,13 +1,12 @@
 import '@/styles/globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import ReactLenis from '@studio-freight/react-lenis';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 const WebGl_Canvas = dynamic(() => import('@/components/WebglBackground'), { ssr: false });
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, router }) {
   const [showWebGL, setShowWebGL] = useState(false);
 
   useEffect(() => {
@@ -21,13 +20,12 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ReactLenis root duration={2}>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </ReactLenis>
 
-      {/* {showWebGL && <WebGl_Canvas />} */}
+      {showWebGL && <WebGl_Canvas />}
     </>
   );
 }
-

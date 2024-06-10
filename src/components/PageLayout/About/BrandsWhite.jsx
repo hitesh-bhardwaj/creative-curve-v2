@@ -79,45 +79,42 @@ function BrandsWhite() {
         requestAnimationFrame(animate2);
         xPercent2 += 0.1 * direction2;
       };
-      useGSAP(()=>{
-        const text = new SplitType('.para-animation', { types: 'words, chars' });
-        const headText = new SplitType('.about-brand-head',{types:"words,chars"})
-        const head = document.querySelectorAll(".about-brand-head .word .char")
-      const para = document.querySelectorAll(".para-animation .word .char")
-      const tl = gsap.timeline({
-        scrollTrigger:{
-          trigger:brands.current,
-        }
-      });
-      tl.from(head,{
-          yPercent:100,
-          delay:1,
-          stagger:0.04,
-          duration:0.5,
-          ease:"power4.out",
+
+    //   useGSAP(()=>{
+    //     const text = new SplitType('.para-animation', { types: 'words, chars' });
+    //     const headText = new SplitType('.about-brand-head',{types:"words,chars"})
+    //     const head = document.querySelectorAll(".about-brand-head .word .char")
+    //   const para = document.querySelectorAll(".para-animation .word .char")
+    //   const tl = gsap.timeline({
+    //     scrollTrigger:{
+    //       trigger:brands.current,
+    //     }
+    //   });
+    //   tl.from(head,{
+    //       yPercent:100,
+    //       delay:1,
+    //       stagger:0.04,
+    //       duration:0.5,
+    //       ease:"power4.out",
           
 
-      })
-      .from(para, {
-        filter: "blur(10px)",
-        opacity: 0,
-        duration: 0.6,
-        yPercent: 100,
-        stagger: 0.01,
-        delay: -1,
-        ease: "power3.out",
-        
-        
-      
-    })
-    tl.from(".about-brand-small",{
-      yPercent:-100,
-      duration:0.6,
-      delay:-0.59
-      
-    })
+    //   })
+    //   .from(para, {
+    //     filter: "blur(10px)",
+    //     opacity: 0,
+    //     duration: 0.6,
+    //     yPercent: 100,
+    //     stagger: 0.01,
+    //     delay: -1,
+    //     ease: "power3.out",
+    // })
+    // tl.from(".about-brand-small",{
+    //   yPercent:-100,
+    //   duration:0.6,
+    //   delay:-0.59
+    // })
 
-      })
+    //   })
       
 
   return (

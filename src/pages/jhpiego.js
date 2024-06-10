@@ -2,6 +2,8 @@ import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Branding from "@/components/PageLayout/PortfolioDetail/Branding";
 import Events from "@/components/PageLayout/PortfolioDetail/Events";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function PortfolioDetail({}) {
 
@@ -9,6 +11,7 @@ export default function PortfolioDetail({}) {
 
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"JHPIEGO"}
                 subheading={"Every day, thousands of women, children and men die of preventable causes: cervical cancer, malaria, HIV, and complications from pregnancy and childbirth."}
@@ -32,6 +35,7 @@ export default function PortfolioDetail({}) {
                 img2={"/images/projects/jhpiego/event-2.png"}
                 img3={"/images/projects/jhpiego/event-3.png"}
             />
+            <Footer />
         </main>
     )
 }

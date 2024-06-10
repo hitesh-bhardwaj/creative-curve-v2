@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Blog from "@/components/PageLayout/Hero/Blog";
 import Brands from "@/components/PageLayout/Hero/Brands";
 import Hero from "@/components/PageLayout/Hero/Hero";
@@ -19,12 +21,14 @@ export default function Index () {
     <>
       <Cursor cursorSize={0} isGelly={true} />
       <main>
+        <Header />
         <Hero />
         <Portfolio />
         <Parallax />
         <Services />
         <Brands />
         <Blog />
+        <Footer />
       </main>
     </>
   )

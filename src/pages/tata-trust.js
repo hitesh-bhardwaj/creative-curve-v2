@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import VideoPlayer from "@/components/PageLayout/VideoPlayer";
@@ -8,6 +10,7 @@ export default function PortfolioDetail({}) {
 
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"Tata Trust"}
                 subheading={"The journey of a million smiles began in 1892 with Jamsetji Tata, the pioneer, visionary and founder of the Tata Group."}
@@ -29,6 +32,7 @@ export default function PortfolioDetail({}) {
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     )
 }

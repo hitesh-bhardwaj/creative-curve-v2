@@ -46,6 +46,11 @@ body{
     background-color: var(--white);
 }
 
+::selection{
+    background-color: var(--accent);
+    color: var(--white);
+}
+
 /* Lenis CSS Start */
 html.lenis, html.lenis body {
     height: auto;
@@ -163,6 +168,16 @@ html.lenis, html.lenis body {
     background-color: #1a1a1a;
     color: #fff;
     animation: none !important;
+}
+
+/* Text-anim */
+.heading-anim .line{
+    line-height: 0.8;
+    overflow: hidden;
+}
+.heading-anim span{
+    line-height: 1.1;
+    overflow: hidden;
 }
 /* Main CSS end */
 

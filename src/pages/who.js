@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Storyboard from "@/components/PageLayout/PortfolioDetail/Stroyboard";
@@ -8,6 +10,7 @@ export default function PortfolioDetail({}) {
 
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"WHO"}
                 subheading={"WHO leads global efforts to expand universal health coverage. We direct and coordinate the world's response to health emergencies."}
@@ -26,6 +29,7 @@ export default function PortfolioDetail({}) {
                 img3={"/images/projects/who/story-3.png"}
                 img4={"/images/projects/who/story-4.png"}
             />
+            <Footer />
         </main>
     )
 }

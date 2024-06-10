@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Pr from "@/components/PageLayout/PortfolioDetail/Pr";
@@ -5,6 +7,7 @@ import Pr from "@/components/PageLayout/PortfolioDetail/Pr";
 export default function PortfolioDetail({}) {
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"ICMR"}
                 subheading={"The Indian Council of Medical Research (ICMR), New Delhi, the apex body in India for the formulation."}
@@ -19,6 +22,7 @@ export default function PortfolioDetail({}) {
                 img1={"/images/projects/icmr/pr-1.png"}
                 img2={"/images/projects/icmr/pr-2.png"}
             />
+            <Footer />
         </main>
     )
 }

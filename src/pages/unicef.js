@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Campaign from "@/components/PageLayout/PortfolioDetail/Campaign";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
@@ -5,6 +7,7 @@ import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 export default function PortfolioDetail({}) {
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"Unicef"}
                 subheading={"Unicef Wants to Encourage a Sense of Stability for a Child."}
@@ -24,6 +27,7 @@ export default function PortfolioDetail({}) {
                 content1={"UNICEF works in over 190 countries and territories to save children's lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence."}
                 content2={"Discover UNICEF's work for every child, everywhere"}
             />
+            <Footer />
         </main>
     )
 }

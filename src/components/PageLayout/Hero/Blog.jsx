@@ -83,15 +83,13 @@ export default function Blog() {
 
                     <div className="w-[55%] mobile:w-full">
                         <p className="text-24 mb-[1vw] fadeUp">Our Blogs</p>
-                        <h2 className="text-96 leading-[1.1] space-grotesk mb-[1vw] heading-anim mobile:leading-[1]">
+                        <h2 className="text-96 space-grotesk mb-[1vw] heading-anim mobile:leading-[1]">
                             <span className="block overflow-hidden">
-                            Dive Into Our
-                                </span>
-                            
-                            <span className="block overflow-hidden">
-                            Creative Musings
+                                Dive Into Our
                             </span>
-                            
+                            <span className="block overflow-hidden">
+                                Creative Musings
+                            </span>
                         </h2>                    
                         <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] mobile:mt-[2vh]">
                             <span>

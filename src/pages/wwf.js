@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Campaign from "@/components/PageLayout/PortfolioDetail/Campaign";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
@@ -5,6 +7,7 @@ import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 export default function PortfolioDetail({}) {
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"WWF"}
                 subheading={"World Wide Fund for Nature-India (WWF India) was founded with the express objective of ensuring the conservation of the country's wildlife and natural habitats."}
@@ -24,6 +27,7 @@ export default function PortfolioDetail({}) {
                 content1={"WWF created a movement that inspired people to care for nature. As environmental problems grew, so did people's concern. The need arose for a platform where citizens could contribute their time, effort and energy to conservation."}
                 content2={"Nature Needs Helping Hands"}
             />
+            <Footer/>
         </main>
     )
 }

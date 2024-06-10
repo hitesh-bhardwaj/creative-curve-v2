@@ -70,7 +70,7 @@ export default function Menu({ menuOpen }) {
         className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] ${menuOpen ? "open" : ""}`}>
         <div className="px-[3vw] pb-[3vw] pt-[4vw] mobile:px-[8vw] mobile:pt-[12vw] mobile:pb-[10vw]">
           <ul className="flex flex-col justify-center items-start h-full gap-[0.5vw] pb-[2vw]">
-            {["HOME", "ABOUT", "SERVICES", "PORTFOLIO", "Blog", "Contact"].map(
+            {["HOME", "ABOUT", "SERVICES", "PORTFOLIO", "BLOG", "CONTACT"].map(
               (text, index) => (
                 <li
                   key={index}

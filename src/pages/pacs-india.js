@@ -1,10 +1,13 @@
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Events from "@/components/PageLayout/PortfolioDetail/Events";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function PortfolioDetail({}) {
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"PACS INDIA"}
                 subheading={"Primary Agricultural Credit Societies are the grass root level arms of the short-term co-operative credit structure."}
@@ -23,6 +26,7 @@ export default function PortfolioDetail({}) {
                 img4={"/images/projects/pacs-india/event-4.png"}
                 img5={"/images/projects/pacs-india/event-5.png"}
             />
+            <Footer />
         </main>
     )
 }

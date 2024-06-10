@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Pr from "@/components/PageLayout/PortfolioDetail/Pr";
@@ -5,6 +7,7 @@ import Pr from "@/components/PageLayout/PortfolioDetail/Pr";
 export default function PortfolioDetail({}) {
     return (
         <main>
+            <Header />
             <Hero 
                 heading={"White Ribbon Alliance"}
                 subheading={"Most women and girls are never asked to inform the decisions that are made about their bodies, health, or minds."}
@@ -20,6 +23,7 @@ export default function PortfolioDetail({}) {
                 img1={"/images/projects/wra/pr-1.png"}
                 img2={"/images/projects/wra/pr-2.png"}
             />
+            <Footer />
         </main>
     )
 }
