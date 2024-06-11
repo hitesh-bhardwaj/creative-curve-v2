@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import BlogCard from './BlogCard';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+import SplitType from "split-type";
 
 
 const Listing = () => {
     const [blogs, setBlogs] = useState([]);
     const [activeCategory, setActiveCategory] = useState('All');
     const categories = ["All", "Branding", "UI Design", "UX Design", "Insights"];
+   
   
 
     useEffect(() => {
@@ -24,8 +30,8 @@ const Listing = () => {
             <section id="listing">
                 <div className="container pt-[8%] pb-[10%] mobile:pt-[20%] mobile:pb-[30%]">
                     <div className='mb-[5vw]'>
-                        <h4 className="text-140 space-grotesk leading-[1.2] text-textHead">
-                            <span>
+                        <h4 className="text-140 space-grotesk leading-[1.2] text-textHead heading-anim overflow-hidden">
+                            <span className='block'>
                                 Latest Blogs
                             </span>
                         </h4>

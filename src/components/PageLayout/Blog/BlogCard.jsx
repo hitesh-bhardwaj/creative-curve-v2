@@ -2,52 +2,21 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const BlogCard = ({ title, category, img, link }) => {
-    useGSAP(() => {
-        if(globalThis.innerWidth<541){
-            // const parallaxImgs = document.querySelectorAll(".parallaximg");
-        
-            // parallaxImgs.forEach((parallaxImg) => {
-            //   gsap.to(parallaxImg, {
-            //     yPercent: 15,
-            //     scrollTrigger: {
-            //       trigger: parallaxImg,
-            //       start: "20% bottom",
-            //       end: "bottom top",
-            //       scrub: true,
-            //       // markers: true
-            //     },
-            //   });
-            // });
     
-        }else{
-            const parallaxImgs = document.querySelectorAll(".parallaximg");
-        
-            parallaxImgs.forEach((parallaxImg) => {
-              gsap.to(parallaxImg, {
-                yPercent: 10,
-                scrollTrigger: {
-                  trigger: parallaxImg,
-                  start: "20% bottom",
-                  end: "bottom top",
-                  scrub: true,
-                  // markers: true
-                },
-              });
-            });
-    
-        }
-       
-      });
+     
+      
+      
     return (
         <div className="col-span-1 blog-card h-full mobile:mt-[4vh]">
             <Link href={link} className="w-full relative h-fit group/blog">
                 <div className="h-[40vw] w-full rounded-[1.5vw] overflow-hidden mobile:h-[80vw] mobile:rounded-[3vw]">
                     <img src={img} alt={title} className="w-full h-full group-hover/blog:scale-[1.1] object-cover transition-all duration-300 scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"/>
                 </div>
-                <h5 className="text-48 leading-[1.2] aeonik text-textHead mt-[1.2vw] mobile:mt-[2vh]">{title}</h5>
+                <h5 className="text-48 leading-[1.2] aeonik text-textHead mt-[1.2vw] mobile:mt-[2vh] para-animations">{title}</h5>
                 <p className="text-[1.4vw] space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-10 left-10 mobile:text-[3.5vw] mobile:px-[3vw] mobile:top-3 mobile:left-3 mobile:py-[1.2vw]">{category}</p>
                 <p className="uppercase flex items-center group gap-[10px] mt-[2vw] mobile:mt-[2vh]">
                     <span className="text-[1.55vw] relative after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-textHead after:transition-all after:duration-300 after:ease-out hover:after:scale-x-0 mobile:text-[4vw]">

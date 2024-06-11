@@ -8,34 +8,8 @@ import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
 
 const PageHero = () => {
-    useGSAP(() => {
-        const text = new SplitType('.para-anim', { types: 'words, chars' });
-        const para = document.querySelectorAll(".para-anim .word .char")
-        const tl = gsap.timeline();
-        tl.from(".about-head",{
-            xPercent:-100,
-            delay:1,
-            stagger:0.1,
-            duration:1,
-            ease:"power4.out"
-
-        })
-        .from(para, {
-          filter: "blur(10px)",
-          opacity: 0,
-          duration: 0.6,
-          yPercent: 100,
-          stagger: 0.01,
-          delay: -1,
-          ease: "power3.out"
-      })
-      gsap.from(".about-small-head",{
-        yPercent:-100,
-        duration:0.5,
-        delay:1.7
-        
-      })
-    })
+    
+    
     return (
         <>
             <section id="hero">

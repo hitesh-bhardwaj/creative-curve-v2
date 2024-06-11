@@ -3,6 +3,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const FeaturedArticle = () => {
@@ -42,15 +43,17 @@ const FeaturedArticle = () => {
     }
    
   });
+ 
   return (
     <>
       <section id="second-section" className="bg-black text-white">
         <div className="container py-[8%] mobile:py-[20%]">
           <div className="w-[45%] relative mobile:w-full">
-            <h2 className="text-140 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white">
+            <h2 className="text-140 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white overflow-hidden">
               Featured Blog
             </h2>
-            <p className="text-24 w-[50%] para-animations absolute right-0 bottom-2 mobile:static mobile:w-[80%] mobile:pt-[10%]">
+            <br/>
+            <p className="text-24 w-[50%] para-animations absolute right-0 bottom-2 mobile:static mobile:w-[80%] mobile:pt-[4%]">
               <span>
                 From global branding trends to the nuances of digital
                 storytelling, explore the world through our lens.
@@ -58,7 +61,7 @@ const FeaturedArticle = () => {
             </p>
           </div>
 
-          <div className="flex justify-between items-start mt-[6vw] mobile:flex-col">
+          <div className="flex justify-between items-start mt-[6vw] mobile:flex-col mobile:mt-[10vw]">
             <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px]">
               <Image
                 src="/images/blogs/featured.png"
@@ -81,10 +84,10 @@ const FeaturedArticle = () => {
               </div>
 
               <div className="space-y-[2.5vw] mobile:pt-[2vh]">
-                <h3 className="text-[2.9vw] leading-[1.2] mobile:text-[5.5vw]">
+                <h3 className="text-[2.9vw] leading-[1.2] mobile:text-[5.5vw] para-animations ">
                   Global Branding in a Digital Age: Insights from Creative Curve
                 </h3>
-                <p className="text-24 mobile:text-[4vw] mobile:pt-[1.5vh] mobile:pb-[4vh]">
+                <p className="text-24 mobile:text-[4vw] mobile:pt-[1.5vh] mobile:pb-[4vh] para-animations">
                   Digital branding allows companies to tap into new
                   demographics, geos, and psychographics. With 4.66 billion
                   active internet users worldwide.

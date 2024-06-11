@@ -1,6 +1,12 @@
 import ServiceCarousel from "./ServiceCarousel"
+import gsap from "gsap";
+
+import { useGSAP } from "@gsap/react";
+
+import SplitType from "split-type";
 
 const Services = () => {
+    
     return (
         <>
             <section id="second-section" className="w-full h-full bg-black text-white" data-cursor-exclusion>

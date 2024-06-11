@@ -24,7 +24,10 @@ function BrandsWhite() {
     const slider2 = useRef(null);
     let xPercent2 = 0;
     let direction2 = 1;
+     
 
+
+  
     useGSAP(() => {
         gsap.to(slider.current, {
           scrollTrigger: {

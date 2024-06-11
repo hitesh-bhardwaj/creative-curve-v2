@@ -1,7 +1,15 @@
 import Image from "next/image"
 import imageSrc from "../../../../public/images/service/why-us.png"
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import SplitType from "split-type";
+
+gsap.registerPlugin(useGSAP);
 
 const WhyUs = () => {
+
     return (
         <>
             <section className="why-us">
@@ -24,7 +32,7 @@ const WhyUs = () => {
                                     We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
                                 </p>
                             </div>
-                            <div className="w-full space-y-[2vw] mobile:hidden mobile:flex">
+                            <div className="w-full space-y-[2vw] mobile:hidden">
                                 <div className="">
                                     <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%] fadeUp">
                                         <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['+'] after:top-[10%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw]">

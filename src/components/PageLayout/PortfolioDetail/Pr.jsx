@@ -3,8 +3,46 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import SplitType from "split-type";
 
 const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
+    useGSAP(() => {
+        const headings = document.querySelectorAll(".heading-anim");
+        headings.forEach((heading) => {
+          const headingSplit = new SplitType(heading, {
+            types: "lines, words, chars",
+          });
+          let headingWord = heading.querySelectorAll(".word .char");
+          gsap.from(headingWord, {
+            scrollTrigger: {
+              trigger: headingWord,
+              start: "top 85%",
+            },
+            duration: 0.6,
+            yPercent: 110,
+            rotate: "10deg",
+            stagger: 0.04,
+          });
+        });
+      }, []);
+      useGSAP(() => {
+        const paraAnimations = document.querySelectorAll(".para-animations");
+        paraAnimations.forEach((paraAnimation) => {
+          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
+          let paraword = paraAnimation.querySelectorAll(".word .char");
+          gsap.from(paraword, {
+            scrollTrigger: {
+              trigger: paraword,
+              start: "top 85%",
+            },
+            filter: "blur(10px)",
+            opacity: 0,
+            duration: 0.6,
+            yPercent: 100,
+            stagger: 0.005,
+          });
+        });
+      }, []);
     useGSAP(() => {
         if(globalThis.innerWidth<541){
             const parallaxImgs = document.querySelectorAll(".parallaximg");
@@ -47,15 +85,15 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                 <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[30%]">
                     <div className="space-y-[1.5vw] mb-[6vw] flex justify-between items-end mobile:flex-col mobile:items-start">
                         <div className="w-1/2 mobile:w-full mobile:mb-[8%]">
-                            <h3 className="text-140 space-grotesk leading-[1.1]">
-                                <span className="">
+                            <h3 className="text-140 space-grotesk leading-[1.1] overflow-hidden heading-anim">
+                                <span className="block">
                                     Public
                                 </span>
                                 <span className="block">
                                     Relations
                                 </span>
                             </h3>
-                            <p className="text-24 w-[70%] mobile:w-[90%] mobile:pt-[10%]">
+                            <p className="text-24 w-[70%] mobile:w-[90%] mobile:pt-[10%] para-animations">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>

@@ -4,6 +4,10 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+import SplitType from "split-type";
+
 const Events = ({ className, img1, img2, img3, img4, img5 }) => {
     useGSAP(() => {
         if(globalThis.innerWidth<541){
@@ -41,22 +45,59 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
         }
        
       });
+      useGSAP(() => {
+        const headings = document.querySelectorAll(".heading-anim");
+        headings.forEach((heading) => {
+          const headingSplit = new SplitType(heading, {
+            types: "lines, words, chars",
+          });
+          let headingWord = heading.querySelectorAll(".word .char");
+          gsap.from(headingWord, {
+            scrollTrigger: {
+              trigger: headingWord,
+              start: "top 85%",
+            },
+            duration: 0.6,
+            yPercent: 110,
+            rotate: "10deg",
+            stagger: 0.04,
+          });
+        });
+      }, []);
+      useGSAP(() => {
+        const paraAnimations = document.querySelectorAll(".para-animations");
+        paraAnimations.forEach((paraAnimation) => {
+          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
+          let paraword = paraAnimation.querySelectorAll(".word .char");
+          gsap.from(paraword, {
+            scrollTrigger: {
+              trigger: paraword,
+              start: "top 85%",
+            },
+            filter: "blur(10px)",
+            opacity: 0,
+            duration: 0.6,
+            yPercent: 100,
+            stagger: 0.005,
+          });
+        });
+      }, []);
     return (
         <>
             <section id="second-section" className={`${className}`}>
                 <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[25%]">
                     <div className="space-y-[1.5vw] mb-[6vw] relative w-full">
                         <div className="w-full flex justify-between items-start mobile:flex-col">
-                            <h3 className="text-140 space-grotesk leading-[1.2]">
-                                <span className="w-full block">
+                            <h3 className="text-140 space-grotesk leading-[1.2] heading-anim overflow-hidden">
+                                <span className="w-full block ">
                                     Events
                                 </span>
                             </h3>
-                            <p className="pt-[2vw] text-24 w-[25%] mobile:w-[70%]">
+                            <p className="pt-[2vw] text-24 w-[25%] mobile:w-[70%] para-animations">
                                 From global branding trends to the nuances of digital storytelling, explore the world through our lens.
                             </p>
                         </div>
-                        <p className="text-24 w-[35%] mobile:w-[90%] mobile:pt-[4vh]">
+                        <p className="text-24 w-[35%] mobile:w-[90%] mobile:pt-[4vh] para-animations">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                     </div>

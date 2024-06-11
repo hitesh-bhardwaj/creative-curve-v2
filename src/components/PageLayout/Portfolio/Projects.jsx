@@ -3,6 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -22,6 +23,7 @@ const Projects = () => {
                 },
               });
             });
+            
     
         }else{
             const parallaxImgs = document.querySelectorAll(".parallaximg");
@@ -42,12 +44,13 @@ const Projects = () => {
         }
        
       });
+      
     return (
         <>
             <section id="second-section" className="bg-black text-white">
                 <div className="container py-[9%] mobile:py-[20%]">
                     <div className="text-center mx-auto w-3/4 mobile:w-full mobile:text-start">
-                        <p className="space-grotesk text-48 mobile:text-[5vw]">
+                        <p className="space-grotesk text-48 mobile:text-[5vw] para-animations">
                             <span>
                                 Explore our case studies and see how Creative Curve evolves brands for a changing world, ensuring cultural relevance and future readiness
                             </span>

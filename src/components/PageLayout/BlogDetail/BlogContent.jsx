@@ -4,7 +4,12 @@ import { useGSAP } from "@gsap/react";
 import Article from "./Article";
 import AuthorInfo from "./AuthorInfo";
 
+gsap.registerPlugin(ScrollTrigger);
+import SplitType from "split-type";
+
 const BlogContent = () => {
+   
+      
 
     if (globalThis.innerWidth>1024) {
         gsap.registerPlugin(ScrollTrigger,useGSAP);

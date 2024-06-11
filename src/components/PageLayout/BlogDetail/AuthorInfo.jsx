@@ -10,30 +10,30 @@ const AuthorInfo = () => {
         <>
             <div id='authorInfo' className="w-[20%] space-y-[2.5vw] mobile:w-full mobile:flex mobile:justify-between mobile:flex-wrap">
                 <div className="space-y-[1vw]">
-                    <p className="text-30">Author</p>
+                    <p className="text-30 para-animations">Author</p>
                     <div className="flex items-center gap-[10px]">
-                        <img src="/images/blogs/avatar.png" alt="Author Image" className="rounded-full w-[3vw] h-[3vw]"/>
-                        <p className="text-24 mobile:text-[4vw]">Jasdeep Singh</p>
+                        <img src="/images/blogs/avatar.png" alt="Author Image" className="rounded-full w-[3vw] h-[3vw] mobile:h-[8vw] mobile:w-[8vw]"/>
+                        <p className="text-24 mobile:text-[4vw] para-animations">Jasdeep Singh</p>
                     </div>
                 </div>
 
                 <div className="space-y-[0.5vw] mobile:space-y-0">
-                    <p className="text-30">Posted On</p>
+                    <p className="text-30 para-animations">Posted On</p>
                     <div className="flex items-center gap-[10px]">
-                        <p className="text-24">19, June 2023</p>
+                        <p className="text-24 para-animations">19, June 2023</p>
                     </div>
                 </div>
 
                 <div className="space-y-[0.8vw]">
-                    <p className="text-30">Share Article</p>
-                    <div className="flex items-center justify-start gap-[1vw] mobile:gap-[4vw]">
+                    <p className="text-30 para-animations">Share Article</p>
+                    <div className="flex items-center justify-start gap-[1vw] mobile:gap-[4vw] ">
                         <FacebookShareButton
                           url="https://creative-curve.co.in"
                           quote={"Read more articles like this on our website - https://creative-curve.co.in"}
                           hashtag={"#CreativeCurve"}
                         >
                           <img
-                            className="w-[1.6vw] h-[1.6vw] mobile:w-[3vw] mobile:h-[3vw]"
+                            className="w-[1.6vw] h-[1.6vw] mobile:w-[5vw] mobile:h-[5vw]"
                             src="/images/blogs/social/fb.svg"
                             alt="social icon"
                           />
@@ -44,7 +44,7 @@ const AuthorInfo = () => {
                           hashtag={"#CreativeCurve"}
                         >
                           <img
-                            className="w-[1.6vw] h-[1.6vw] mobile:w-[3vw] mobile:h-[3vw]"
+                            className="w-[1.6vw] h-[1.6vw] mobile:w-[5vw] mobile:h-[5vw]"
                             src="/images/blogs/social/linkedin.svg"
                             alt="social icon"
                           />
@@ -55,7 +55,7 @@ const AuthorInfo = () => {
                           hashtag={"#CreativeCurve"}
                         >
                           <img
-                            className="w-[1.4vw] h-[1.4vw] mobile:w-[3vw] mobile:h-[3vw]"
+                            className="w-[1.4vw] h-[1.4vw] mobile:w-[5vw] mobile:h-[5vw]"
                             src="/images/blogs/social/twitter.svg"
                             alt="social icon"
                           />
@@ -66,7 +66,7 @@ const AuthorInfo = () => {
                           hashtag={"#CreativeCurve"}
                         >
                           <img
-                            className="w-[1.6vw] h-[1.6vw] mobile:w-[3vw] mobile:h-[3vw]"
+                            className="w-[1.6vw] h-[1.6vw] mobile:w-[5vw] mobile:h-[5vw]"
                             src="/images/blogs/social/whatsapp.svg"
                             alt="social icon"
                           />
