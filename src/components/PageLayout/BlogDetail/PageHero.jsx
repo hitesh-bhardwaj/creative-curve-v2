@@ -23,7 +23,7 @@ const PageHero = () => {
                             <p className="space-grotesk text-textHead text-24 rounded-full py-[0.8vw] border border-textHead text-center min-w-[11vw] mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[4vw]">19, June 2023</p>
                         </div>
 
-                        <div className="w-full flex items-center justify-center absolute bottom-[10%] mobile:bottom-[20%]">
+                        <div className="w-full flex items-center justify-center absolute bottom-[10%] mobile:flex-col mobile:gap-[40vh]">
                             <ScrollButton />
                         </div>
                     </div>

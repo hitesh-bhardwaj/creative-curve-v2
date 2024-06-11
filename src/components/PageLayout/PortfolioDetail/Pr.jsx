@@ -6,43 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 import SplitType from "split-type";
 
 const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
-    useGSAP(() => {
-        const headings = document.querySelectorAll(".heading-anim");
-        headings.forEach((heading) => {
-          const headingSplit = new SplitType(heading, {
-            types: "lines, words, chars",
-          });
-          let headingWord = heading.querySelectorAll(".word .char");
-          gsap.from(headingWord, {
-            scrollTrigger: {
-              trigger: headingWord,
-              start: "top 85%",
-            },
-            duration: 0.6,
-            yPercent: 110,
-            rotate: "10deg",
-            stagger: 0.04,
-          });
-        });
-      }, []);
-      useGSAP(() => {
-        const paraAnimations = document.querySelectorAll(".para-animations");
-        paraAnimations.forEach((paraAnimation) => {
-          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
-          let paraword = paraAnimation.querySelectorAll(".word .char");
-          gsap.from(paraword, {
-            scrollTrigger: {
-              trigger: paraword,
-              start: "top 85%",
-            },
-            filter: "blur(10px)",
-            opacity: 0,
-            duration: 0.6,
-            yPercent: 100,
-            stagger: 0.005,
-          });
-        });
-      }, []);
+   
     useGSAP(() => {
         if(globalThis.innerWidth<541){
             const parallaxImgs = document.querySelectorAll(".parallaximg");
@@ -98,7 +62,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                             </p>
                         </div>
 
-                        <div className="relative h-[45vh] border-2 rounded-[35px] overflow-hidden border-black/50 w-[41%] mobile:w-full mobile:h-[22vh] mobile:rounded-[15px]">
+                        <div className="relative h-[45vh] border-2 rounded-[35px] overflow-hidden border-black/50 w-[41%] mobile:w-full mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
                             <Image 
                                 src={img1}
                                 alt="pr-image"
@@ -109,7 +73,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                     </div>
 
                     <div className="w-full h-full gap-x-[3vw] gap-y-[5vw] grid grid-col-4 mobile:flex mobile:flex-col mobile:mt-[5%]">
-                        <div className="col-span-4 h-[85vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px]">
+                        <div className="col-span-4 h-[85vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img2}
@@ -120,7 +84,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                         </div>
 
                         {img3 && (
-                            <div className="col-span-4 h-[45vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px]">
+                            <div className="col-span-4 h-[45vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img3}
@@ -131,7 +95,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img4 && (
-                            <div className="col-span-1 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50  mobile:rounded-[15px]">
+                            <div className="col-span-1 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50  mobile:rounded-[15px] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img4}
@@ -142,7 +106,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img5 && (
-                            <div className="col-span-3 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px]">
+                            <div className="col-span-3 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img5}

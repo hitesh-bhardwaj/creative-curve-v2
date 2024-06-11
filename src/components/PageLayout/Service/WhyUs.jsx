@@ -1,15 +1,42 @@
 import Image from "next/image"
 import imageSrc from "../../../../public/images/service/why-us.png"
 import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import SplitType from "split-type";
+
 
 gsap.registerPlugin(useGSAP);
 
 const WhyUs = () => {
+    useGSAP(()=>{
+        if(globalThis.innerWidth<541){
+            gsap.to(".why-img",{
+                yPercent:10,
+                scrollTrigger:{
+                    trigger:".why-img",
+                    start:"top 70%",
+                    end:"bottom 10%",
 
+                    scrub:true
+    
+                }
+            })
+
+        }else{
+            gsap.to(".why-img",{
+                yPercent:20,
+                scrollTrigger:{
+                    trigger:".why-img",
+                    start:"top 70%",
+                    end:"bottom 10%",
+                    
+                    scrub:true
+    
+                }
+            })
+
+        }
+       
+    })
     return (
         <>
             <section className="why-us">
@@ -60,16 +87,16 @@ const WhyUs = () => {
 
                            
                         </div>
-                        <div className="w-[48%] h-[45vw] relative overflow-hidden rounded-[20px] mobile:order-2 mobile:w-full mobile:h-[100vw] mobile:rounded-[10px] mobile:mt-[10%]">
+                        <div className="w-[48%] h-[45vw] relative overflow-hidden rounded-[20px] mobile:order-2 mobile:w-full mobile:h-[100vw] mobile:rounded-[10px] mobile:mt-[10%] fadeUp">
                             <Image
                                 src={imageSrc}
                                 alt="Service Image"
                                 fill
-                                className="object-cover"
+                                className="object-cover scale-[120%] translate-y-[-10%] why-img mobile:scale-[110%] mobile:translate-y-[-5%]"
                             />
                         </div>
                         <div className="w-full space-y-[2vw] mobile:order-3 hidden mobile:block mobile:mt-[10%]">
-                                <div className="">
+                                <div className="fadeUp">
                                     <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[6%]">
                                         <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['+'] after:top-[10%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw]">
                                             <span>5</span>
@@ -82,7 +109,7 @@ const WhyUs = () => {
                                     <span className="block w-full h-[1px] bg-black/20" />
                                 </div>
 
-                                <div className="">
+                                <div className="fadeUp">
                                     <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[6%] mobile:pt-[4%]">
                                     <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['%'] after:top-[20%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:text-[3vw] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw] mobile:after:h-[5vw]">
                                             <span>9</span>

@@ -35,7 +35,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <section id="testimonial">
+      <section id="testimonial" className="bg-white">
         <div className="container relative pt-[5%] pb-[10%] mobile:pt-[10%] mobile:pb-[20%]">
           <Swiper
             speed={1000}

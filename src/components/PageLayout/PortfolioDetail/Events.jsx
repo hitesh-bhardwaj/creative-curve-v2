@@ -45,43 +45,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
         }
        
       });
-      useGSAP(() => {
-        const headings = document.querySelectorAll(".heading-anim");
-        headings.forEach((heading) => {
-          const headingSplit = new SplitType(heading, {
-            types: "lines, words, chars",
-          });
-          let headingWord = heading.querySelectorAll(".word .char");
-          gsap.from(headingWord, {
-            scrollTrigger: {
-              trigger: headingWord,
-              start: "top 85%",
-            },
-            duration: 0.6,
-            yPercent: 110,
-            rotate: "10deg",
-            stagger: 0.04,
-          });
-        });
-      }, []);
-      useGSAP(() => {
-        const paraAnimations = document.querySelectorAll(".para-animations");
-        paraAnimations.forEach((paraAnimation) => {
-          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
-          let paraword = paraAnimation.querySelectorAll(".word .char");
-          gsap.from(paraword, {
-            scrollTrigger: {
-              trigger: paraword,
-              start: "top 85%",
-            },
-            filter: "blur(10px)",
-            opacity: 0,
-            duration: 0.6,
-            yPercent: 100,
-            stagger: 0.005,
-          });
-        });
-      }, []);
+     
     return (
         <>
             <section id="second-section" className={`${className}`}>
@@ -104,7 +68,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
 
                     <div className="w-full h-full grid grid-cols-8 gap-[3vw] items-end mobile:flex mobile:flex-col">
                         {img1 && (
-                            <div className="col-span-5 h-[60vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[8%] mobile:border-2 mobile:border-black mobile:h-[22vh]">
+                            <div className="col-span-5 h-[60vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[8%] mobile:border-2 mobile:border-black mobile:h-[22vh] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img1}
@@ -115,7 +79,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img2 && (
-                            <div className="col-span-3 -mt-[25%] h-[80vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[22vh] mobile:rounded-[20px] mobile:mt-[5%] mobile:border-2 mobile:border-black">
+                            <div className="col-span-3 -mt-[25%] h-[80vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[22vh] mobile:rounded-[20px] mobile:mt-[5%] mobile:border-2 mobile:border-black fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img2}
@@ -126,7 +90,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img3 && (
-                            <div className="col-span-8 h-[85vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh]">
+                            <div className="col-span-8 h-[85vh] relative rounded-[40px] overflow-hidden mobile:w-full mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img3}
@@ -137,7 +101,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img4 && (
-                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:hidden">
+                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:mt-[5%] mobile:border-black mobile:hidden fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img4}
@@ -148,7 +112,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img5 && (
-                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:w-full mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh]">
+                            <div className="col-span-4 h-[55vh] relative rounded-[40px] overflow-hidden mobile:rounded-[20px] mobile:w-full mobile:mt-[5%] mobile:border-black mobile:border-2 mobile:h-[22vh] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img5}

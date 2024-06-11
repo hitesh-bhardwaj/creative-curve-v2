@@ -58,7 +58,7 @@ const Projects = () => {
                     </div>
                     <div className="mt-[8vw] mobile:mt-[15vw]">
                         <div className="grid grid-cols-10 gap-[40px] mobile:flex mobile:flex-col">
-                            <div className="col-span-5">
+                            <div className="col-span-5 fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px]">
                                         <Image 
@@ -71,7 +71,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">Bharti Foundation</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-5 mobile:mt-[5vw]">
+                            <div className="col-span-5 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px]">
                                         <Image 
@@ -84,7 +84,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[4.5vw] mobile:pl-[2vw] mobile:pt-[2vh]">World Food Programme</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-6 mobile:mt-[5vw]">
+                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[25vh] mobile:rounded-[20px]">
                                         <Image 
@@ -97,7 +97,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">World Wildlife Fund</h3>
                                 </Link>
                             </div> 
-                            <div className="col-span-4 mobile:mt-[5vw]">
+                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[60vh] mobile:rounded-[20px]">
                                         <Image 
@@ -110,7 +110,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">Save the children</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-4 mobile:mt-[5vw]">
+                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px]">
                                         <Image 
@@ -123,7 +123,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">Unicef</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-6 mobile:mt-[5vw]">
+                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[25vh] mobile:rounded-[20px]">
                                         <Image
@@ -136,7 +136,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">Oxfam</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-6 mobile:mt-[5vw]">
+                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px]">
                                         <Image 
@@ -149,7 +149,7 @@ const Projects = () => {
                                     <h3 className="space-grotesk text-[2.2vw] mobile:text-[5vw] mobile:pl-[2vw] mobile:pt-[2vh]">Asian Paints</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-4 mobile:mt-[5vw]">
+                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
                                 <Link href="#" className="space-y-[1vw] group">
                                     <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[60vh] mobile:rounded-[20px]">
                                         <Image 

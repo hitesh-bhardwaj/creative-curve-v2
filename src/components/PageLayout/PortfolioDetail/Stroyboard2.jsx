@@ -6,43 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 import SplitType from "split-type";
 
 const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
-    useGSAP(() => {
-        const headings = document.querySelectorAll(".heading-anim");
-        headings.forEach((heading) => {
-          const headingSplit = new SplitType(heading, {
-            types: "lines, words, chars",
-          });
-          let headingWord = heading.querySelectorAll(".word .char");
-          gsap.from(headingWord, {
-            scrollTrigger: {
-              trigger: headingWord,
-              start: "top 85%",
-            },
-            duration: 0.6,
-            yPercent: 110,
-            rotate: "10deg",
-            stagger: 0.04,
-          });
-        });
-      }, []);
-      useGSAP(() => {
-        const paraAnimations = document.querySelectorAll(".para-animations");
-        paraAnimations.forEach((paraAnimation) => {
-          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
-          let paraword = paraAnimation.querySelectorAll(".word .char");
-          gsap.from(paraword, {
-            scrollTrigger: {
-              trigger: paraword,
-              start: "top 85%",
-            },
-            filter: "blur(10px)",
-            opacity: 0,
-            duration: 0.6,
-            yPercent: 100,
-            stagger: 0.005,
-          });
-        });
-      }, []);
+   
     useGSAP(() => {
         if(globalThis.innerWidth<541){
             const parallaxImgs = document.querySelectorAll(".parallaximg");
@@ -95,7 +59,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                     </div>
 
                     <div className="w-full h-full gap-x-[3vw] gap-y-[5vw] grid grid-col-2 mobile:flex mobile:flex-col mobile:gap-[3vh] mobile:mt-[4vh]">
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img1}
@@ -104,7 +68,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[50vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[50vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img2}
@@ -113,7 +77,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[40vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-1 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[40vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img3}
@@ -122,7 +86,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[25vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img4}
@@ -131,7 +95,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[23vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[23vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img5}
@@ -140,7 +104,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
                                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                             />
                         </div>
-                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[22vh] mobile:rounded-[20px] mobile:border-2">
+                        <div className="col-span-2 h-[90vh] relative rounded-[35px] overflow-hidden border-4 border-sky-400 mobile:h-[22vh] mobile:rounded-[20px] mobile:border-2 fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img6}

@@ -6,43 +6,7 @@ import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
-    useGSAP(() => {
-        const headings = document.querySelectorAll(".heading-anim");
-        headings.forEach((heading) => {
-          const headingSplit = new SplitType(heading, {
-            types: "lines, words, chars",
-          });
-          let headingWord = heading.querySelectorAll(".word .char");
-          gsap.from(headingWord, {
-            scrollTrigger: {
-              trigger: headingWord,
-              start: "top 85%",
-            },
-            duration: 0.6,
-            yPercent: 110,
-            rotate: "10deg",
-            stagger: 0.04,
-          });
-        });
-      }, []);
-      useGSAP(() => {
-        const paraAnimations = document.querySelectorAll(".para-animations");
-        paraAnimations.forEach((paraAnimation) => {
-          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
-          let paraword = paraAnimation.querySelectorAll(".word .char");
-          gsap.from(paraword, {
-            scrollTrigger: {
-              trigger: paraword,
-              start: "top 85%",
-            },
-            filter: "blur(10px)",
-            opacity: 0,
-            duration: 0.6,
-            yPercent: 100,
-            stagger: 0.005,
-          });
-        });
-      }, []);
+   
     return (
         <>
             <section id="second-section" className="bg-black text-white">
@@ -66,7 +30,7 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
                     </div>
 
                     {videoSrc && (
-                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:mt-[15%]">
+                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:mt-[15%] fadeUp">
                             <VideoPlayer 
                                 src={videoSrc}
                                 poster={videoPoster}

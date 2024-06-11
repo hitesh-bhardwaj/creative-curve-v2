@@ -85,7 +85,7 @@ const Achievement = () => {
 
     return (
         <>
-            <section id="achievement" className="pt-[10%] pb-[10%]">
+            <section id="achievement" className="pt-[10%] pb-[10%] bg-white">
                 <div className="container">
                     
                     <div className="w-[55%] mobile:w-full overflow-hidden">

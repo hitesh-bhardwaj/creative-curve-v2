@@ -46,7 +46,7 @@ const PageHero = () => {
                             <span className="uppercase block portfolio-head">Creative Odyssey</span>
                         </h1>
 
-                        <div className="flex justify-between w-full mt-[6%]">
+                        <div className="flex justify-between w-full mt-[6%] mobile:flex-col mobile:gap-[40vh]">
                             <ScrollButton />
 
                             <p className="text-24 text-textBody text-right w-[20vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim">

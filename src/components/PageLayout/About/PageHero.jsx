@@ -19,7 +19,7 @@ const PageHero = () => {
                             <span className="text-76 relative after:absolute after:w-[3vw] after:bg-current after:block after:h-[3px] after:right-0 after:top-[55%] after:translate-x-[140%] mobile:text-[6vw] mobile:after:w-[20vw] mobile:after:translate-x-[120%] about-small-head block">We Are</span>
                             <span className="uppercase about-head block">Creative <span className="about-head mobile:block inline-block"> Curve</span> </span>
                         </h1>
-                        <div className="flex justify-between w-full mt-[10%] mobile:flex-col">
+                        <div className="flex justify-between w-full mt-[10%] mobile:flex-col mobile:gap-[40vh]">
                             <ScrollButton />
                             <p className="text-24 text-textBody text-right w-[20vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim">
                                 <span>
