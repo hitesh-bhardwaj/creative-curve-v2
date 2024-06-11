@@ -13,7 +13,11 @@ const Box = () => {
     const text = useRef(null);
 
     useGSAP(() => {
-        gsap.to(ele.current, {
+        gsap.fromTo(ele.current, {
+            scale: 0,
+            opacity: 0,
+            y: 100,
+        },{
             scrollTrigger: {
                 trigger: container.current,
                 start: "top 70%",
@@ -26,8 +30,10 @@ const Box = () => {
             y: 0,
             rotate: "45deg",
             ease: "power3.in",
+            duration: 1,
         })
     });
+
     useGSAP(() => {
         if(globalThis.innerWidth<541){
             const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
@@ -109,7 +115,7 @@ const Box = () => {
             <section id="second-section" className="story-container h-full" ref={container}>
                 <div className="min-h-screen overflow-hidden">
                     <div className="h-screen relative flex justify-center items-center overflow-hidden">
-                        <img ref={ele} src="/images/about/about-square.svg" alt="hero" className="absolute w-[20%] scale-0 opacity-0 translate-y-[100px] max-w-[1000%] pointer-events-none" />
+                        <img ref={ele} src="/images/about/about-square.svg" alt="hero" className="absolute w-[20%] max-w-[1000%] pointer-events-none" />
                         <div className="mx-auto w-[60%] mobile:w-[90%]">
                             <h2 ref={text} className="space-grotesk text-white text-48 text-left story-para">
                                 <span>

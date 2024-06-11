@@ -6,6 +6,7 @@ import Hero from "@/components/PageLayout/Hero/Hero";
 import Parallax from "@/components/PageLayout/Hero/Parallax";
 import Portfolio from "@/components/PageLayout/Hero/Portfolio";
 import Services from "@/components/PageLayout/Hero/Services";
+import Transition from "@/components/Transition";
 import gsap from "gsap";
 
 import { Cursor } from 'react-creative-cursor';
@@ -19,7 +20,7 @@ export default function Index () {
   
   return (
     <>
-      <Cursor cursorSize={0} isGelly={true} />
+      <Cursor cursorSize={10} />
       <main>
         <Header />
         <Hero />
@@ -30,6 +31,7 @@ export default function Index () {
         <Blog />
         <Footer />
       </main>
+      <Transition />
     </>
   )
 }

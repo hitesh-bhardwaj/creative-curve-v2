@@ -54,7 +54,7 @@ const Story = () => {
                   <h3 className="text-44">
                     <span>OUR STORY</span>
                   </h3>
-                  <p className="text-22">
+                  <p className="text-22 fadeUp">
                     <span>
                       At the heart of our agency lies a passion for excellence,
                       spanning continents and industries. We work with Fortune
@@ -88,7 +88,7 @@ const Story = () => {
                   <h3 className="text-44">
                     <span>OUR MISSION</span>
                   </h3>
-                  <p className="text-22 mobile:hidden">
+                  <p className="text-22 mobile:hidden fadeUp">
                     <span>
                       At the heart of our agency lies a passion for excellence,
                       spanning continents and industries. We work with Fortune

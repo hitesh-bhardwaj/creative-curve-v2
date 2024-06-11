@@ -309,7 +309,7 @@ const ServiceCarousel = () => {
       <div ref={carouselRef} className="parentCarou mt-[8vw]">
         <div className="pushCarousel mobile:hidden">
           <div className="flex justify-between innerCarou">
-            <div className="w-[40%] pt-[5vw] flex justify-between relative mobile:w-full">
+            <div className="w-[40%] pt-[5vw] flex justify-between relative mobile:w-full fadeUp">
               <div className="relative parentEntree">
                 <div className="entree current space-y-[2vw]">
                   <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">
@@ -384,7 +384,7 @@ const ServiceCarousel = () => {
                 </div>
               </div>
             </div>
-            <div className="imgs w-[45%] relative">
+            <div className="imgs w-[45%] relative fadeUp">
               <div className="puces flex items-center">
                 <ul className="flex items-center">
                   <li className="toSlide relative">

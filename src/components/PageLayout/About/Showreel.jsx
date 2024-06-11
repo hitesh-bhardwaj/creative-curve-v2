@@ -39,7 +39,7 @@ const Showreel = () => {
     return (
         <>
             <section ref={container} id="showreel" className="bg-black">
-                <div className="h-screen w-screen relative flex items-center justify-center mobile:h-[50vh]">
+                <div className="min-h-screen w-screen relative flex items-center justify-center mobile:h-[50vh]">
                     <div ref={video} className="overflow-hidden w-full h-full absolute">
                         <video 
                             autoPlay

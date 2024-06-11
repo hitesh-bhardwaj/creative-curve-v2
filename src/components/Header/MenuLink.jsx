@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function MenuLink({ linkText, link }) {
     return (
         <>
-            <Link href={link} className="leading-[2] flex group overflow-hidden relative items-center justify-between uppercase">
+            <Link scroll={false} href={link} className="leading-[2] flex group overflow-hidden relative items-center justify-between uppercase">
                 <span data-content={linkText} className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                     {linkText}
                 </span>

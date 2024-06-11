@@ -134,7 +134,7 @@ export default function Services() {
 
   return (
     <>
-      <section id="services" className="bg-black">
+      <section id="services" className="bg-black" data-cursor-color="#fff">
         <div className="container pt-[10%] pb-[5%]">
           <div className="text-white mb-[4vw]">
             <p className="text-24 mb-[1vw] fadeUp mobile:text-[3.5vw]">

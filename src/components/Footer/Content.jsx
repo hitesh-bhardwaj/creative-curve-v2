@@ -1,10 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
-import ScrollTrigger from "gsap/dist/ScrollTrigger"
-import splitInLine from "@/utils";
-import { useEffect, useRef } from "react"
 
 const Content = ({children}) => {
    
@@ -48,14 +43,14 @@ const Content = ({children}) => {
                             </h6>
                             <ul className="text-white space-y-[1.5vw] text-[1.25vw] mobile:text-[5vw] mobile:w-full mobile:items-center mobile:flex mobile:flex-col mobile:gap-[2vh]">
                                 <li className="">
-                                    <Link href="tel:9810007195" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="tel:9810007195" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="+91 981 000 7195" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             +91 981 000 7195
                                         </span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="mailto:info@creative-curve.co.in" className="leading-[1.4] whitespace-nowrap w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="mailto:info@creative-curve.co.in" className="leading-[1.4] whitespace-nowrap w-fit block group overflow-hidden">
                                         <span data-content="info@creative-curve.co.in" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             info@creative-curve.co.in
                                         </span>
@@ -70,28 +65,28 @@ const Content = ({children}) => {
                             </h6>
                             <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="About Us" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             About Us
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Contact" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Contact
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Services" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Services
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Blog" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Blog
                                         </span>
@@ -106,28 +101,28 @@ const Content = ({children}) => {
                             </h6>
                             <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Facebook" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Facebook
                                         </span>
                                     </Link>
                                 </li>
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Twitter" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Twitter
                                         </span>
                                     </Link>
                                 </li>
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Linkedin" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Linkedin
                                         </span>
                                     </Link>
                                 </li>
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Instagram" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Instagram
                                         </span>
@@ -141,7 +136,7 @@ const Content = ({children}) => {
                                 © 2024 | Alrights reserved by Creative Curve
                             </p>
                             <p className="mobile:text-[3vw]">
-                                By: <Link href="https://weareenigma.com" className="ul-c">Enigma</Link>
+                                By: <Link data-cursor-size="60px" href="https://weareenigma.com" className="relative after:absolute after:block after:bottom-[-20%] after:left-0 after:w-full after:h-[1px] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300">Enigma</Link>
                             </p>
                         </div>
 

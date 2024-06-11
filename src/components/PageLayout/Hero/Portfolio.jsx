@@ -129,6 +129,7 @@ function Portfolio() {
   return (
     <>
       <section
+        data-cursor-color="#fff"
         ref={pinContainer}
         className="py-[10%] bg-black relative mobile:py-[15%]"
         id="second-section"
@@ -146,7 +147,7 @@ function Portfolio() {
                 Featured Works
               </h2>
             </div>
-            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:font-thin mobile:mt-[3vh]">
+            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:font-thin mobile:mt-[3vh] ">
               Dive into a world where design meets strategy, only at Creative
               Curve. Our creative designing services are more than just
               aesthetics.
@@ -179,7 +180,6 @@ function Portfolio() {
 
           <Link href="#" className="col-span-5 col-start-7">
             <div
-              data-cursor-color="#f0f0f0"
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
@@ -199,7 +199,6 @@ function Portfolio() {
           </Link>
           <Link href="#" className="col-span-5">
             <div
-              data-cursor-color="#f0f0f0"
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
@@ -219,7 +218,6 @@ function Portfolio() {
           </Link>
           <Link href="#" className="col-span-5 col-start-7">
             <div
-              data-cursor-color="#f0f0f0"
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
@@ -239,7 +237,6 @@ function Portfolio() {
           </Link>
           <Link href="#" className="col-span-5">
             <div
-              data-cursor-color="#f0f0f0"
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
@@ -259,7 +256,6 @@ function Portfolio() {
           </Link>
           <Link href="#" className="col-span-5 col-start-7">
             <div
-              data-cursor-color="#f0f0f0"
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img

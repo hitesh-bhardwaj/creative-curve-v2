@@ -135,7 +135,7 @@ function Hero() {
               </p>
             </div>
             <div onClick={handleSmoothScroll} className="uppercase text-24 cursor-pointer text-textBody absolute mt-[5vw] left-1/2 -translate-x-1/2 mobile:static mobile:translate-x-0 mobile:mt-[9vh]">
-              <span className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out after:left-0">
+              <span data-cursor-size="60px" data-cursor-exclusion className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out after:left-0">
                 Scroll Down
               </span>
             </div>

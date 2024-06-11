@@ -80,7 +80,7 @@ function Brands() {
 
   return (
     <>
-      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[25%]" id="brands">
+      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[25%]" id="brands" data-cursor-color="#fff">
         <div className="container">
           <div className="w-[55%] mobile:w-full">
             <p className="text-24 mb-[1vw] fadeUp text-white">Our Clients</p>

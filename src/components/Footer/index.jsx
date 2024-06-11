@@ -29,6 +29,7 @@ export default function Footer() {
     return (
         <>
             <footer 
+                data-cursor-exclusion
                 id="footer" 
                 className="relative h-[50vw] mobile:h-[130vh] bg-black"
                 style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
