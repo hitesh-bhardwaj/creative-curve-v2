@@ -4,10 +4,6 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-import SplitType from "split-type";
-
 const Events = ({ className, img1, img2, img3, img4, img5 }) => {
     useGSAP(() => {
         if(globalThis.innerWidth<541){
@@ -48,7 +44,7 @@ const Events = ({ className, img1, img2, img3, img4, img5 }) => {
      
     return (
         <>
-            <section id="second-section" className={`${className}`}>
+            <section id="second-section" className={`${className}`} data-cursor-exclusion>
                 <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[25%]">
                     <div className="space-y-[1.5vw] mb-[6vw] relative w-full">
                         <div className="w-full flex justify-between items-start mobile:flex-col">

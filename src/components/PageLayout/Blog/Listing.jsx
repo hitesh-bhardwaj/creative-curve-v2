@@ -1,29 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import BlogCard from './BlogCard';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-import SplitType from "split-type";
-
+import blogData from "./blogdata.json"; 
 
 const Listing = () => {
-    const [blogs, setBlogs] = useState([]);
+    const btnContainer = useRef(null);
+    const blogContainer = useRef(null);
     const [activeCategory, setActiveCategory] = useState('All');
     const categories = ["All", "Branding", "UI Design", "UX Design", "Insights"];
-   
-  
-
-    useEffect(() => {
-        fetch('/images/blogs/blogdata.json')
-            .then(response => response.json())
-            .then(data => setBlogs(data.blogs))
-            .catch(error => console.error('Error fetching blog data:', error));
-    }, []);
 
     const filteredBlogs = activeCategory === 'All' 
-        ? blogs 
-        : blogs.filter(blog => blog.category === activeCategory);
+        ? blogData.blogs 
+        : blogData.blogs .filter(blog => blog.category === activeCategory);
 
     return (
         <>
@@ -37,7 +24,7 @@ const Listing = () => {
                         </h4>
                     </div>
 
-                    <div className="flex justify-start items-start gap-[2.5vw] mb-[5vw] mobile:justify-between">
+                    <div ref={btnContainer} className="flex justify-start items-start gap-[2.5vw] mb-[5vw] mobile:justify-between">
                         {categories.map((category, index) => (
                             <button 
                                 key={index} 
@@ -53,7 +40,7 @@ const Listing = () => {
                     </div>
 
                     {filteredBlogs.length > 0 ? (
-                        <div className="grid grid-cols-2 gap-x-[4vw] gap-y-[6vw] mt-8 mobile:flex mobile:flex-col">
+                        <div id='blogContainer' ref={blogContainer} className="grid grid-cols-2 gap-x-[4vw] gap-y-[6vw] mt-8 mobile:flex mobile:flex-col">
                             {filteredBlogs.map((blog) => (
                                 <BlogCard
                                     key={blog.id}

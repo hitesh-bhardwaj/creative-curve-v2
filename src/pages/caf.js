@@ -10,6 +10,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
+import Transition from "@/components/Transition";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -75,7 +76,10 @@ export default function PortfolioDetail({}) {
           );
         });
       }, []);
+
     return (
+      <>
+        <Cursor cursorSize={10} animationDuration={0.5}/>
         <main>
             <Header />
             <Hero 
@@ -95,5 +99,7 @@ export default function PortfolioDetail({}) {
             />
             <Footer />
         </main>
+        <Transition />
+      </>
     )
 }

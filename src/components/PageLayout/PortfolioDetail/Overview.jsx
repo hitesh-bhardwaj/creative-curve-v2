@@ -9,7 +9,7 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
    
     return (
         <>
-            <section id="second-section" className="bg-black text-white">
+            <section id="second-section" className="bg-black text-white" data-cursor-exclusion>
                 <div className="container pt-[8%] pb-[8%] mobile:py-[20%]">
                     <div className="flex justify-between items-start mobile:flex-col">
                         <h2 className="overview text-76 space-grotesk uppercase leading-[1.2] overflow-hidden">

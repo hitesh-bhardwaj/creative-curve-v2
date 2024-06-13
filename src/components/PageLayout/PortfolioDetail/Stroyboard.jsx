@@ -1,10 +1,4 @@
 import Image from "next/image"
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
-import SplitType from "split-type";
 
 const Storyboard = ({ className, img1, img2, img3, img4 }) => {
   
@@ -14,8 +8,8 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                 <div className="pt-[7%] pb-[9%] mobile:pt-[12%] mobile:pb-[20%]">
                     <div className="space-y-[1.5vw] mb-[6vw]">
                         <h3 className="text-140 space-grotesk text-center leading-[1.2] overflow-hidden heading-anim">
-                            <span classname="block ">
-                                StoryBoard
+                            <span>
+                                Story Board
                             </span>
                         </h3>
                         <p className="text-center text-24 w-[48%] mx-auto mobile:w-[90%] mobile:pt-[2vh] mobile:text-[4vw] para-animations">

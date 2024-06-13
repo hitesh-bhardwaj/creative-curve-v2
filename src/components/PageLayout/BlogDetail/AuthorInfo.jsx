@@ -9,23 +9,23 @@ const AuthorInfo = () => {
     return (
         <>
             <div id='authorInfo' className="w-[20%] space-y-[2.5vw] mobile:w-full mobile:flex mobile:justify-between mobile:flex-wrap">
-                <div className="space-y-[1vw]">
-                    <p className="text-30 para-animations">Author</p>
+                <div className="space-y-[1vw] fadeUp">
+                    <p className="text-30">Author</p>
                     <div className="flex items-center gap-[10px]">
                         <img src="/images/blogs/avatar.png" alt="Author Image" className="rounded-full w-[3vw] h-[3vw] mobile:h-[8vw] mobile:w-[8vw]"/>
-                        <p className="text-24 mobile:text-[4vw] para-animations">Jasdeep Singh</p>
+                        <p className="text-24 mobile:text-[4vw]">Jasdeep Singh</p>
                     </div>
                 </div>
 
-                <div className="space-y-[0.5vw] mobile:space-y-0">
-                    <p className="text-30 para-animations">Posted On</p>
+                <div className="space-y-[0.5vw] mobile:space-y-0 fadeUp">
+                    <p className="text-30">Posted On</p>
                     <div className="flex items-center gap-[10px]">
-                        <p className="text-24 para-animations">19, June 2023</p>
+                        <p className="text-24">19, June 2023</p>
                     </div>
                 </div>
 
-                <div className="space-y-[0.8vw]">
-                    <p className="text-30 para-animations">Share Article</p>
+                <div className="space-y-[0.8vw] fadeUp">
+                    <p className="text-30">Share Article</p>
                     <div className="flex items-center justify-start gap-[1vw] mobile:gap-[4vw] ">
                         <FacebookShareButton
                           url="https://creative-curve.co.in"

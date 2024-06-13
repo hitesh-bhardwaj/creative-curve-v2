@@ -10,6 +10,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
+import Transition from "@/components/Transition";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -79,7 +80,9 @@ export default function PortfolioDetail({}) {
     const videoUrl = "https://res.cloudinary.com/djfyshazn/video/upload/v1717666930/tata-portfolio_qr2j8i.mp4";
 
     return (
-        <main>
+        <>
+          <Cursor cursorSize={10} animationDuration={0.5}/>
+          <main>
             <Header />
             <Hero 
                 heading={"Tata Trust"}
@@ -104,5 +107,7 @@ export default function PortfolioDetail({}) {
             </section>
             <Footer />
         </main>
+        <Transition />
+      </>
     )
 }

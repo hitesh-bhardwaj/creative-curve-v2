@@ -65,28 +65,28 @@ const Content = ({children}) => {
                             </h6>
                             <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
                                 <li className="mobile:flex mobile:justify-center">
-                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
-                                        <span data-content="About Us" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
-                                            About Us
+                                    <Link scroll={false} data-cursor-size="60px" href="/about" className="leading-[1.4] w-fit block group overflow-hidden">
+                                        <span data-content="About" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
+                                            About
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link scroll={false} data-cursor-size="60px" href="/contact" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Contact" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Contact
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link scroll={false} data-cursor-size="60px" href="/services" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Services" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Services
                                         </span>
                                     </Link>
                                 </li>
                                 <li className=" mobile:flex mobile:justify-center">
-                                    <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
+                                    <Link scroll={false} data-cursor-size="60px" href="/blog" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Blog" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                             Blog
                                         </span>

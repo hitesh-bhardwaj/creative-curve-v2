@@ -1,15 +1,10 @@
 import Image from "next/image"
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
-gsap.registerPlugin(ScrollTrigger);
-
-
+import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 const Hero = ({ heading, subheading, imgSrc }) => {
     
-
     const handleSmoothScroll = () => {
         gsap.to(window, {
             duration: 1.5,
@@ -20,7 +15,7 @@ const Hero = ({ heading, subheading, imgSrc }) => {
 
     return (
         <>
-            <section id="hero">
+            <section id="hero" data-cursor-exclusion>
                 <div className="h-[85vh] relative">
                     <div className="w-full h-full absolute top-0 left-0">
                         <Image className="cover" src={imgSrc} alt={`${heading} Background Image`} fill priority={true}/>
@@ -31,7 +26,7 @@ const Hero = ({ heading, subheading, imgSrc }) => {
                         </h1>
 
                         <div className="flex justify-between w-full absolute bottom-[15%] mobile:flex-col mobile:static">
-                            <div onClick={handleSmoothScroll} className="uppercase cursor-pointer text-24 text-white mobile:order-2 mobile:absolute mobile:bottom-[10%] mobile:left-[30%]">
+                            <div onClick={handleSmoothScroll} data-cursor-size="60px" className="uppercase cursor-pointer text-24 text-white mobile:order-2 mobile:absolute mobile:bottom-[10%] mobile:left-[30%]">
                                 <span className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out">Scroll Down</span>
                             </div>
 

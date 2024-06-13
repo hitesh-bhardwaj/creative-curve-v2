@@ -11,7 +11,6 @@ const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, co
     useGSAP(() => {
         if(globalThis.innerWidth<541){
             const parallaxImgs = document.querySelectorAll(".parallaximg");
-        
             parallaxImgs.forEach((parallaxImg) => {
               gsap.to(parallaxImg, {
                 yPercent: 15,
@@ -20,14 +19,11 @@ const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, co
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });
-    
         }else{
             const parallaxImgs = document.querySelectorAll(".parallaximg");
-        
             parallaxImgs.forEach((parallaxImg) => {
               gsap.to(parallaxImg, {
                 yPercent: 10,
@@ -40,18 +36,16 @@ const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, co
                 },
               });
             });
-    
         }
-       
       });
      
     return (
         <>
-            <section id="campaign" className={`${className}`}>
+            <section id="campaign" className={`${className}`} data-cursor-exclusion>
                 <div className="container py-[7%] mobile:py-[20%]">
                     <div className="flex justify-start items-center gap-[5vw] mobile:flex-col mobile:items-start">
-                        <h3 className="text-140 space-grotesk text-textHead leading-[1.2] overflow-hidden">
-                            <span className="block heading-anim">
+                        <h3 className="text-140 space-grotesk heading-anim text-textHead leading-[1.2] overflow-hidden">
+                            <span className="">
                                 Campaign
                             </span>
                         </h3>

@@ -12,6 +12,15 @@ export default function Menu({ menuOpen }) {
   const linksRef = useRef([]);
   const emailRef = useRef(null);
 
+  const menudata = [
+    { id: 1, text: "Home", href: "/" },
+    { id: 2, text: "About", href: "/about" },
+    { id: 1, text: "Services", href: "/services" },
+    { id: 1, text: "Portfolio", href: "/portfolio" },
+    { id: 1, text: "Blog", href: "/blog" },
+    { id: 3, text: "Contact", href: "/contact" },
+  ]
+
   useGSAP(() => {
     const social = document.querySelectorAll(".social-links")
 
@@ -70,14 +79,14 @@ export default function Menu({ menuOpen }) {
         className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] ${menuOpen ? "open" : ""}`}>
         <div className="px-[3vw] pb-[3vw] pt-[4vw] mobile:px-[8vw] mobile:pt-[12vw] mobile:pb-[10vw]">
           <ul className="flex flex-col justify-center items-start h-full gap-[0.5vw] pb-[2vw]">
-            {["HOME", "ABOUT", "SERVICES", "PORTFOLIO", "BLOG", "CONTACT"].map(
-              (text, index) => (
+            {menudata.map(
+              (link, index) => (
                 <li
                   key={index}
                   className="text-[1.35vw] w-full text-black mobile:text-[7vw]"
                   ref={(el) => (linksRef.current[index] = el)}
                 >
-                  <MenuLink link={`/${text.toLowerCase()}`} linkText={text} />
+                  <MenuLink link={link.href} linkText={link.text} />
                 </li>
               )
             )}

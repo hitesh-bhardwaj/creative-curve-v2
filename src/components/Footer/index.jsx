@@ -5,10 +5,11 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import { splitInLine } from "@/utils";
 import { useEffect, useRef } from "react"
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 export default function Footer() {
     const headingRef = useRef(null);
 
-    gsap.registerPlugin(useGSAP, ScrollTrigger);
 
     useGSAP(() => {
         splitInLine(headingRef.current);
@@ -19,6 +20,7 @@ export default function Footer() {
                 scrub: 1, 
                 start: "35% bottom", 
                 end: "80% bottom",
+                invalidateOnRefresh: true
             }, 
             yPercent: 100, 
             duration: 1,

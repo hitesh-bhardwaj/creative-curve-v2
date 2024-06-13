@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import SplitType from "split-type";
 
 const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
    
@@ -45,15 +44,15 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
       });
     return (
         <>
-            <section id="second-section" className={`${className}`}>
+            <section id="second-section" className={`${className}`} data-cursor-exclusion>
                 <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[30%]">
                     <div className="space-y-[1.5vw] mb-[6vw] flex justify-between items-end mobile:flex-col mobile:items-start">
                         <div className="w-1/2 mobile:w-full mobile:mb-[8%]">
                             <h3 className="text-140 space-grotesk leading-[1.1] overflow-hidden heading-anim">
-                                <span className="block">
+                                <span>
                                     Public
                                 </span>
-                                <span className="block">
+                                <span>
                                     Relations
                                 </span>
                             </h3>

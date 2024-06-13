@@ -5,11 +5,8 @@ import Article from "./Article";
 import AuthorInfo from "./AuthorInfo";
 
 gsap.registerPlugin(ScrollTrigger);
-import SplitType from "split-type";
 
 const BlogContent = () => {
-   
-      
 
     if (globalThis.innerWidth>1024) {
         gsap.registerPlugin(ScrollTrigger,useGSAP);
@@ -30,7 +27,7 @@ const BlogContent = () => {
 
     return (
         <>
-            <section id="second-section" className="bg-black text-white">
+            <section id="second-section" className="bg-black text-white" data-cursor-exclusion>
                 <div className="container py-[8%]">
                     <div className="w-full h-full flex justify-between items-start mobile:flex-col">
                         <AuthorInfo />

@@ -1,10 +1,4 @@
 import ScrollButton from "../About/ScrollButton"
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
-import SplitType from "split-type";
 
 const PageHero = () => {
     
@@ -14,8 +8,8 @@ const PageHero = () => {
             <section id="hero">
                 <div className="container h-[85vh] relative">
                     <div className="flex flex-col justify-center h-full w-full items-center mobile:justify-start mobile:mt-[50%]">
-                        <h1 className="text-76 tracking-[1px] w-4/5 text-center leading-[1.1] space-grotesk text-textHead mobile:w-full mobile:text-[10vw] heading-anim global-heading">
-                            Global Branding in a Digital Age:Insight From Creative Curve 
+                        <h1 className="text-76 tracking-[1px] w-4/5 text-center leading-[1.2] space-grotesk text-textHead mobile:w-full mobile:text-[10vw] heading-anim global-heading">
+                            Global Branding in a Digital Age: Insight From Creative Curve 
                         </h1>
 
                         <div className="flex justify-center w-full mt-[5%] items-center gap-[2vw] mobile:flex-col mobile:mt-[15%] mobile:gap-[2.5vh]">

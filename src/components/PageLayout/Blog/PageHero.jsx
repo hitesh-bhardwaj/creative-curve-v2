@@ -44,7 +44,7 @@ const PageHero = () => {
                         <h1 className="text-140 tracking-[1px] leading-[1.1] space-grotesk text-textHead overflow-hidden">
                             <span className="text-76 mobile:text-[7vw] block blog-small-head">A Curated</span>
                             
-                            <span className="uppercase block blog-head">Collection<br/> Insights</span>
+                            <span className="uppercase block blog-head">Collection OF<br/> Insights</span>
                         </h1>
 
                         <div className="flex justify-between w-full mt-[6%] mobile:flex-col mobile:gap-[40vh]">

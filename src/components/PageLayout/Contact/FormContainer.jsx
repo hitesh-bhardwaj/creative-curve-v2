@@ -9,7 +9,7 @@ const FormContainer = () => {
     
     return (
         <>
-            <section id="contact-form">
+            <section id="contact-form" data-cursor-exclusion>
                 <div className="container py-[8%] mobile:py-[20%]"> 
                     <div className="flex justify-between items-start mobile:flex-col">
                         <div className="w-1/2 space-y-[1.5vw] mobile:w-full">

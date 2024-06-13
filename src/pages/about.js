@@ -88,7 +88,7 @@ export default function aboutPage() {
 
     return (
         <>
-        <Cursor cursorSize={10} />
+        <Cursor cursorSize={10} animationDuration={0.5}/>
         <main data-cursor-exclusion>
             <Header />
             <PageHero />

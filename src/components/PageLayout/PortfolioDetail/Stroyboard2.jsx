@@ -45,7 +45,7 @@ const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
       });
     return (
         <>
-            <section id="second-section" className={`${className}`}>
+            <section id="second-section" className={`${className}`} data-cursor-exclusion>
                 <div className="container pt-[7%] pb-[10%] mobile:pt-[20%] mobile:pb-[30%]">
                     <div className="space-y-[1.5vw] mb-[6vw]">
                         <h3 className="text-140 space-grotesk text-center leading-[1.2] overflow-hidden heading-anim">

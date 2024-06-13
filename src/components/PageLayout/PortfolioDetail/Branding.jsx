@@ -18,7 +18,6 @@ const Branding = ({ className, videoSrc, videoPoster, img1, img2, img3 }) => {
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });
@@ -34,17 +33,14 @@ const Branding = ({ className, videoSrc, videoPoster, img1, img2, img3 }) => {
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });
-    
         }
-       
       });
     return (
         <>
-            <section id="second-section" className={`${className}`}>
+            <section id="second-section" className={`${className}`} data-cursor-exclusion>
                 <div className="container pt-[7%] pb-[9%] mobile:pt-[12%] mobile:pb-[20%]">
                     <div className="space-y-[1.5vw] mb-[7vw] relative w-2/3">
                         <h3 className="text-140 space-grotesk leading-[1.2] heading-anim">

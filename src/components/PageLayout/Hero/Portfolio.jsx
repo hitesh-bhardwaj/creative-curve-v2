@@ -44,9 +44,7 @@ function Portfolio() {
             },
           });
         });
-
     }
-   
   });
 
   useGSAP(() => {

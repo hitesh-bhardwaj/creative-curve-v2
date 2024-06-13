@@ -78,7 +78,7 @@ export default function portfolioPage () {
       }, []);
     return (
         <>
-        <Cursor cursorSize={10} />
+        <Cursor cursorSize={10} animationDuration={0.5}/>
         <main>
             <Header />
             <PageHero />
