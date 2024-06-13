@@ -29,7 +29,7 @@ const BlogContent = () => {
         <>
             <section id="second-section" className="bg-black text-white" data-cursor-exclusion>
                 <div className="container py-[8%]">
-                    <div className="w-full h-full flex justify-between items-start mobile:flex-col">
+                    <div className="w-full h-full flex justify-between items-start mobile:flex-col tablet:flex-col">
                         <AuthorInfo />
                         <Article />
                     </div>

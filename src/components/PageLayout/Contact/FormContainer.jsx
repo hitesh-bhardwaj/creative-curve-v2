@@ -22,12 +22,12 @@ const FormContainer = () => {
                                     Touch
                                 </span>
                             </h4>
-                            <p className="w-[45%] text-22 mobile:w-[80%] mobile:pt-[2.5vh] para-animations">
+                            <p className="w-[45%] text-22 mobile:w-[80%] mobile:pt-[2.5vh] para-animations tablet:w-[80%]">
                                 Ready to elevate your vision? Our passion lies in crafting masterpieces. Let's build together!
                             </p>
                         </div>
 
-                        <div className="w-1/2 mobile:w-full mobile:mt-[6vh]">
+                        <div className="w-1/2 mobile:w-full mobile:mt-[6vh] tablet:w-[65%]">
                             <ContactForm />
                         </div>
                     </div>

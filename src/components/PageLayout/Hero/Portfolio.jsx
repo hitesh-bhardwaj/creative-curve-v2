@@ -29,7 +29,9 @@ function Portfolio() {
           });
         });
 
-    }else{
+    }
+    
+    else{
         const parallaxImgs = document.querySelectorAll(".parallaximg");
     
         parallaxImgs.forEach((parallaxImg) => {
@@ -49,7 +51,10 @@ function Portfolio() {
 
   useGSAP(() => {
     if (globalThis.innerWidth < 541) {
-    } else {
+    } 
+    if(globalThis.innerWidth<1024){
+      
+    }else {
       ScrollTrigger.create({
         trigger: pin.current,
         start: "top 18%",
@@ -132,40 +137,40 @@ function Portfolio() {
         className="py-[10%] bg-black relative mobile:py-[15%]"
         id="second-section"
       >
-        <div className="container grid grid-cols-11 items-center gap-y-[3vw] mobile:flex mobile:flex-col">
+        <div className="container grid grid-cols-11 items-center gap-y-[3vw] mobile:flex mobile:flex-col ">
           <div
             ref={pin}
-            className="text-white absolute top-[10%] w-[45%] mobile:w-full mobile:static"
+            className="text-white absolute top-[10%] w-[45%] mobile:w-full mobile:static tablet:col-span-11 tablet:row-start-1 tablet:static tablet:w-full"
           >
             <p className="text-24 mb-[1vw] fadeUp mobile:font-light">
               Our Portfolio
             </p>
             <div className="w-full h-fit overflow-hidden">
-              <h2 className="text-96 leading-[1] mb-[1vw] font-regular space-grotesk heading-anim mobile:mt-[2vh]">
+              <h2 className="text-96 leading-[1] mb-[1vw] font-regular space-grotesk heading-anim mobile:mt-[2vh] tablet:mt-[1.5vh]">
                 Featured Works
               </h2>
             </div>
-            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:font-thin mobile:mt-[3vh] ">
+            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:font-thin mobile:mt-[3vh] tablet:mt-[2vh] ">
               Dive into a world where design meets strategy, only at Creative
               Curve. Our creative designing services are more than just
               aesthetics.
             </p>
             <Link
               href="#"
-              className="border block w-fit border-[#4D4D4D] py-[1vw] text-22 px-[2.5vw] rounded-full bg-[#1f1f1f] fadeUp mobile:py-[3.5vw] mobile:px-[5vw] mobile:mt-[6vh] mobile:flex mobile:gap-[3vw]"
+              className="border block w-fit border-[#4D4D4D] py-[1vw] text-22 px-[2.5vw] rounded-full bg-[#1f1f1f] fadeUp mobile:py-[3.5vw] mobile:px-[5vw] mobile:mt-[6vh] mobile:flex mobile:gap-[3vw] tablet:mt-[3.5vh] tablet:py-[2.5vw] tablet:px-[5vw] tablet:flex tablet:gap-[3vw]"
             >
-              <span className="uppercase">ALL WORKS</span>
-              <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block hidden">
-                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
+              <span className="uppercase ">ALL WORKS</span>
+              <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
+                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
                   <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                     src="/images/icons/arrow-right-home.svg"
                     alt="Arrow Right"
                     width={30}
                     height={30}
                   />
                   <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                     src="/images/icons/arrow-right-home.svg"
                     alt="Arrow Right"
                     width={30}
@@ -176,12 +181,12 @@ function Portfolio() {
             </Link>
           </div>
 
-          <Link href="#" className="col-span-5 col-start-7">
+          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[10vh]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[10vh] tablet:rounded-[15px] tablet:mt-[5vh]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -195,12 +200,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5">
+          <Link href="#" className="col-span-5 tablet:row-start-3">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px] tablet:mt-[4vh]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg2 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -214,12 +219,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7">
+          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-3">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]"
+              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg3 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -233,12 +238,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5">
+          <Link href="#" className="col-span-5 tablet:row-start-4">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]"
+              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg4 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -252,12 +257,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7">
+          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-4">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"

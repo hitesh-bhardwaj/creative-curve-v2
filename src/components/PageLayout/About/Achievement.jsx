@@ -88,7 +88,7 @@ const Achievement = () => {
             <section id="achievement" className="pt-[10%] pb-[10%] bg-white">
                 <div className="container">
                     
-                    <div className="w-[55%] mobile:w-full overflow-hidden">
+                    <div className="w-[55%] mobile:w-full overflow-hidden tablet:w-full">
                         <p className="text-20 mb-[1vw] fadeUp about-ach-small ">Our Achievements</p>
                         <h2 className="text-96 leading-[1] space-grotesk text-textHead mb-[1vw] heading-anim">
                             <span className="">Check Recent
@@ -103,7 +103,7 @@ const Achievement = () => {
                     </div>
 
                     <div className="w-full flex justify-end -mt-[2%] mobile:mt-[5vh]">
-                        <div className="w-1/3 text-left mobile:w-[80%] mobile:text-right ">
+                        <div className="w-1/3 text-left mobile:w-[80%] mobile:text-right tablet:text-right tablet:w-[60%] ">
                             <p className="text-24 para-animations overflow-hidden">
                                 <span className="block">
                                     We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
@@ -114,7 +114,7 @@ const Achievement = () => {
 
                     <div ref={containerRef} className="w-full grid grid-cols-2 text-textHead grid-rows-5 gap-x-[3vw] gap-y-[4vw] mt-[5vw] mobile:flex mobile:flex-col mobile:gap-[2vh] about-ach-block-container">
                         
-                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F6FFE7] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left">
+                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F6FFE7] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left tablet:h-[30vw] tablet:rounded-[20px]">
                             <div className="h-[5.5vw] overflow-hidden">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     1270
@@ -137,7 +137,7 @@ const Achievement = () => {
                             </div>
                         </div>
 
-                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F3F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-2 row-start-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right">
+                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F3F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-2 row-start-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right tablet:h-[30vw] tablet:rounded-[20px]">
                             <div className="h-[5.5vw] overflow-hidden">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     130
@@ -159,7 +159,7 @@ const Achievement = () => {
                             </div>
                         </div>
 
-                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#E8F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left">
+                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#E8F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left tablet:h-[30vw] tablet:rounded-[20px]">
                             <div className="h-[5.5vw] overflow-hidden">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     8
@@ -181,7 +181,7 @@ const Achievement = () => {
                             </div>
                         </div>
 
-                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#FFF3ED] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right">
+                        <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#FFF3ED] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right tablet:h-[30vw] tablet:rounded-[20px]">
                             <div className="h-[5.5vw] overflow-hidden">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     20

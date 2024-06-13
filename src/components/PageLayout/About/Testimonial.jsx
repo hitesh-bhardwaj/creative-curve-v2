@@ -50,7 +50,7 @@ const Testimonial = () => {
             modules={[Pagination, Autoplay, Parallax]}
             className="mySwiper"
           >
-            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%] mobile:top-[11%] mobile:gap-[10vw] mobile:right-[5%]">
+            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%] mobile:top-[11%] mobile:gap-[10vw] mobile:right-[5%] tablet:gap-[6vw] tablet:right-[15%]">
                 <PrevButton />
                 <NextButton />
             </div>
@@ -65,7 +65,7 @@ const Testimonial = () => {
                     </p>
                     <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw] tablet:text-[2vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -80,7 +80,7 @@ const Testimonial = () => {
                     </p>
                     <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw] tablet:text-[2vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -95,7 +95,7 @@ const Testimonial = () => {
                     </p>
                     <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw] tablet:text-[2vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -110,7 +110,7 @@ const Testimonial = () => {
                     </p>
                     <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw] tablet:text-[2vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -125,7 +125,7 @@ const Testimonial = () => {
                     </p>
                     <div data-swiper-parallax="-300" data-swiper-parallax-duration="600" className="mobile:mt-[3vh]">
                         <p className="text-24 font-medium">Sophie Alex</p>
-                        <p className="text-[1vw] text-textBody mobile:text-[3vw]">Business Owner</p>
+                        <p className="text-[1vw] text-textBody mobile:text-[3vw] tablet:text-[2vw]">Business Owner</p>
                     </div>
                 </div>
             </SwiperSlide>

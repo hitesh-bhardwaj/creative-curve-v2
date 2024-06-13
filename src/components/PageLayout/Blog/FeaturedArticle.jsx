@@ -63,7 +63,7 @@ const FeaturedArticle = () => {
     <>
       <section id="second-section" className="bg-black text-white" data-cursor-exclusion>
         <div className="container py-[8%] mobile:py-[20%]">
-          <div className="w-[45%] relative mobile:w-full">
+          <div className="w-[45%] relative mobile:w-full tablet:w-full">
             <h2 className="text-140 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white overflow-hidden">
               <span>
                 Featured
@@ -72,7 +72,7 @@ const FeaturedArticle = () => {
                 Work
               </span>
             </h2>
-            <p className="text-24 w-[50%] para-animations absolute right-0 bottom-[9%] mobile:static mobile:w-[80%] mobile:pt-[4%]">
+            <p className="text-24 w-[50%] para-animations absolute right-0 bottom-[9%] mobile:static mobile:w-[80%] mobile:pt-[4%] tablet:static tablet:w-[70%]">
               <span>
                 From global branding trends to the nuances of digital
                 storytelling, explore the world through our lens.
@@ -80,8 +80,8 @@ const FeaturedArticle = () => {
             </p>
           </div>
 
-          <div className="flex justify-between items-start mt-[6vw] mobile:flex-col mobile:mt-[10vw]" ref={textContainer}>
-            <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px]">
+          <div className="flex justify-between items-start mt-[6vw] mobile:flex-col mobile:mt-[10vw] tablet:flex-col tablet:items-center " ref={textContainer}>
+            <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px] tablet:h-[50vh] tablet:w-[80vw]">
               <Image
                 src="/images/blogs/featured.png"
                 fill
@@ -91,22 +91,22 @@ const FeaturedArticle = () => {
               />
             </div>
 
-            <div ref={textSec} className="w-[40%] space-y-[2vw] pt-4 mobile:w-full mobile:mt-[3vh]">
+            <div ref={textSec} className="w-[40%] space-y-[2vw] pt-4 mobile:w-full mobile:mt-[3vh] tablet:w-full tablet:mt-[2vh]">
               <div className="flex justify-start gap-[2.5vw] items-center">
-                <div className="rounded-full bg-white text-textHead space-grotesk text-24 px-[2vw] py-[0.8vw] mobile:px-[5vw] mobile:py-[2.5vw] mobile:text-[4vw]">
+                <div className="rounded-full bg-white text-textHead space-grotesk text-24 px-[2vw] py-[0.8vw] mobile:px-[5vw] mobile:py-[2.5vw] mobile:text-[4vw] tablet:py-[1.5vw]">
                   <span>Branding</span>
                 </div>
 
-                <div className="rounded-full border border-white/70 space-grotesk text-24 px-[1.4vw] py-[0.8vw] mobile:px-[3vw] mobile:py-[3vw] mobile:text-[3.5vw]">
+                <div className="rounded-full border border-white/70 space-grotesk text-24 px-[1.4vw] py-[0.8vw] mobile:px-[3vw] mobile:py-[3vw] mobile:text-[3.5vw] tablet:py-[1.5vw]">
                   <span>19, June 2023</span>
                 </div>
               </div>
 
-              <div className="space-y-[2.5vw] mobile:pt-[2vh]">
-                <h3 className="text-[2.9vw] leading-[1.2] mobile:text-[5.5vw]">
+              <div className="space-y-[2.5vw] mobile:pt-[2vh] tablet:pt-[1.5vh]">
+                <h3 className="text-[2.9vw] leading-[1.2] mobile:text-[5.5vw] tablet:text-[4vw]">
                   Global Branding in a Digital Age: Insights from Creative Curve
                 </h3>
-                <p className="text-24 mobile:text-[4vw] mobile:pt-[1.5vh] mobile:pb-[4vh]">
+                <p className="text-24 mobile:text-[4vw] mobile:pt-[1.5vh] mobile:pb-[4vh] tablet:pt-[1vh] tablet:pb-[2vh]">
                   Digital branding allows companies to tap into new
                   demographics, geos, and psychographics. With 4.66 billion
                   active internet users worldwide.
@@ -114,20 +114,20 @@ const FeaturedArticle = () => {
 
                 <Link
                   href="/global-branding"
-                  className="border block w-fit border-[#4D4D4D] py-[1vw] text-24 px-[2.5vw] rounded-full bg-[#1D1D1D] mobile:px-[5vw] mobile:text-[3.5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw]"
+                  className="border block w-fit border-[#4D4D4D] py-[1vw] text-24 px-[2.5vw] rounded-full bg-[#1D1D1D] mobile:px-[5vw] mobile:text-[3.5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw] tablet:flex tablet:gap-[1vw] tablet:py-[1.5vw]"
                 >
                   <span className="uppercase">Read More</span>
-                  <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block hidden">
-                    <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
+                  <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block tablet:w-[3vw] tablet:h-[3vw]">
+                    <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
                       <Image
-                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
                         src="/images/icons/arrow-right-home.svg"
                         alt="Arrow Right"
                         width={30}
                         height={30}
                       />
                       <Image
-                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
                         src="/images/icons/arrow-right-home.svg"
                         alt="Arrow Right"
                         width={30}

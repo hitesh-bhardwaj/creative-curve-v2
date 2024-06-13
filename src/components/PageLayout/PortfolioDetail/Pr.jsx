@@ -45,9 +45,9 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
     return (
         <>
             <section id="second-section" className={`${className}`} data-cursor-exclusion>
-                <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[30%]">
-                    <div className="space-y-[1.5vw] mb-[6vw] flex justify-between items-end mobile:flex-col mobile:items-start">
-                        <div className="w-1/2 mobile:w-full mobile:mb-[8%]">
+                <div className="container pt-[7%] pb-[9%] mobile:pt-[20%] mobile:pb-[30%] tablet:pt-[15%] tablet:pb-[20%]">
+                    <div className="space-y-[1.5vw] mb-[6vw] flex justify-between items-end mobile:flex-col mobile:items-start tablet:flex-col tablet:items-start">
+                        <div className="w-1/2 mobile:w-full mobile:mb-[8%] tablet:w-full tablet:mb-[5%]">
                             <h3 className="text-140 space-grotesk leading-[1.1] overflow-hidden heading-anim">
                                 <span>
                                     Public
@@ -56,12 +56,12 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                                     Relations
                                 </span>
                             </h3>
-                            <p className="text-24 w-[70%] mobile:w-[90%] mobile:pt-[10%] para-animations">
+                            <p className="text-24 w-[70%] mobile:w-[90%] mobile:pt-[10%] tablet:pt-[5%] para-animations">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
 
-                        <div className="relative h-[45vh] border-2 rounded-[35px] overflow-hidden border-black/50 w-[41%] mobile:w-full mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
+                        <div className="relative h-[45vh] border-2 rounded-[35px] overflow-hidden border-black/50 w-[41%] mobile:w-full mobile:h-[22vh] mobile:rounded-[15px] tablet:w-full fadeUp tablet:h-[55vh]">
                             <Image 
                                 src={img1}
                                 alt="pr-image"
@@ -72,7 +72,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                     </div>
 
                     <div className="w-full h-full gap-x-[3vw] gap-y-[5vw] grid grid-col-4 mobile:flex mobile:flex-col mobile:mt-[5%]">
-                        <div className="col-span-4 h-[85vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
+                        <div className="col-span-4 h-[85vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] tablet:h-[50vh] fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img2}
@@ -83,7 +83,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                         </div>
 
                         {img3 && (
-                            <div className="col-span-4 h-[45vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
+                            <div className="col-span-4 h-[45vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] tablet:h-[50vh] fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img3}
@@ -94,7 +94,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img4 && (
-                            <div className="col-span-1 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50  mobile:rounded-[15px] fadeUp">
+                            <div className="col-span-1 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50  mobile:rounded-[15px] tablet:h-[50vh] fadeUp tablet:col-span-4">
                                 <Image 
                                     loading="lazy"
                                     src={img4}
@@ -105,7 +105,7 @@ const Pr = ({ className, img1, img2, img3, img4, img5 }) => {
                             </div>
                         )}
                         {img5 && (
-                            <div className="col-span-3 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] fadeUp">
+                            <div className="col-span-3 h-[65vh] relative border-2 rounded-[35px] overflow-hidden border-black/50 mobile:h-[22vh] mobile:rounded-[15px] tablet:h-[50vh] tablet:col-span-4 fadeUp">
                                 <Image 
                                     loading="lazy"
                                     src={img5}

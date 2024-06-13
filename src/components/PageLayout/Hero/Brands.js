@@ -80,9 +80,9 @@ function Brands() {
 
   return (
     <>
-      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[25%]" id="brands" data-cursor-color="#fff">
+      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[25%] tablet:pt-[15%] tablet:pb-[10%]" id="brands" data-cursor-color="#fff">
         <div className="container">
-          <div className="w-[55%] mobile:w-full">
+          <div className="w-[55%] mobile:w-full tablet:w-full">
             <p className="text-24 mb-[1vw] fadeUp text-white">Our Clients</p>
             <h2 className="text-96 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white">
               <span className="block overflow-hidden">They Choose Us</span>
@@ -102,7 +102,7 @@ function Brands() {
           </div>
         </div>
 
-        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw]">
+        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw] tablet:mt-[4vh]">
         <div ref={slider} className="relative whitespace-nowrap">
           <div ref={firstText} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
             <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">

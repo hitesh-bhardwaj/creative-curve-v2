@@ -163,23 +163,23 @@ export default function ContactForm() {
 
         {/* Submit button */}
         <Button
-          className="rounded-full text-[1.1vw] uppercase text-white font-[400] aeonik px-[2vw] py-[1vw] h-full mobile:text-[3vw] mobile:px-[5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw]"
+          className="rounded-full text-[1.1vw] uppercase text-white font-[400] aeonik px-[2vw] py-[1vw] h-full mobile:text-[3vw] mobile:px-[5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw] tablet:text-[2vw] tablet:px-[5vw] tablet:py-[1.5vw] tablet:flex tablet:gap-[2vw]"
           type="submit"
           disabled={submitting}
         >
           {submitting ? "sending..." : "send message"}
 
-          <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block hidden">
-            <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
+          <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block tablet:w-[4vw] tablet:h-[4vw]">
+            <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
               <Image
-                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                 src="/images/icons/arrow-right-home.svg"
                 alt="Arrow Right"
                 width={30}
                 height={30}
               />
               <Image
-                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                 src="/images/icons/arrow-right-home.svg"
                 alt="Arrow Right"
                 width={30}

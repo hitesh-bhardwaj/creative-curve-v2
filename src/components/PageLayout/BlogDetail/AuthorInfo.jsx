@@ -8,11 +8,11 @@ import {
 const AuthorInfo = () => {
     return (
         <>
-            <div id='authorInfo' className="w-[20%] space-y-[2.5vw] mobile:w-full mobile:flex mobile:justify-between mobile:flex-wrap">
+            <div id='authorInfo' className="w-[20%] space-y-[2.5vw] mobile:w-full mobile:flex mobile:justify-between mobile:flex-wrap tablet:flex tablet:justify-between tablet:flex-wrap tablet:w-full">
                 <div className="space-y-[1vw] fadeUp">
                     <p className="text-30">Author</p>
                     <div className="flex items-center gap-[10px]">
-                        <img src="/images/blogs/avatar.png" alt="Author Image" className="rounded-full w-[3vw] h-[3vw] mobile:h-[8vw] mobile:w-[8vw]"/>
+                        <img src="/images/blogs/avatar.png" alt="Author Image" className="rounded-full w-[3vw] h-[3vw] mobile:h-[8vw] mobile:w-[8vw] tablet:w-[5vw] tablet:h-[5vw]"/>
                         <p className="text-24 mobile:text-[4vw]">Jasdeep Singh</p>
                     </div>
                 </div>

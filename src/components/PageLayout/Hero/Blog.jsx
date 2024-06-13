@@ -17,6 +17,9 @@ export default function Blog() {
         if(globalThis.innerWidth<541){
 
         }
+        if(globalThis.innerWidth<1024){
+            
+        }
         else{
             const tl = gsap.timeline({
                 scrollTrigger : {
@@ -79,9 +82,9 @@ export default function Blog() {
     return(
         <>
             <section id="Blog" className="bg-dark relative z-[1]">
-                <div className="container py-[10%] mobile:py-[20%]">
+                <div className="container py-[10%] mobile:py-[20%] tablet:py-[15%]">
 
-                    <div className="w-[55%] mobile:w-full">
+                    <div className="w-[55%] mobile:w-full tablet:w-full">
                         <p className="text-24 mb-[1vw] fadeUp">Our Blogs</p>
                         <h2 className="text-96 space-grotesk mb-[1vw] heading-anim mobile:leading-[1]">
                             <span className="block overflow-hidden">
@@ -91,7 +94,7 @@ export default function Blog() {
                                 Creative Musings
                             </span>
                         </h2>                    
-                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] mobile:mt-[2vh]">
+                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] mobile:mt-[2vh] table:w-[75%] tablet:mt-[1.2vh] ">
                             <span>
                                 A curated collection of thoughts, ideas, and inspirations. Join us in this exploration, where every word is crafted with passion.
                             </span>
@@ -105,7 +108,7 @@ export default function Blog() {
 
                     {/* <!-- Blog Grid --> */}
                         <div className="flex items-center justify-between gap-x-[2vw] pt-[8vw] mobile:flex-col" ref={trigger}>
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full mobile:mt-[8vh]" ref={item1}>
+                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full mobile:mt-[8vh] tablet:w-1/2" ref={item1}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
@@ -121,7 +124,7 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-2 mobile:w-full mobile:mt-[5vh]" ref={item2}>
+                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-2 mobile:w-full mobile:mt-[5vh] tablet:w-1/2 " ref={item2}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
@@ -137,7 +140,7 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="cursor-none w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh]" ref={item3}>
+                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="cursor-none w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh] tablet:hidden" ref={item3}>
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">

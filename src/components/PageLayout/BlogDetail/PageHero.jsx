@@ -13,8 +13,8 @@ const PageHero = () => {
                         </h1>
 
                         <div className="flex justify-center w-full mt-[5%] items-center gap-[2vw] mobile:flex-col mobile:mt-[15%] mobile:gap-[2.5vh]">
-                            <p className="space-grotesk text-white text-24 rounded-full py-[0.8vw] bg-textHead text-center min-w-[11vw] mobile:px-[10vw] mobile:py-[4.5vw] mobile:text-[3.5vw]">Branding</p>
-                            <p className="space-grotesk text-textHead text-24 rounded-full py-[0.8vw] border border-textHead text-center min-w-[11vw] mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[4vw]">19, June 2023</p>
+                            <p className="space-grotesk text-white text-24 rounded-full py-[0.8vw] bg-textHead text-center min-w-[11vw] mobile:px-[10vw] mobile:py-[4.5vw] mobile:text-[3.5vw] tablet:px-[4.2vw] tablet:py-[1.5vw] tablet:text-[3vw]">Branding</p>
+                            <p className="space-grotesk text-textHead text-24 rounded-full py-[0.8vw] border border-textHead text-center min-w-[11vw] mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[4vw] tablet:px-[3vw] tablet:py-[1.5vw] tablet:text-[2.7vw]">19, June 2023</p>
                         </div>
 
                         <div className="w-full flex items-center justify-center absolute bottom-[10%] mobile:flex-col mobile:gap-[40vh]">

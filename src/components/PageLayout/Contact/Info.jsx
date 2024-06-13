@@ -11,7 +11,7 @@ const Info = () => {
     return (
         <>
             <section id="second-section" className="bg-black text-white mobile:py-[15%]" data-cursor-exclusion>
-                <div className="container py-[6%] space-y-[7vw] ">
+                <div className="container py-[6%] space-y-[7vw] tablet:py-[15%]">
                     <div className="w-[90%] mx-auto mobile:w-full">
                         <h2 className="text-76 space-grotesk text-center leading-[1.2] mobile:text-[6vw] para-animations">
                             Ready for a Game-Changing Partnership? Let's Shape the Future, Side by Side.

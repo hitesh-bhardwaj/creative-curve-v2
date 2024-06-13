@@ -53,22 +53,22 @@ const Marquee = () => {
     return (
         <>
             <section id="marquee" ref={container} className="overflow-hidden bg-white">
-                <div className="h-[50vw] flex justify-center items-center mobile:h-[80vw] mobile:my-[10%]">
+                <div className="h-[50vw] flex justify-center items-center mobile:h-[80vw] mobile:my-[10%] tablet:my-[10%]">
                     <div className="">
                         <div ref={slider} className="text-textHead flex w-max relative rotate-[15deg] mobile:rotate-[12deg]">
-                            <p ref={firstText} className="border-y border-textHead text-[4vw] w-max px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw]">
+                            <p ref={firstText} className="border-y border-textHead text-[4vw] w-max px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw] tablet:text-[5vw]">
                                 We Are Creative Curve.... We Transform Brands Worldwide
                             </p>
-                            <p ref={secondText} className="border-y border-textHead text-[4vw] w-max absolute left-full px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw]">
+                            <p ref={secondText} className="border-y border-textHead text-[4vw] w-max absolute left-full px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw] tablet:text-[5vw]">
                                 We Are Creative Curve.... We Transform Brands Worldwide
                             </p>
                         </div>
 
                         <div ref={slider2} className="text-white flex w-max relative -rotate-[15deg] -translate-y-[8vw] mobile:-rotate-[12deg] mobile:-translate-y-[12vw]">
-                            <p ref={firstText2} className="text-[4vw] bg-textHead w-max px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw] ">
+                            <p ref={firstText2} className="text-[4vw] bg-textHead w-max px-[0.5vw] mobile:text-[7vw] mobile:py-[1vw]  tablet:text-[5vw]">
                                 We Are Creative Curve.... We Transform Brands Worldwide
                             </p>
-                            <p ref={secondText2} className="text-[4vw] bg-textHead w-max absolute left-full px-[0.55vw] mobile:text-[7vw] mobile:py-[1vw]">
+                            <p ref={secondText2} className="text-[4vw] bg-textHead w-max absolute left-full px-[0.55vw] mobile:text-[7vw] mobile:py-[1vw] tablet:text-[5vw]">
                                 We Are Creative Curve.... We Transform Brands Worldwide
                             </p>
                         </div>

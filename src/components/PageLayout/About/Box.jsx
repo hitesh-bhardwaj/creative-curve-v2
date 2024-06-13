@@ -71,7 +71,45 @@ const Box = () => {
                 delay: -4,
             });
 
-        }else{
+        }
+        if(globalThis.innerWidth<1024){
+            const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: "top top",
+                    end: "+=2000 top",
+                    markers: false,
+                    scrub: true,
+                    pin: true,
+                }
+            });
+            tl.to(ele.current, {
+                width: "800vw",
+                height: "800vw",
+                rotate: "180deg",
+                ease: "power1.out",
+                duration: 20,
+            })
+            .fromTo(document.querySelector("body"), {
+                backgroundColor: "#fff",
+            }, {
+                backgroundColor: "#000",
+                delay: -8,
+                duration: 2,
+            })
+            .from(document.querySelectorAll(".story-para .line .word .char"), {
+                filter: "blur(10px)",
+                opacity: 0,
+                y: 20,
+                duration: 1,
+                stagger: 0.1,
+                delay: -5,
+            });
+
+        }
+        else{
             const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
 
             const tl = gsap.timeline({
@@ -116,7 +154,7 @@ const Box = () => {
                 <div className="min-h-screen overflow-hidden">
                     <div className="h-screen relative flex justify-center items-center overflow-hidden">
                         <img ref={ele} src="/images/about/about-square.svg" alt="hero" className="absolute w-[20%] max-w-[1000%] pointer-events-none" />
-                        <div className="mx-auto w-[60%] mobile:w-[90%]">
+                        <div className="mx-auto w-[60%] mobile:w-[90%] tablet:w-[70%]">
                             <h2 ref={text} className="space-grotesk text-white text-48 text-left story-para">
                                 <span>
                                     Every Brand has a Story Waiting to be told, and at Creative Curve, we consider it our mission to tell it in the most impactful way possible. We don't just Create Campaigns; we build narratives. We don't just Design Visuals; We Evoke Emotions.

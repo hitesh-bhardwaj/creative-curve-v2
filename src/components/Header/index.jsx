@@ -21,8 +21,8 @@ export default function Header() {
 
     return (
         <>  
-            <div className="fixed top-0 left-0 my-[2%] px-[3%] w-full z-[998]">
-                <div className="w-[4.5vw] h-[3.5vw] flex items-center mobile:w-[8vh]">
+            <div className="fixed top-0 left-0 my-[2%] px-[3%] w-full z-[998] mobile:top-[5%] tablet:top-[5%]">
+                <div className="w-[4.5vw] h-[3.5vw] flex items-center mobile:w-[8vh] tablet:w-[8vh]">
                     <Link href="/">
                         <img
                             src="/logo.png"
@@ -37,12 +37,12 @@ export default function Header() {
             </div>
 
             <header className="fixed top-0 bottom-0 right-0 left-0 w-full z-[999] mix-blend-exclusion pointer-events-none">
-                <div className="w-[100%] px-[3%] my-[2%] mobile:px-[5%] mobile:my-[5%] justify-end items-center flex">
-                        <div className="w-[3.5vw] h-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] relative ">
+                <div className="w-[100%] px-[3%] my-[2%] mobile:px-[5%] mobile:my-[5%] justify-end items-center flex tablet:my-[5%]">
+                        <div className="w-[3.5vw] h-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] relative tablet:w-[10vw] tablet:h-[10vw] ">
                             <button
                                 data-cursor-size="60px"
                                 aria-label="Open Menu"
-                                className={`menu-btn cursor-pointer pointer-events-auto overflow-hidden h-[3.5vw] fixed z-[999] w-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] ${menuOpen ? "open" : ""}`}
+                                className={`menu-btn cursor-pointer pointer-events-auto overflow-hidden h-[3.5vw] fixed z-[999] w-[3.5vw] mobile:w-[12vw] mobile:h-[12vw] tablet:w-[10vw] tablet:h-[10vw] ${menuOpen ? "open" : ""}`}
                                 disabled={buttonDisabled}
                                 onClick={handleMenuButtonClick}
                             >

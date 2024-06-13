@@ -76,14 +76,14 @@ export default function Menu({ menuOpen }) {
     <>
       <nav
         ref={menuRef}
-        className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] ${menuOpen ? "open" : ""}`}>
-        <div className="px-[3vw] pb-[3vw] pt-[4vw] mobile:px-[8vw] mobile:pt-[12vw] mobile:pb-[10vw]">
+        className={`w-[20vw] border border-[#989898] rounded-[20px] bg-white nav-clip-path mobile:w-[80vw] tablet:w-[60vw] ${menuOpen ? "open" : ""}`}>
+        <div className="px-[3vw] pb-[3vw] pt-[4vw] mobile:px-[8vw] mobile:pt-[12vw] mobile:pb-[10vw] tablet:pt-[8vw] tablet:pb-[6vw] tablet:px-[6vw]">
           <ul className="flex flex-col justify-center items-start h-full gap-[0.5vw] pb-[2vw]">
             {menudata.map(
               (link, index) => (
                 <li
                   key={index}
-                  className="text-[1.35vw] w-full text-black mobile:text-[7vw]"
+                  className="text-[1.35vw] w-full text-black mobile:text-[7vw] tablet:text-[4.5vw]"
                   ref={(el) => (linksRef.current[index] = el)}
                 >
                   <MenuLink link={link.href} linkText={link.text} />
@@ -92,7 +92,7 @@ export default function Menu({ menuOpen }) {
             )}
           </ul>
 
-          <div className="text-[1vw] mobile:text-[4vw]">
+          <div className="text-[1vw] mobile:text-[4vw] tablet:text-[3vw]">
             <Link
               ref={emailRef}
               href="mailto:info@creative-curve.co.in"
@@ -104,17 +104,17 @@ export default function Menu({ menuOpen }) {
               >
                 info@creative-curve.co.in
               </span>
-              <div className="w-[1vw] h-fit text-black overflow-hidden mobile:w-[5vw] mobile:h-[5vw]">
-                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
+              <div className="w-[1vw] h-fit text-black overflow-hidden mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
+                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
                   <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                     src="/images/icons/arrow-right.svg"
                     alt="Arrow Right"
                     width={30}
                     height={30}
                   />
                   <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw]"
+                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
                     src="/images/icons/arrow-right.svg"
                     alt="Arrow Right"
                     width={30}
@@ -126,7 +126,7 @@ export default function Menu({ menuOpen }) {
             </Link>
           </div>
 
-          <div className="flex w-[90%] justify-between items-center mt-[1.8vw] mobile:mt-[5vw]">
+          <div className="flex w-[90%] justify-between items-center mt-[1.8vw] mobile:mt-[5vw] tablet:mt-[3vw]">
             {[
               {
                 href: "https://facebook.com",
@@ -152,7 +152,7 @@ export default function Menu({ menuOpen }) {
               <Link
                 key={index}
                 href={icon.href}
-                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links mobile:w-[7vw]"
+                className="w-[1.8vw] hover:opacity-75 transition-all duration-300 ease-out social-links mobile:w-[7vw] tablet:w-[6vw]"
               >
                 <Image
                   src={icon.src}

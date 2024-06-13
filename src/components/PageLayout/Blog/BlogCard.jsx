@@ -9,7 +9,7 @@ const BlogCard = ({ title, category, img, link }) => {
                     <img src={img} alt={title} className="cover w-full h-full group-hover/blog:scale-[1] scale-[1.1] transition-all duration-500 ease-out"/>
                 </div>
                 <h5 className="text-48 leading-[1.2] aeonik text-textHead mt-[1.2vw] mobile:mt-[2vh]">{title}</h5>
-                <p className="text-[1.4vw] space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-10 pointer-events-none left-10 mobile:text-[3.5vw] mobile:px-[3vw] mobile:top-3 mobile:left-3 mobile:py-[1.2vw]">{category}</p>
+                <p className="text-[1.4vw] space-grotesk text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-10 pointer-events-none left-10 mobile:text-[3.5vw] mobile:px-[3vw] mobile:top-3 mobile:left-3 mobile:py-[1.2vw] tablet:text-[2vw] tablet:px-[3vw] tablet:top-3 tablet:left-3 tablet:py-[1.2vw]">{category}</p>
                 <p className="uppercase flex items-center group gap-[10px] mt-[2vw] mobile:mt-[2vh]">
                     <span className="text-[1.55vw] relative after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-textHead after:transition-all after:duration-300 after:ease-out hover:after:scale-x-0 mobile:text-[4vw]">
                         Read More

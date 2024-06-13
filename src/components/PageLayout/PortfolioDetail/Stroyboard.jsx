@@ -12,13 +12,13 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 Story Board
                             </span>
                         </h3>
-                        <p className="text-center text-24 w-[48%] mx-auto mobile:w-[90%] mobile:pt-[2vh] mobile:text-[4vw] para-animations">
+                        <p className="text-center text-24 w-[48%] mx-auto mobile:w-[90%] mobile:pt-[2vh] mobile:text-[4vw] para-animations tablet:w-[80%]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis.
                         </p>
                     </div>
 
                     <div className="w-full h-full space-y-[7vw]">
-                        <div className="w-full h-[90vh] relative mobile:h-[22vh] fadeUp ">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] fadeUp tablet:h-[35vh] ">
                             <Image 
                                 loading="lazy"
                                 src={img1}
@@ -27,7 +27,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-left"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] fadeUp">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] tablet:h-[35vh] fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img2}
@@ -36,7 +36,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-left"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] fadeUp">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] tablet:h-[35vh] fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img3}
@@ -45,7 +45,7 @@ const Storyboard = ({ className, img1, img2, img3, img4 }) => {
                                 className="cover mobile:object-center"
                             />
                         </div>
-                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] fadeUp">
+                        <div className="w-full h-[90vh] relative mobile:h-[22vh] mobile:pt-[3vh] tablet:h-[35vh] fadeUp">
                             <Image 
                                 loading="lazy"
                                 src={img4}
