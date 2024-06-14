@@ -19,7 +19,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <ReactLenis root duration={2}>
+      <ReactLenis root duration={2} smoothTouch={true}>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>

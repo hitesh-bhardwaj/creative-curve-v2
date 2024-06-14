@@ -1,0 +1,102 @@
+.cta {
+    display: flex;
+    position: relative;
+    padding: 1em 1.5em 1em 1.625em;
+    align-items: center;
+    gap: 1em;
+    overflow: hidden;
+    border-radius: 5.3125em;
+    font-size: clamp(.875rem,1vw,1.75rem);
+    background: var(--white);
+    font-family: Aeonik;
+    text-transform: uppercase;
+    height: 3.375em;
+    width: fit-content;
+    font-weight: 500;
+    color: var(--textHead);
+    transition: background cubic-bezier(.35,0,0,1) .2s;
+    will-change: transform;
+    border: 1px solid var(--textHead);
+}
+.ctaDot {
+    display: inline-block;
+    position: relative;
+    width: .5em;
+    height: .5em;
+    background: var(--textHead);
+    border-radius: 100px;
+    z-index: 1;
+    transition: background cubic-bezier(.35,0,0,1) .5s, transform cubic-bezier(.35,0,0,1) .4s;
+}
+.ctaText {
+    position: relative;
+    z-index: 1;
+    transition: color cubic-bezier(.35,0,0,1) .5s, transform cubic-bezier(.35,0,0,1) .4s;
+}
+.ctaArrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1em;
+    height: 1.2em;
+    width: 1.2em;
+    color: var(--textHead);
+    border-radius: 100%;
+    transform: translate3d(3em, 0, 0);
+    transition: transform cubic-bezier(.4,0,0,1) .4s;
+    z-index: 1;
+}
+.ctaArrow svg {
+    width: 100%;
+    height: 100%;
+    transition: color .5s;
+}
+
+@media (hover: hover) {
+    .cta:hover {
+        color: var(--white);
+        background: var(--textHead);
+        transition: background cubic-bezier(.35,0,0,1) .5s .3s;
+    }
+    .cta:hover .ctaDot {
+        transform: translate3d(4em, 0, 0) scale(32);
+        background: var(--textHead);
+    }
+    .cta:hover .ctaText {
+        transform: translate3d(-1.5em, 0, 0);
+    }
+    .cta:hover .ctaArrow {
+        transform: translateZ(0);
+    }
+    .cta:hover .ctaArrow svg {
+        color: var(--white);
+    }
+}
+
+.dark{
+    background-color: var(--textHead);
+    color: var(--white);
+}
+.dark .ctaDot {
+    background-color: var(--white);
+}
+.dark .ctaArrow{
+    color: var(--white);
+}
+
+@media (hover: hover) {
+    .dark:hover {
+        color: var(--textHead);
+        background: var(--white);
+    }
+    .dark:hover .ctaDot {
+        background: var(--white);
+    }
+    .dark:hover .ctaArrow {
+        color: var(--textHead);
+    }
+    .dark:hover .ctaArrow svg {
+        color: var(--textHead);
+    }
+}

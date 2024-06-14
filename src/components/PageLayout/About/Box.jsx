@@ -35,8 +35,10 @@ const Box = () => {
     });
 
     useGSAP(() => {
+
+        const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
+
         if(globalThis.innerWidth<541){
-            const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
 
             const tl = gsap.timeline({
                 scrollTrigger: {
@@ -73,8 +75,6 @@ const Box = () => {
 
         }
         if(globalThis.innerWidth<1024){
-            const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
-
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -110,8 +110,6 @@ const Box = () => {
 
         }
         else{
-            const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
-
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -145,7 +143,6 @@ const Box = () => {
                 delay: -4,
             });
         }
-      
     });
 
     return (

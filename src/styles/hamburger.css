@@ -45,3 +45,11 @@
 .menu-btn.open .line--2 {
       --length: 0;
 }
+
+@media screen and (max-width: 540px) {
+    .nav-clip-path{
+        top: 2%;
+        right: 5%;
+        clip-path: inset(4% 7% 96% 92% round 50px);
+    }
+}

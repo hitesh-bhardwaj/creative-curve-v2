@@ -80,17 +80,15 @@ function Brands() {
 
   return (
     <>
-      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[25%] tablet:pt-[15%] tablet:pb-[10%]" id="brands" data-cursor-color="#fff">
+      <section ref={brands} className="bg-black pt-[5%] pb-[10%] mobile:pt-[15%] mobile:pb-[20%] tablet:pt-[15%] tablet:pb-[10%]" id="brands" data-cursor-color="#fff">
         <div className="container">
           <div className="w-[55%] mobile:w-full tablet:w-full">
             <p className="text-24 mb-[1vw] fadeUp text-white">Our Clients</p>
             <h2 className="text-96 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white">
               <span className="block overflow-hidden">They Choose Us</span>
-              
               <span className="block overflow-hidden">
               And We Delivered!
               </span>
-              
             </h2>
             <p className="text-22 w-[65%] mb-[2vw] text-white para-animations mobile:w-[90%]">
               <span>
@@ -102,111 +100,116 @@ function Brands() {
           </div>
         </div>
 
-        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw] tablet:mt-[4vh]">
-        <div ref={slider} className="relative whitespace-nowrap">
-          <div ref={firstText} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
+        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw] tablet:mt-[4vh] mobile:gap-[2.5vw] mobile:mt-[15vw]">
+
+        <div ref={slider} className="relative whitespace-nowrap mobile:w-[185%]">
+
+          <div ref={firstText} className="w-full grid h-[18vw] grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className="col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
+            <div className="col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
+            <div className="col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
+            <div className="col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/bharti.svg" />
-            </div>
-          </div>
-          <div ref={secondText} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/bharti.svg" />
+            <div className="col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={thirdText} className="w-full top-0 left-[200%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
+
+          <div ref={secondText} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[40vw]">
-              <img src="/images/brands/bharti.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
             </div>
           </div>
+
+          <div ref={thirdText} className="w-full top-0 left-[200%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
+            </div>
+          </div>
+
         </div>
 
-        <div ref={slider2} className="relative whitespace-nowrap">
-          <div ref={firstText2} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
+        <div ref={slider2} className="relative whitespace-nowrap mobile:w-[180%]">
+          <div ref={firstText2} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/bharti.svg" />
-            </div>
-          </div>
-          <div ref={secondText2} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
-            </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/bharti.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={thirdText2} className="w-full top-0 left-[-100%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:flex">
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/tnc-white.svg" />
+          <div ref={secondText2} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/unicef.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/oxfam.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/wwf-white.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
             </div>
-            <div className=" h-[18vw] bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl mobile:h-[50vw] mobile:w-[50vw]">
-              <img src="/images/brands/bharti.svg" />
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
+            </div>
+          </div>
+          <div ref={thirdText2} className="w-full top-0 left-[-100%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/tnc-white.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/unicef.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/oxfam.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/wwf-white.svg" />
+            </div>
+            <div className=" col-span-1 h-full bg-[#151515] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img alt="brand img" loading="lazy" src="/images/brands/bharti.svg" />
             </div>
           </div>
         </div>

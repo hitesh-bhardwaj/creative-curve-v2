@@ -8,53 +8,130 @@ import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
 
 const PageHero = () => {
+
+    const small = useRef(null);
+    const digital = useRef(null);
+    const product = useRef(null);
+    const and = useRef(null);
+    const experience = useRef(null);
+
     useGSAP(() => {
         const text = new SplitType('.para-anim', { types: 'words, chars' });
         const para = document.querySelectorAll(".para-anim .word .char")
         const tl = gsap.timeline();
-        tl.from(".service-head",{
-            xPercent:-100,
-            delay:1,
-            stagger:0.1,
-            duration:1,
-            ease:"power4.out"
-
+  
+        tl.from(digital.current, {
+            duration: 1,
+            xPercent: -100,
+            delay: 1,
+            ease: "power3.out"
+        })
+        .from(product.current, {
+            duration: 1,
+            xPercent: 100,
+            delay: -0.8,
+            ease: "power3.out"
         })
         .from(para, {
-          filter: "blur(10px)",
+            filter: "blur(10px)",
+            opacity: 0,
+            duration: 0.6,
+            yPercent: 100,
+            stagger: 0.01,
+            delay: -0.8,
+            ease: "power3.out"
+        })
+        .from(and.current, {
+            duration: 1,
+            xPercent: -100,
+            delay: -0.9,
+            ease: "power3.out",
+        }).from(experience.current, {
+            duration: 1,
+            xPercent: 110,
+            delay: -0.9,
+            ease: "power3.out",
+        }).from(small.current, {
+            duration: 1,
+            yPercent: -100,
+            delay: -0.8,
+            ease: "power3.out"
+        }).from(".scroll-btn", {
+          duration: 0.8,
+          y: 30,
           opacity: 0,
-          duration: 0.6,
-          yPercent: 100,
-          stagger: 0.01,
-          delay: -1,
-          ease: "power3.out"
-      })
-      gsap.from(".service-small-head",{
-        yPercent:-100,
-        duration:0.5,
-        delay:1.7
-        
-      })})
+          ease: "power3.out",
+          delay: -0.4
+        });
+    }, []);
+
+    useGSAP(()=> {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#hero",
+            start: "top top",
+            end: "bottom 40%",
+            scrub: true,
+          }
+        });
+    
+        tl.to(experience.current, {
+          yPercent: 110,
+          duration: 0.8,
+          ease: "power2.in",
+        }).to(and.current, {
+          yPercent: 110,
+          duration: 0.8,
+          delay: -0.7,ease: "power2.in",
+        }).to(".para-anim", {
+          yPercent: 110,
+          duration: 0.8,
+          delay: -0.7,ease: "power2.in",
+        }).to(product.current, {
+          yPercent: 110,
+          duration: 0.8,
+          delay: -0.7,ease: "power2.in",
+        }).to(digital.current, {
+          yPercent: 110,
+          duration: 0.8,
+          delay: -0.7,ease: "power2.in",
+        }).to(small.current, {
+          yPercent: 110,
+          duration: 0.8,
+          delay: -0.7,ease: "power2.in",
+        })
+      }, []);
+
     return (
         
         <>
-            <section id="hero">
-                <div className="container h-[85vh] mobile:relative">
-                    <div className="flex flex-col justify-center h-full w-full items-start mobile:justify-start mobile:mt-[50%]">
-                        <h1 className="text-140 tracking-[1px] leading-[1.1] space-grotesk text-textHead overflow-hidden">
-                            <span className="text-76 service-small-head block">We Create</span>
-                            
-                            <span className="uppercase service-head block">Digital Products <br/> And Experiences</span>
-                        </h1>
+            <section className="h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+                <div className="fixed top-0 left-0 w-full h-full">
+                    <div className="container h-[85vh] mobile:relative">
+                        <div className="flex flex-col justify-center h-full w-full items-start pt-5 mobile:justify-start mobile:mt-[50%]">
+                            <h1 className="text-140 uppercase tracking-[1px] leading-[1.1] space-grotesk text-textHead overflow-hidden">
+                                <div className="w-fit overflow-hidden">
+                                    <span ref={small} className="text-76 capitalize text-textBody service-small-head block mb-2">We Create</span> 
+                                </div>
+                                <div className="overflow-hidden">
+                                    <span ref={digital} className="service-head inline-block overflow-hidden">Digital</span>{" "}
+                                    <span ref={product} className="inline-block overflow-hidden">Products</span>{" "}
+                                </div>
+                                <div className="overflow-hidden">
+                                    <span ref={and} className="inline-block overflow-hidden">And</span>{" "}
+                                    <span ref={experience} className="inline-block overflow-hidden">Experiences</span>{" "}
+                                </div>
+                            </h1>
 
-                        <div className="flex justify-between w-full mt-[6%] mobile:flex-col mobile:gap-[40vh]">
-                            <ScrollButton />
+                            <div className="flex justify-between items-end w-full mt-[6%] mobile:flex-col mobile:gap-[40vh]">
+                                <ScrollButton />
 
-                            <p className="text-24 text-textBody text-right w-[21vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim">
-                                <span>
-                                We're crafting brand narratives that resonate globally, driving engagement and elevating your business to new heights.
-                                </span>
-                            </p>
+                                <p className="text-24 text-textBody text-right w-[21vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim">
+                                    <span>
+                                    We're crafting brand narratives that resonate globally, driving engagement and elevating your business to new heights.
+                                    </span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

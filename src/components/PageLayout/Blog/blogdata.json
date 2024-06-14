@@ -4,56 +4,56 @@
         "id": 1,
         "title": "The Power of Psychology in UX Design: Unlocking the Human",
         "category": "Branding",
-        "img": "/images/blogs/blog-listing-1.png",
+        "img": "/images/blogs/blog-listing-1.webp",
         "link": "/power-of-psychology-in-ux-design"
       },
       {
         "id": 2,
         "title": "How to manage a talented and successful design team",
         "category": "UI Design",
-        "img": "/images/blogs/blog-listing-2.png",
+        "img": "/images/blogs/blog-listing-2.webp",
         "link": "#"
       },
       {
         "id": 3,
         "title": "How to bring fold to your startup company with Enigma",
         "category": "Branding",
-        "img": "/images/blogs/blog-listing-3.png",
+        "img": "/images/blogs/blog-listing-3.webp",
         "link": "#"
       },
       {
         "id": 4,
         "title": "How to manage a talented and successful design team",
         "category": "Branding",
-        "img": "/images/blogs/blog-listing-4.png",
+        "img": "/images/blogs/blog-listing-4.webp",
         "link": "#"
       },
       {
         "id": 5,
         "title": "Top 10 Travel Destinations for 2024",
         "category": "Insights",
-        "img": "/images/blogs/blog-listing-1.png",
+        "img": "/images/blogs/blog-listing-1.webp",
         "link": "#"
       },
       {
         "id": 6,
         "title": "Mastering Personal Finance",
         "category": "Branding",
-        "img": "/images/blogs/blog-listing-2.png",
+        "img": "/images/blogs/blog-listing-2.webp",
         "link": "#"
       },
       {
         "id": 7,
         "title": "Innovations in Renewable Energy",
         "category": "UI Design",
-        "img": "/images/blogs/blog-listing-3.png",
+        "img": "/images/blogs/blog-listing-3.webp",
         "link": "#"
       },
       {
         "id": 8,
         "title": "The Impact of Social Media on Society",
         "category": "Insights",
-        "img": "/images/blogs/blog-listing-4.png",
+        "img": "/images/blogs/blog-listing-4.webp",
         "link": "#"
       }
     ]

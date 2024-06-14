@@ -3,6 +3,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import Link from "next/link";
 import { useGSAP } from "@gsap/react";
+import ButtonWhite from "@/components/Button/ButtonWhite";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -38,46 +39,8 @@ export default function Blog() {
                 y: "-50%",
                 duration: 2.8
             }, "-0.5");
-
         }
-        
     });
-    useGSAP(() => {
-        if(globalThis.innerWidth<541){
-            // const parallaxImgs = document.querySelectorAll(".parallaxIMG");
-        
-            // parallaxImgs.forEach((parallaxImg) => {
-            //   gsap.to(parallaxImg, {
-            //     yPercent: 10,
-            //     scrollTrigger: {
-            //       trigger: parallaxImg,
-            //       start: "20% bottom",
-            //       end: "bottom top",
-            //       scrub: true,
-            //       // markers: true
-            //     },
-            //   });
-            // });
-    
-        }else{
-            const parallaximgs = document.querySelectorAll(".parallaxImg");
-        
-            parallaximgs.forEach((parallaximg) => {
-              gsap.to(parallaximg, {
-                yPercent: 10,
-                scrollTrigger: {
-                  trigger: parallaximg,
-                  start: "20% bottom",
-                  end: "bottom top",
-                  scrub: true,
-                  // markers: true
-                },
-              });
-            });
-    
-        }
-       
-      });
 
     return(
         <>
@@ -99,26 +62,25 @@ export default function Blog() {
                                 A curated collection of thoughts, ideas, and inspirations. Join us in this exploration, where every word is crafted with passion.
                             </span>
                         </p>
-                        <Link href="/portfolio" className="fadeUp border block w-fit border-[#4D4D4D] py-[1vw] sec-content-24 px-[2.5vw] rounded-full mobile:py-[2vw] mobile:px-[7vw] mobile:mt-[4vh]">
-                            <span className="uppercase">
-                                ALL Blogs
-                            </span>
-                        </Link>
+                        <div className="fadeUp">
+                            <ButtonWhite link="/blog" btnText="View All Blogs" />
+                        </div>
                     </div>
 
                     {/* <!-- Blog Grid --> */}
-                        <div className="flex items-center justify-between gap-x-[2vw] pt-[8vw] mobile:flex-col" ref={trigger}>
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full mobile:mt-[8vh] tablet:w-1/2" ref={item1}>
-                                <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
-                                    <div className="post-prev-2-img overflow-hidden rounded-[20px]">
+                        <div className="flex items-center justify-between gap-x-[2vw] pt-[8vw] mobile:flex-col mobile:pt-[12vw]" ref={trigger}>
+
+                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full tablet:w-1/2" ref={item1}>
+                                <div className="space-y-[1.2vw] mobile:space-y-[2vw]">
+                                    <div className="post-prev-2-img overflow-hidden rounded-[20px] mobile:mb-[4vw]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-1.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-5%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-1.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
-                                    <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
+                                    <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24">
                                         <a href="#">Global Branding in a Digital Age: Insights from Creative Curve</a>
                                     </h4>
-                                    <div className="text-[1.25vw] px-[0.5vw] text-20 mobile:mt-[1vh]">
+                                    <div className="text-[1.25vw] px-[0.5vw] text-20">
                                         Branding . 19 June 2023
                                     </div>
                                 </div>                                
@@ -128,7 +90,7 @@ export default function Blog() {
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-2.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-5%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-2.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
@@ -144,7 +106,7 @@ export default function Blog() {
                                 <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
                                     <div className="post-prev-2-img overflow-hidden rounded-[20px]">
                                         <a href="#">
-                                            <img src="/images/blogs/blog-3.png" className="w-full h-full object-cover scale-[110%] translate-y-[-10%] parallaxIMG mobile:scale-[120%] mobile:translate-y-[-10%]" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                                            <img src="/images/blogs/blog-3.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">

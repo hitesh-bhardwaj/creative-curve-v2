@@ -19,15 +19,11 @@ const Projects = () => {
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });
-            
-    
         }else{
             const parallaxImgs = document.querySelectorAll(".parallaximg");
-        
             parallaxImgs.forEach((parallaxImg) => {
               gsap.to(parallaxImg, {
                 yPercent: 10,
@@ -36,7 +32,6 @@ const Projects = () => {
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });
@@ -46,7 +41,7 @@ const Projects = () => {
     return (
         <>
             <section id="second-section" className="bg-black text-white" data-cursor-color="#fff">
-                <div className="container py-[9%] mobile:py-[20%] tablet:py-[10%HHHHHHHHHHF]">
+                <div className="container py-[9%] mobile:py-[20%] tablet:py-[10%]">
                     <div className="text-center mx-auto w-3/4 mobile:w-full mobile:text-start">
                         <p className="space-grotesk text-48 mobile:text-[5vw] para-animations leading-[1.3]">
                             Explore our case studies and see how Creative Curve evolves brands for a changing world, ensuring cultural relevance and future readiness
@@ -59,7 +54,7 @@ const Projects = () => {
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-bharti-lg.png"
+                                            src="/images/projects/project-bharti-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -75,7 +70,7 @@ const Projects = () => {
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-wfp-lg.png"
+                                            src="/images/projects/project-wfp-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -92,7 +87,7 @@ const Projects = () => {
                                     <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-wwf-lg.png"
+                                            src="/images/projects/project-wwf-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -109,7 +104,7 @@ const Projects = () => {
                                     <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-stc-lg.png"
+                                            src="/images/projects/project-stc-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -126,7 +121,7 @@ const Projects = () => {
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-unicef-lg.png"
+                                            src="/images/projects/project-unicef-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -143,7 +138,7 @@ const Projects = () => {
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-oxfam-lg.png"
+                                            src="/images/projects/project-oxfam-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -160,7 +155,7 @@ const Projects = () => {
                                     <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-ap-lg.png"
+                                            src="/images/projects/project-ap-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}
@@ -177,7 +172,7 @@ const Projects = () => {
                                     <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                                            src="/images/projects/project-canon-lg.png"
+                                            src="/images/projects/project-canon-lg.webp"
                                             alt="Portfolio Image"
                                             loading="lazy"
                                             width={1000}

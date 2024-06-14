@@ -2,8 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-import SplitType from "split-type";
+import { useRef } from "react";
+import { SplitInLineWord } from "@/utils";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -17,24 +17,23 @@ const ImageScroll = () => {
 
     useGSAP(() => {
 
-        const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
-        const textAnim = document.querySelectorAll(".line .word .char");
+        SplitInLineWord(text.current)
+        const textbreakLine = text.current.querySelectorAll(".line");
 
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: container.current,
                 start: "top top",
-                end: "=+2000 top",
-                scrub: 0.25,
+                end: "=+3000 top",
+                scrub: true,
                 pin: true,
             }
         });
 
-        tl.from(textAnim, {
-            opacity: 0.2,
-            duration: 1,
-            ease: "none",
-            stagger: 0.1,
+        tl.to(textbreakLine, {
+            backgroundPositionX: 0,
+            duration: 3,
+            stagger: 3,
         })
 
         tl.fromTo(img1.current, {
@@ -73,17 +72,15 @@ const ImageScroll = () => {
             <section ref={container} className="">
                 <div className="container py-[10%] relative h-screen w-full flex justify-center items-center overflow-hidden ">
                     <div className="relative z-10">
-                        <h4 ref={text} className="aeonik text-textHead text-96 leading-[1.1] text-center mobile:text-start mobile:text-[12vw]">
-                            <span>
-                                Creative Curve has grown into a global powerhouse, recognized for its unique blend of innovation and expertise.
-                            </span>
+                        <h4 ref={text} className="aeonik text-textHead text-96 leading-[1.2] text-center mobile:text-start mobile:text-[12vw] textbreak">
+                            Creative Curve has grown into a global powerhouse, recognized for its unique blend of innovation and expertise.
                         </h4>
                     </div>
                 </div>
                     <Image 
                         ref={img1}
                         className="w-[15vw] absolute left-0 mobile:w-[40vw] mobile:left-[50%] "
-                        src="/images/projects/scroll-1.png"
+                        src="/images/projects/scroll-1.webp"
                         alt="Scroll Image"
                         width={500}
                         height={500}
@@ -91,7 +88,7 @@ const ImageScroll = () => {
                     <Image 
                         ref={img2}
                         className="w-[20vw] absolute right-1/3 mobile:w-[40vw] mobile:left-[5%]"
-                        src="/images/projects/scroll-2.png"
+                        src="/images/projects/scroll-2.webp"
                         alt="Scroll Image"
                         width={500}
                         height={500}
@@ -99,7 +96,7 @@ const ImageScroll = () => {
                     <Image 
                         ref={img3}
                         className="w-[15vw] absolute right-[10%] mobile:w-[40vw]"    
-                        src="/images/projects/scroll-3.png"
+                        src="/images/projects/scroll-3.webp"
                         alt="Scroll Image"
                         width={500}
                         height={500}
@@ -107,7 +104,7 @@ const ImageScroll = () => {
                     <Image 
                         ref={img4}
                         className="w-[19vw] absolute left-[15%] mobile:w-[40vw] mobile:hidden"
-                        src="/images/projects/scroll-4.png"
+                        src="/images/projects/scroll-4.webp"
                         alt="Scroll Image"
                         width={500}
                         height={500}

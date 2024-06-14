@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import SplitType from "split-type";
+import ButtonDark from "@/components/Button/ButtonDark";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -24,7 +25,6 @@ function Portfolio() {
               start: "20% bottom",
               end: "bottom top",
               scrub: true,
-              // markers: true
             },
           });
         });
@@ -42,7 +42,6 @@ function Portfolio() {
               start: "20% bottom",
               end: "bottom top",
               scrub: true,
-              // markers: true
             },
           });
         });
@@ -134,7 +133,7 @@ function Portfolio() {
       <section
         data-cursor-color="#fff"
         ref={pinContainer}
-        className="py-[10%] bg-black relative mobile:py-[15%]"
+        className="py-[10%] bg-black relative mobile:py-[20%]"
         id="second-section"
       >
         <div className="container grid grid-cols-11 items-center gap-y-[3vw] mobile:flex mobile:flex-col ">
@@ -142,7 +141,7 @@ function Portfolio() {
             ref={pin}
             className="text-white absolute top-[10%] w-[45%] mobile:w-full mobile:static tablet:col-span-11 tablet:row-start-1 tablet:static tablet:w-full"
           >
-            <p className="text-24 mb-[1vw] fadeUp mobile:font-light">
+            <p className="text-24 mb-[1vw] fadeUp mobile:font-light mobile:mb-[4vw]">
               Our Portfolio
             </p>
             <div className="w-full h-fit overflow-hidden">
@@ -155,30 +154,10 @@ function Portfolio() {
               Curve. Our creative designing services are more than just
               aesthetics.
             </p>
-            <Link
-              href="#"
-              className="border block w-fit border-[#4D4D4D] py-[1vw] text-22 px-[2.5vw] rounded-full bg-[#1f1f1f] fadeUp mobile:py-[3.5vw] mobile:px-[5vw] mobile:mt-[6vh] mobile:flex mobile:gap-[3vw] tablet:mt-[3.5vh] tablet:py-[2.5vw] tablet:px-[5vw] tablet:flex tablet:gap-[3vw]"
-            >
-              <span className="uppercase ">ALL WORKS</span>
-              <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
-                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
-                  <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
-                    src="/images/icons/arrow-right-home.svg"
-                    alt="Arrow Right"
-                    width={30}
-                    height={30}
-                  />
-                  <Image
-                    className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
-                    src="/images/icons/arrow-right-home.svg"
-                    alt="Arrow Right"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-              </div>
-            </Link>
+            <div className="fadeUp">
+              <ButtonDark btnText="View All Works" link="/portfolio"/>
+            </div> 
+            
           </div>
 
           <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1">
@@ -190,10 +169,11 @@ function Portfolio() {
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                src="/images/home/wwf.png"
+                src="/images/home/wwf.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
+                loading="lazy"
               />
               <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
                 World Wildlife Fund
@@ -209,10 +189,11 @@ function Portfolio() {
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg2 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                src="/images/home/bharti.png"
+                src="/images/home/bharti.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
+                loading="lazy"
               />
               <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
                 Bharti Foundation
@@ -228,10 +209,11 @@ function Portfolio() {
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg3 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                src="/images/home/wfp.png"
+                src="/images/home/wfp.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
+                loading="lazy"
               />
               <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
                 World Food Programme
@@ -247,10 +229,11 @@ function Portfolio() {
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg4 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                src="/images/home/unicef.png"
+                src="/images/home/unicef.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
+                loading="lazy"
               />
               <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
                 Unicef
@@ -266,10 +249,11 @@ function Portfolio() {
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
-                src="/images/home/stc.png"
+                src="/images/home/stc.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
+                loading="lazy"
               />
               <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
                 Save The Children

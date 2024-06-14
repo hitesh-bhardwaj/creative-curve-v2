@@ -21,9 +21,9 @@ export default function Header() {
 
     return (
         <>  
-            <div className="fixed top-0 left-0 my-[2%] px-[3%] w-full z-[998] mobile:top-[5%] tablet:top-[5%]">
-                <div className="w-[4.5vw] h-[3.5vw] flex items-center mobile:w-[8vh] tablet:w-[8vh]">
-                    <Link href="/">
+            <div className="fixed top-0 left-0 my-[2%] px-[3%] w-full z-[998] mobile:top-[5%] tablet:top-[5%] pointer-events-none mobile:px-[5%] mobile:my-[4%]">
+                <div className="w-[4.5vw] h-[3.5vw] flex items-center mobile:w-[8vh] tablet:w-[13vw] mobile:h-[12vw]">
+                    <Link href="/" className="pointer-events-auto">
                         <img
                             src="/logo.png"
                             alt="Creative Curve Logo"

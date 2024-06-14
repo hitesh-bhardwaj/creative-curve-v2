@@ -35,8 +35,8 @@ module.exports = {
         'spin-slow': 'spin 5s linear infinite',
         'spin-slow-reverse': 'spin-reverse 5s linear infinite',
         'scale-up': 'scale 0.5s ease-out',
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.5s ease-out",
+        "accordion-up": "accordion-up 0.5s ease-out",
       },
       keyframes: {
         'spin-slow': {

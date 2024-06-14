@@ -8,7 +8,7 @@ export default function WebglBackground () {
         <>
             <Canvas className='three_canvas'>
                 <EffectComposer>
-                    <Fluid fluidColor='#5D0099' />
+                    <Fluid fluidColor='#000844' />
                 </EffectComposer>
             </Canvas>
         </>

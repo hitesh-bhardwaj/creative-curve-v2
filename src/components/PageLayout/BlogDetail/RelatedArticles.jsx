@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import blogData from "@/components/PageLayout/Blog/blogdata.json";
+import ButtonWhite from "@/components/Button/ButtonWhite";
 
 const RelatedArticles = () => {
   const filteredBlogs = blogData.blogs.slice(0, 3);
@@ -63,30 +64,9 @@ const RelatedArticles = () => {
               <span>Articles</span>
             </h2>
 
-            <Link
-              href="#"
-              className="border mb-3 h-fit block w-fit border-textHead py-[1vw] text-24 px-[2.5vw] rounded-full fadeUp mobile:mt-[4vh] mobile:py-[2vw] mobile:px-[4vw] mobile:text-[3.5vw] mobile:flex mobile:gap-[3vw]"
-            >
-              <span className="uppercase">ALL BLOGS</span>
-              <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[4vw] mobile:h-[4vw] mobile:block hidden">
-                <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0">
-                  <Image
-                    className="w-[0.8vw] mobile:w-[4vw] mobile:h-[4vw]"
-                    src="/images/icons/arrow-right-home.svg"
-                    alt="Arrow Right"
-                    width={30}
-                    height={30}
-                  />
-                  <Image
-                    className="w-[0.8vw] mobile:w-[4vw] mobile:h-[4vw]"
-                    src="/images/icons/arrow-right-home.svg"
-                    alt="Arrow Right"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-              </div>
-            </Link>
+            <div className="fadeUp">
+              <ButtonWhite link={"/blog"} btnText={"View All Blogs"}/>
+            </div>
           </div>
 
           <div className="grid grid-cols-3 gap-[1vw] w-full mobile:flex mobile:flex-col tablet:grid-cols-1">

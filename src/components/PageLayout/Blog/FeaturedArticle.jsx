@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useRef } from "react";
+import ButtonDark from "@/components/Button/ButtonDark";
 gsap.registerPlugin(ScrollTrigger);
 
 const FeaturedArticle = () => {
@@ -83,7 +84,7 @@ const FeaturedArticle = () => {
           <div className="flex justify-between items-start mt-[6vw] mobile:flex-col mobile:mt-[10vw] tablet:flex-col tablet:items-center " ref={textContainer}>
             <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px] tablet:h-[50vh] tablet:w-[80vw]">
               <Image
-                src="/images/blogs/featured.png"
+                src="/images/blogs/featured.webp"
                 fill
                 className="cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-15%]"
                 alt="Featured Blog Image"
@@ -112,30 +113,9 @@ const FeaturedArticle = () => {
                   active internet users worldwide.
                 </p>
 
-                <Link
-                  href="/global-branding"
-                  className="border block w-fit border-[#4D4D4D] py-[1vw] text-24 px-[2.5vw] rounded-full bg-[#1D1D1D] mobile:px-[5vw] mobile:text-[3.5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw] tablet:flex tablet:gap-[1vw] tablet:py-[1.5vw]"
-                >
-                  <span className="uppercase">Read More</span>
-                  <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block tablet:w-[3vw] tablet:h-[3vw]">
-                    <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
-                      <Image
-                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
-                        src="/images/icons/arrow-right-home.svg"
-                        alt="Arrow Right"
-                        width={30}
-                        height={30}
-                      />
-                      <Image
-                        className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
-                        src="/images/icons/arrow-right-home.svg"
-                        alt="Arrow Right"
-                        width={30}
-                        height={30}
-                      />
-                    </div>
-                  </div>
-                </Link>
+                <div>
+                  <ButtonDark link="/global-branding" btnText="Read More"/>
+                </div>
 
               </div>
             </div>

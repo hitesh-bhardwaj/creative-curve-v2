@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import styles from "@/components/Button/index.module.css";
 
 // Update the ContactForm component
 export default function ContactForm() {
@@ -162,32 +163,29 @@ export default function ContactForm() {
         </div>
 
         {/* Submit button */}
-        <Button
-          className="rounded-full text-[1.1vw] uppercase text-white font-[400] aeonik px-[2vw] py-[1vw] h-full mobile:text-[3vw] mobile:px-[5vw] mobile:py-[3vw] mobile:flex mobile:gap-[3vw] tablet:text-[2vw] tablet:px-[5vw] tablet:py-[1.5vw] tablet:flex tablet:gap-[2vw]"
-          type="submit"
-          disabled={submitting}
-        >
-          {submitting ? "sending..." : "send message"}
-
-          <div className="w-[1vw] h-fit text-white overflow-hidden mobile:w-[5vw] mobile:h-[5vw] mobile:block tablet:w-[4vw] tablet:h-[4vw]">
-            <div className="w-[200%] gap-[10%] flex items-center translate-x-[-50%] group-hover:translate-x-[0] transition-all duration-500 ease-out mobile:gap-0 tablet:gap-0">
-              <Image
-                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
-                src="/images/icons/arrow-right-home.svg"
-                alt="Arrow Right"
-                width={30}
-                height={30}
-              />
-              <Image
-                className="w-[0.8vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
-                src="/images/icons/arrow-right-home.svg"
-                alt="Arrow Right"
-                width={30}
-                height={30}
-              />
-            </div>
-          </div>
+        <div className="fadeUp">
+          <Button type="submit" disabled={submitting} className={`${styles.cta} ${styles.dark}`}>
+          <span className={styles.ctaDot}></span>
+          <span className={styles.ctaText}>{submitting ? "sending..." : "send message"}</span>
+          <span className={styles.ctaArrow}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+              viewBox="0 0 16 16"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                d="M2.343 8h11.314m0 0L8.673 3.016M13.657 8l-4.984 4.984"
+              ></path>
+            </svg>
+          </span>
         </Button>
+        </div>
         {submissionError && <p className="text-red-500">{submissionError}</p>}
         {submissionSuccess && (
           <p className="text-green-500">Email sent successfully!</p>

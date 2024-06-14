@@ -66,40 +66,57 @@ function Hero() {
           yPercent: -100,
           delay: -0.8,
           ease: "power3.out"
+      }).from(".scroll-btn", {
+        duration: 0.8,
+        y: 30,
+        opacity: 0,
+        ease: "power3.out",
+        delay: -0.4
       })
   }, []);
 
   useGSAP(()=> {
-    if(globalThis.innerWidth<541){
-      gsap.to(".hero-container", {
-        scrollTrigger: {
-            trigger: "#hero",
-            scrub: true,
-            start: "top top",
-            end: "bottom top",
-        },
-        yPercent: 30,
-    })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: "bottom 40%",
+        scrub: true,
+      }
+    });
 
-    }else{
-      gsap.to(".hero-container", {
-        scrollTrigger: {
-            trigger: "#hero",
-            scrub: true,
-            start: "top top",
-            end: "bottom top",
-        },
-        yPercent: 50,
+    tl.to(worldwide.current, {
+      yPercent: 100,
+      duration: 0.8,
+      ease: "power2.in",
+    }).to(brands.current, {
+      yPercent: 100,
+      duration: 0.8,
+      delay: -0.7,ease: "power2.in",
+    }).to(".para-anim", {
+      yPercent: 100,
+      duration: 0.8,
+      delay: -0.7,ease: "power2.in",
+    }).to(transform.current, {
+      yPercent: 100,
+      duration: 0.8,
+      delay: -0.7,ease: "power2.in",
+    }).to(we.current, {
+      yPercent: 100,
+      duration: 0.8,
+      delay: -0.7,ease: "power2.in",
+    }).to(small.current, {
+      yPercent: 100,
+      duration: 0.8,
+      delay: -0.7,ease: "power2.in",
     })
-
-    }
-     
-  })
+  }, []);
 
   return (
     <>
-      <section className="" id="hero">
-        <div className="container h-dvh flex justify-center items-center hero-container mobile:items-center mobile:max-w-full">
+      <section className="h-screen" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+        <div className="fixed top-0 right-0 left-0 bottom-0">
+        <div className="container h-screen flex justify-center items-center hero-container mobile:items-center mobile:max-w-full">
           <div className="text-center w-full mobile:flex mobile:flex-col tablet:flex tablet:flex-col">
             <h1 className="title-h1">
               <div className="text-24 aeonik text-left ml-[5vw]  text-anim overflow-hidden mobile:text-center mobile:ml-0 tablet:text-center tablet:ml-0">
@@ -134,11 +151,12 @@ function Hero() {
                 funds across industries and continents.
               </p>
             </div>
-            <div onClick={handleSmoothScroll} className="uppercase text-24 cursor-pointer text-textBody absolute mt-[5vw] left-1/2 -translate-x-1/2 mobile:static mobile:translate-x-0 mobile:mt-[9vh] tablet:static tablet:translate-x-0 tablet:mt-[9vh]">
+            <div onClick={handleSmoothScroll} className="scroll-btn uppercase text-24 cursor-pointer text-textBody absolute mt-[5vw] left-1/2 -translate-x-1/2 mobile:static mobile:translate-x-0 mobile:mt-[9vh]">
               <span data-cursor-size="60px" data-cursor-exclusion className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out after:left-0">
                 Scroll Down
               </span>
             </div>
+          </div>
           </div>
         </div>
       </section>

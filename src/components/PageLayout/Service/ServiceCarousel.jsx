@@ -405,22 +405,22 @@ const ServiceCarousel = () => {
                     <div className="lesImgs flex">
                       <img
                         className="cover"
-                        src="/images/service/s-1-small.png"
+                        src="/images/service/s-1-small.webp"
                         alt="Service Image"
                       />
                       <img
                         className="cover"
-                        src="/images/service/s-2-small.png"
+                        src="/images/service/s-2-small.webp"
                         alt="Service Image"
                       />
                       <img
                         className="cover"
-                        src="/images/service/s-3-small.png"
+                        src="/images/service/s-3-small.webp"
                         alt="Service Image"
                       />
                       <img
                         className="cover"
-                        src="/images/service/s-4-small.png"
+                        src="/images/service/s-4-small.webp"
                         alt="Service Image"
                       />
                     </div>
@@ -432,8 +432,9 @@ const ServiceCarousel = () => {
                   <div className="img">
                     <img
                       className="cover"
-                      src="/images/service/s-1.png"
+                      src="/images/service/s-1.webp"
                       alt="Service Image"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -441,7 +442,18 @@ const ServiceCarousel = () => {
                   <div className="img">
                     <img
                       className="cover"
-                      src="/images/service/s-2.png"
+                      src="/images/service/s-2.webp"
+                      alt="Service Image"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="innerImg">
+                  <div className="img">
+                    <img
+                      loading="lazy"
+                      className="cover"
+                      src="/images/service/s-3.webp"
                       alt="Service Image"
                     />
                   </div>
@@ -449,17 +461,9 @@ const ServiceCarousel = () => {
                 <div className="innerImg">
                   <div className="img">
                     <img
+                      loading="lazy"
                       className="cover"
-                      src="/images/service/s-3.png"
-                      alt="Service Image"
-                    />
-                  </div>
-                </div>
-                <div className="innerImg">
-                  <div className="img">
-                    <img
-                      className="cover"
-                      src="/images/service/s-4.png"
+                      src="/images/service/s-4.webp"
                       alt="Service Image"
                     />
                   </div>

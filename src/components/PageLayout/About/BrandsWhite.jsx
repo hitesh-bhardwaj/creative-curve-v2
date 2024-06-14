@@ -106,110 +106,115 @@ function BrandsWhite() {
           </div>
         </div>
 
-        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw]">
-        <div ref={slider} className="relative whitespace-nowrap">
-          <div ref={firstText} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+        <div className="brands flex flex-col gap-[1.5vw] mt-[4vw] mobile:gap-[2.5vw] mobile:mt-[15vw]">
+
+        <div ref={slider} className="relative whitespace-nowrap mobile:w-[185%]">
+
+          <div ref={firstText} className="w-full grid h-[18vw] grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className="col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/tnc-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className="col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className="col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className="col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/wwf-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className="col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={secondText} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+
+          <div ref={secondText} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/tnc-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/wwf-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={thirdText} className="w-full top-0 left-[200%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
-              <img src="/images/brands/tnc-black.svg" />
+
+          <div ref={thirdText} className="w-full top-0 left-[200%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img src="/images/brands/tnc-white.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
-              <img src="/images/brands/wwf-black.svg" />
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+              <img src="/images/brands/wwf-white.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>
+
         </div>
 
-        <div ref={slider2} className="relative whitespace-nowrap">
-          <div ref={firstText2} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+        <div ref={slider2} className="relative whitespace-nowrap mobile:w-[180%]">
+          <div ref={firstText2} className="w-full grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/tnc-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/wwf-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={secondText2} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+          <div ref={secondText2} className="w-full top-0 left-full absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/tnc-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/wwf-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>
-          <div ref={thirdText2} className="w-full top-0 left-[-100%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw]">
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+          <div ref={thirdText2} className="w-full top-0 left-[-100%] absolute grid grid-cols-5 items-center gap-[1.5vw] pr-[1.5vw] h-[18vw] mobile:h-[35vw] mobile:gap-[2.5vw] mobile:pr-[2.5vw]">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/tnc-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/unicef.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/oxfam.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/wwf-black.svg" />
             </div>
-            <div className=" h-[18vw] border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
+            <div className=" col-span-1 h-full  border border-[#a8a8a8] flex justify-center items-center p-[5vw] rounded-xl">
               <img src="/images/brands/bharti.svg" />
             </div>
           </div>

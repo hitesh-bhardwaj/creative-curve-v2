@@ -1,16 +1,10 @@
 import Link from "next/link"
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
-gsap.registerPlugin(ScrollTrigger);
 
 const Info = () => {
-    
-       
+
     return (
         <>
-            <section id="second-section" className="bg-black text-white mobile:py-[15%]" data-cursor-exclusion>
+            <section id="second-section" className="bg-black text-white mobile:py-[15%] before:pointer-events-none" data-cursor-exclusion>
                 <div className="container py-[6%] space-y-[7vw] tablet:py-[15%]">
                     <div className="w-[90%] mx-auto mobile:w-full">
                         <h2 className="text-76 space-grotesk text-center leading-[1.2] mobile:text-[6vw] para-animations">
@@ -39,7 +33,7 @@ const Info = () => {
                     </div>
 
                     <div className="h-[70vh] w-full">
-                        <iframe className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.079754562661!2d77.37042431488638!3d28.627371691065694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550a3a6d601%3A0x690d8b3ffd0857e1!2sCreative+Curve+Communication+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1516274485667" 
+                        <iframe style={{pointerEvents: "auto"}} className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.079754562661!2d77.37042431488638!3d28.627371691065694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce550a3a6d601%3A0x690d8b3ffd0857e1!2sCreative+Curve+Communication+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1516274485667" 
                         frameBorder="0" />
                     </div>
                 </div>

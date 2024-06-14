@@ -1,5 +1,4 @@
 import Image from "next/image"
-import imageSrc from "../../../../public/images/service/why-us.png"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -152,7 +151,7 @@ const WhyUs = () => {
                         </div>
                         <div className="w-[48%] h-[45vw] relative overflow-hidden rounded-[20px] mobile:order-2 mobile:w-full mobile:h-[100vw] mobile:rounded-[10px] mobile:mt-[10%] fadeUp">
                             <Image
-                                src={imageSrc}
+                                src="/images/service/why-us.webp"
                                 alt="Service Image"
                                 fill
                                 className="object-cover scale-[120%] translate-y-[-10%] why-img mobile:scale-[110%] mobile:translate-y-[-5%]"

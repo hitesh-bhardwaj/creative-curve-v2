@@ -71,10 +71,11 @@ const Story = () => {
                 >
                   <Image
                     className="cover object-top h-full w-full mobile:w-full"
-                    src="/images/about/story.png"
+                    src="/images/about/story.webp"
                     alt="Our Story Image"
                     width={500}
                     height={400}
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -103,10 +104,11 @@ const Story = () => {
                     className="w-[20%] h-[14vw] overflow-hidden rounded-xl border border-white/50 mobile:w-full mobile:h-[60vw]  mobile:justify-center mobile:mt-[5vh] mobile:hidden">
                   <Image
                     className="cover object-top h-full w-full"
-                    src="/images/about/story.png"
+                    src="/images/about/story.webp"
                     alt="Our Story Image"
                     width={500}
                     height={400}
+                    loading="lazy"
                   />
                 </div>
               </div>
