@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"Unicef"}
                 subheading={"Unicef Wants to Encourage a Sense of Stability for a Child."}
-                imgSrc={"/images/projects/unicef/hero.png"}
+                imgSrc={"/images/projects/unicef/hero.webp"}
             />
 
             <Overview 
@@ -94,9 +94,9 @@ export default function PortfolioDetail({}) {
             <Campaign  
                 secSubHead={"From global branding trends to the nuances of digital storytelling, explore the world through our lens."}
                 title={"Unicef"}
-                img1={"/images/projects/unicef/image1.png"}
-                img2={"/images/projects/unicef/image2.png"}
-                img3={"/images/projects/unicef/image3.png"}
+                img1={"/images/projects/unicef/image1.webp"}
+                img2={"/images/projects/unicef/image2.webp"}
+                img3={"/images/projects/unicef/image3.webp"}
                 content1={"UNICEF works in over 190 countries and territories to save children's lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence."}
                 content2={"Discover UNICEF's work for every child, everywhere"}
             />

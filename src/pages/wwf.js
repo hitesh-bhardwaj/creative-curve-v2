@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"WWF"}
                 subheading={"World Wide Fund for Nature-India (WWF India) was founded with the express objective of ensuring the conservation of the country's wildlife and natural habitats."}
-                imgSrc={"/images/projects/wwf/hero.png"}
+                imgSrc={"/images/projects/wwf/hero.webp"}
             />
 
             <Overview 
@@ -94,9 +94,9 @@ export default function PortfolioDetail({}) {
             <Campaign  
                 secSubHead={"From global branding trends to the nuances of digital storytelling, explore the world through our lens."}
                 title={"WWF INDIA"}
-                img1={"/images/projects/wwf/image1.png"}
-                img2={"/images/projects/wwf/image2.png"}
-                img3={"/images/projects/wwf/image3.png"}
+                img1={"/images/projects/wwf/image1.webp"}
+                img2={"/images/projects/wwf/image2.webp"}
+                img3={"/images/projects/wwf/image3.webp"}
                 content1={"WWF created a movement that inspired people to care for nature. As environmental problems grew, so did people's concern. The need arose for a platform where citizens could contribute their time, effort and energy to conservation."}
                 content2={"Nature Needs Helping Hands"}
             />

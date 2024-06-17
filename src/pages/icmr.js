@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"ICMR"}
                 subheading={"The Indian Council of Medical Research (ICMR), New Delhi, the apex body in India for the formulation."}
-                imgSrc={"/images/projects/icmr/hero.png"}
+                imgSrc={"/images/projects/icmr/hero.webp"}
             />
 
             <Overview 
@@ -92,8 +92,8 @@ export default function PortfolioDetail({}) {
             />
 
             <Pr 
-                img1={"/images/projects/icmr/pr-1.png"}
-                img2={"/images/projects/icmr/pr-2.png"}
+                img1={"/images/projects/icmr/pr-1.webp"}
+                img2={"/images/projects/icmr/pr-2.webp"}
             />
             <Footer />
         </main>

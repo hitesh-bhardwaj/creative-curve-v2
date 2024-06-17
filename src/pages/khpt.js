@@ -83,7 +83,7 @@ export default function PortfolioDetail({}) {
               <Hero 
                   heading={"KHPT"}
                   subheading={"KHPT's model is comprised of three engines that demonstrate pathways to create scalable impact. We deploy the model through our multiple themes."}
-                  imgSrc={"/images/projects/khpt/hero.png"}
+                  imgSrc={"/images/projects/khpt/hero.webp"}
               />
 
               <Overview 
@@ -91,11 +91,11 @@ export default function PortfolioDetail({}) {
                   content2={"These interventions were evidence-driven, systematically planned, rigorously implemented, and monitored. We succeeded in scaling impact well beyond Karnataka and KHPT became a learning site for innovative approaches."}
               />
               <Pr 
-                  img1={"/images/projects/khpt/pr-1.png"}
-                  img2={"/images/projects/khpt/pr-2.png"}
-                  img3={"/images/projects/khpt/pr-3.png"}
-                  img4={"/images/projects/khpt/pr-4.png"}
-                  img5={"/images/projects/khpt/pr-5.png"}
+                  img1={"/images/projects/khpt/pr-1.webp"}
+                  img2={"/images/projects/khpt/pr-2.webp"}
+                  img3={"/images/projects/khpt/pr-3.webp"}
+                  img4={"/images/projects/khpt/pr-4.webp"}
+                  img5={"/images/projects/khpt/pr-5.webp"}
               />
               <Footer />
           </main>

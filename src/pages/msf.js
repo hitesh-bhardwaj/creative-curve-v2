@@ -87,21 +87,21 @@ export default function PortfolioDetail({}) {
               <Hero 
                   heading={"MSF"}
                   subheading={"MSF may speak out publicly to bring a forgotten crisis into view, or to denounce abuses, or challenge the diversion of assistance."}
-                  imgSrc={"/images/projects/msf/hero.png"}
+                  imgSrc={"/images/projects/msf/hero.webp"}
               />
               <Overview 
                   content1={"With more than 40 years of field experience as an emergency and humanitarian aid organisation, and as part of our need to reflect critically on our actions and improve our ways of working, several reflection centres have been set up within MSF."}
                   content2={"Their role is mainly to reflect and challenge the organisation on past humanitarian and medical actions, draw lessons-learned and ways forward for future operations."}
-                  videoPoster={"/images/projects/msf/video-cover.png"}
+                  videoPoster={"/images/projects/msf/video-cover.webp"}
                   videoSrc={videoUrl}
               />
               <Storyboard2
-                  img1={"/images/projects/msf/story-1.png"}
-                  img2={"/images/projects/msf/story-2.png"}
-                  img3={"/images/projects/msf/story-3.png"}
-                  img4={"/images/projects/msf/story-4.png"}
-                  img5={"/images/projects/msf/story-5.png"}
-                  img6={"/images/projects/msf/story-6.png"}
+                  img1={"/images/projects/msf/story-1.webp"}
+                  img2={"/images/projects/msf/story-2.webp"}
+                  img3={"/images/projects/msf/story-3.webp"}
+                  img4={"/images/projects/msf/story-4.webp"}
+                  img5={"/images/projects/msf/story-5.webp"}
+                  img6={"/images/projects/msf/story-6.webp"}
               />
               <Footer />
           </main>

@@ -87,7 +87,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"Tata Trust"}
                 subheading={"The journey of a million smiles began in 1892 with Jamsetji Tata, the pioneer, visionary and founder of the Tata Group."}
-                imgSrc={"/images/projects/tata-trust/hero.png"}
+                imgSrc={"/images/projects/tata-trust/hero.webp"}
             />
 
             <Overview 
@@ -100,7 +100,7 @@ export default function PortfolioDetail({}) {
                     <div className="w-full rounded-[40px] overflow-hidden border-2 border-black/50 mobile:rounded-[15px]">
                         <VideoPlayer 
                             src={videoUrl}
-                            poster={"/images/projects/tata-trust/video-cover.png"}
+                            poster={"/images/projects/tata-trust/video-cover.webp"}
                         />
                     </div>
                 </div>

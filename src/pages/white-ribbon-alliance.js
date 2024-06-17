@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"White Ribbon Alliance"}
                 subheading={"Most women and girls are never asked to inform the decisions that are made about their bodies, health, or minds."}
-                imgSrc={"/images/projects/wra/hero.png"}
+                imgSrc={"/images/projects/wra/hero.webp"}
             />
 
             <Overview 
@@ -93,8 +93,8 @@ export default function PortfolioDetail({}) {
             />
 
             <Pr 
-                img1={"/images/projects/wra/pr-1.png"}
-                img2={"/images/projects/wra/pr-2.png"}
+                img1={"/images/projects/wra/pr-1.webp"}
+                img2={"/images/projects/wra/pr-2.webp"}
             />
             <Footer />
         </main>

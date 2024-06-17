@@ -1,16 +1,17 @@
-'use client'
-import { Canvas } from "@react-three/fiber";
-import { EffectComposer } from "@react-three/postprocessing";
-import { Fluid } from "../lib";
+'use client';
+import { Canvas } from '@react-three/fiber';
+import { EffectComposer } from '@react-three/postprocessing';
+import { Fluid } from '../lib';
+import { Suspense } from 'react';
 
-export default function WebglBackground () {
-    return (
-        <>
-            <Canvas className='three_canvas'>
-                <EffectComposer>
-                    <Fluid fluidColor='#000844' />
-                </EffectComposer>
-            </Canvas>
-        </>
-    )
+export default function WebglBackground() {
+  return (
+    <Suspense fallback={null}>
+      <Canvas className='three_canvas'>
+        <EffectComposer>
+          <Fluid fluidColor='#000844' />
+        </EffectComposer>
+      </Canvas>
+    </Suspense>
+  );
 }

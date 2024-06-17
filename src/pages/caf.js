@@ -85,7 +85,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"CAF"}
                 subheading={"Charities Aid Foundation (CAF) India, a leading not-for-profit organization set up to promote and support strategic giving in India."}
-                imgSrc={"/images/projects/caf/hero.png"}
+                imgSrc={"/images/projects/caf/hero.webp"}
             />
 
             <Overview 
@@ -93,9 +93,9 @@ export default function PortfolioDetail({}) {
             />
 
             <Branding 
-                img1={"/images/projects/caf/brand-1.png"}
-                img2={"/images/projects/caf/brand-2.png"}
-                img3={"/images/projects/caf/brand-3.png"}
+                img1={"/images/projects/caf/brand-1.webp"}
+                img2={"/images/projects/caf/brand-2.webp"}
+                img3={"/images/projects/caf/brand-3.webp"}
             />
             <Footer />
         </main>

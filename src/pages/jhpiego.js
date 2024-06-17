@@ -88,7 +88,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"JHPIEGO"}
                 subheading={"Every day, thousands of women, children and men die of preventable causes: cervical cancer, malaria, HIV, and complications from pregnancy and childbirth."}
-                imgSrc={"/images/projects/jhpiego/hero.png"}
+                imgSrc={"/images/projects/jhpiego/hero.webp"}
             />
 
             <Overview 
@@ -98,15 +98,15 @@ export default function PortfolioDetail({}) {
             <Branding 
                 className={"bg-black text-white"}
                 videoSrc={videoUrl}
-                videoPoster={"/images/projects/jhpiego/video-cover.png"}
-                img2={"/images/projects/jhpiego/brand-2.png"}
-                img3={"/images/projects/jhpiego/brand-3.png"}
+                videoPoster={"/images/projects/jhpiego/video-cover.webp"}
+                img2={"/images/projects/jhpiego/brand-2.webp"}
+                img3={"/images/projects/jhpiego/brand-3.webp"}
             />
 
             <Events 
-                img1={"/images/projects/jhpiego/event-1.png"}
-                img2={"/images/projects/jhpiego/event-2.png"}
-                img3={"/images/projects/jhpiego/event-3.png"}
+                img1={"/images/projects/jhpiego/event-1.webp"}
+                img2={"/images/projects/jhpiego/event-2.webp"}
+                img3={"/images/projects/jhpiego/event-3.webp"}
             />
             <Footer />
         </main>

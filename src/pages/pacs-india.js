@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"PACS INDIA"}
                 subheading={"Primary Agricultural Credit Societies are the grass root level arms of the short-term co-operative credit structure."}
-                imgSrc={"/images/projects/pacs-india/hero.png"}
+                imgSrc={"/images/projects/pacs-india/hero.webp"}
             />
 
             <Overview 
@@ -93,11 +93,11 @@ export default function PortfolioDetail({}) {
             />
 
             <Events 
-                img1={"/images/projects/pacs-india/event-1.png"}
-                img2={"/images/projects/pacs-india/event-2.png"}
-                img3={"/images/projects/pacs-india/event-3.png"}
-                img4={"/images/projects/pacs-india/event-4.png"}
-                img5={"/images/projects/pacs-india/event-5.png"}
+                img1={"/images/projects/pacs-india/event-1.webp"}
+                img2={"/images/projects/pacs-india/event-2.webp"}
+                img3={"/images/projects/pacs-india/event-3.webp"}
+                img4={"/images/projects/pacs-india/event-4.webp"}
+                img5={"/images/projects/pacs-india/event-5.webp"}
             />
             <Footer />
         </main>
