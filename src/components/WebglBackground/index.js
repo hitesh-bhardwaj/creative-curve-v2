@@ -6,11 +6,11 @@ import { Suspense } from 'react';
 export default function WebglBackground() {
   return (
       <Canvas className='three_canvas'>
-        <Suspense fallback={null}>
             <EffectComposer>
-            <Fluid fluidColor='#000844' />
+                <Suspense fallback={null}>
+                    <Fluid fluidColor='#000844' />
+                </Suspense>
             </EffectComposer>
-        </Suspense>
       </Canvas>
   );
 }

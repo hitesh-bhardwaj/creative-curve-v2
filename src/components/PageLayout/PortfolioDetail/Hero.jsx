@@ -26,7 +26,7 @@ const Hero = ({ heading, subheading, imgSrc }) => {
         SplitInWordChar(paraRef.current);
 
         const headAnim = headingRef.current.querySelectorAll(".line .word");
-        const paraAnim = paraRef.current.querySelectorAll(".word .char");
+        const paraAnim = paraRef.current.querySelectorAll(".word");
         const tl = gsap.timeline();
   
         tl.from(headAnim, {
@@ -46,10 +46,10 @@ const Hero = ({ heading, subheading, imgSrc }) => {
         .from(paraAnim, {
             filter: "blur(10px)",
             opacity: 0,
-            duration: 0.6,
+            duration: 1,
             yPercent: 100,
             stagger: 0.01,
-            delay: -1.5,
+            delay: -1,
             ease: "power3.out"
         }).from(".scroll-btn", {
           duration: 0.8,

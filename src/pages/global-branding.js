@@ -73,8 +73,8 @@ export default function BlogDetail() {
       useGSAP(() => {
         const paraAnimations = document.querySelectorAll(".para-animations");
         paraAnimations.forEach((paraAnimation) => {
-          const paraSplit = new SplitType(paraAnimation, { types: "words, chars" });
-          let paraword = paraAnimation.querySelectorAll(".word .char");
+          const paraSplit = new SplitType(paraAnimation, { types: "words" });
+          let paraword = paraAnimation.querySelectorAll(".word");
           gsap.from(paraword, {
             scrollTrigger: {
               trigger: paraword,
@@ -84,7 +84,7 @@ export default function BlogDetail() {
             opacity: 0,
             duration: 0.6,
             yPercent: 100,
-            stagger: 0.005,
+            stagger: 0.01,
           });
         });
       }, []);

@@ -14,8 +14,8 @@ const PageHero = () => {
     const work = useRef(null);
 
     useGSAP(() => {
-        const text = new SplitType('.para-anim', { types: 'words, chars' });
-        const para = document.querySelectorAll(".para-anim .word .char")
+        const text = new SplitType('.para-anim', { types: 'words' });
+        const para = document.querySelectorAll(".para-anim .word")
         const tl = gsap.timeline();
   
         tl.from(productive.current, {
@@ -27,10 +27,10 @@ const PageHero = () => {
         .from(para, {
             filter: "blur(10px)",
             opacity: 0,
-            duration: 0.6,
+            duration: 1,
             yPercent: 100,
             stagger: 0.01,
-            delay: -1.5,
+            delay: -1,
             ease: "power3.out"
         })
         .from(work.current, {
