@@ -27,7 +27,6 @@ export default function BlogDetail() {
                   start: "20% bottom",
                   end: "bottom top",
                   scrub: true,
-                  // markers: true
                 },
               });
             });

@@ -45,6 +45,7 @@ const PageHero = () => {
         })
     }, []);
 
+    if(globalThis.innerWidth>640){
     useGSAP(()=> {
         const textWords = heading.current.querySelectorAll(".word")
         const tl = gsap.timeline({
@@ -73,21 +74,22 @@ const PageHero = () => {
             delay: -0.2,
             ease: "power2.in"
         });
-      }, []);
+      });
+    }
        
     return (
         <>
-            <section className="h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
-                <div className="fixed top-0 left-0 w-full h-full">
-                    <div className="container h-[85vh] relative">
-                        <div className="flex flex-col justify-center h-full w-full items-center mobile:justify-start mobile:mt-[50%]">
+            <section className="h-[85vh] mobile:h-screen" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+                <div className="fixed top-0 left-0 w-full h-[85vh] mobile:h-screen mobile:static">
+                    <div className="container w-full h-full mobile:relative tablet:relative">
+                        <div className="flex flex-col justify-center h-full w-full items-center tablet:justify-center mobile:justify-start mobile:pt-[40%]">
                             <h1 ref={heading} className="text-76 tracking-[1px] w-4/5 text-center leading-[1.2] space-grotesk text-textHead mobile:w-full mobile:text-[10vw] global-heading">
                                 Global Branding in a Digital Age: Insight From Creative Curve 
                             </h1>
 
                             <div className="flex justify-center w-full mt-[5%] items-center gap-[2vw] mobile:flex-col mobile:mt-[15%] mobile:gap-[2.5vh]">
-                                <p ref={category} className="space-grotesk text-white text-24 rounded-full py-[0.8vw] bg-textHead text-center min-w-[11vw] mobile:px-[10vw] mobile:py-[4.5vw] mobile:text-[3.5vw] tablet:px-[4.2vw] tablet:py-[1.5vw] tablet:text-[3vw]">Branding</p>
-                                <p ref={date} className="space-grotesk text-textHead text-24 rounded-full py-[0.8vw] border border-textHead text-center min-w-[11vw] mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[4vw] tablet:px-[3vw] tablet:py-[1.5vw] tablet:text-[2.7vw]">19, June 2023</p>
+                                <p ref={category} className="space-grotesk text-white text-24 rounded-full py-[0.8vw] bg-textHead text-center min-w-[11vw] mobile:px-[10vw] mobile:py-[4.5vw] mobile:text-[4vw] tablet:px-[4.2vw] tablet:py-[1.5vw] tablet:text-[3vw]">Branding</p>
+                                <p ref={date} className="space-grotesk text-textHead text-24 rounded-full py-[0.8vw] border border-textHead text-center min-w-[11vw] mobile:text-[4vw] mobile:px-[5vw] mobile:py-[4vw] tablet:px-[3vw] tablet:py-[1.5vw] tablet:text-[2.7vw]">19, June 2023</p>
                             </div>
 
                             <div className="w-full flex items-center justify-center absolute bottom-[10%] mobile:flex-col mobile:gap-[40vh]">

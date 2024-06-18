@@ -53,6 +53,7 @@ const PageHero = () => {
         })
     }, []);
   
+    if(globalThis.innerWidth>640){
     useGSAP(()=> {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -80,15 +81,16 @@ const PageHero = () => {
         duration: 0.8,
         delay: -0.7,ease: "power2.in",
       })
-    }, []);
+    });
+}
 
     return (
         <>
-            <section className="h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
-            <div className="fixed top-0 left-0 w-full h-full">
-                <div className="container h-[85vh] mobile:relative">
-                    <div className="flex flex-col justify-center h-full w-full items-start mobile:justify-start mobile:mt-[50%]">
-                        <h1 className="text-140 tracking-[1px] leading-[1.1] space-grotesk text-textHead overflow-hidden">
+            <section className="h-[85vh] mobile:h-screen" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+                <div className="fixed top-0 left-0 w-full h-[85vh] mobile:h-screen mobile:static">
+                    <div className="container w-full h-full mobile:relative tablet:relative">
+                        <div className="flex flex-col justify-center h-full w-full items-start tablet:justify-center mobile:justify-start mobile:pt-[40%]">
+                            <h1 className="text-140 uppercase tracking-[1px] leading-[1.1] space-grotesk text-textHead overflow-hidden mobile:w-min">
                             <div className="overflow-hidden">
                                 <span ref={small} className="text-76 mobile:text-[7vw] block">A Curated</span>
                             </div>
@@ -100,12 +102,13 @@ const PageHero = () => {
                             </div>
                         </h1>
 
-                        <div className="flex justify-between w-full mt-[6%] mobile:flex-col mobile:gap-[40vh]">
-                            <ScrollButton />
-
-                            <p className="text-24 text-textBody text-right w-[21vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim tablet:w-[40vw]">
+                        <div className="flex justify-between w-full items-end mt-[5%] tablet:flex-col tablet:items-start mobile:flex-col mobile:items-start">
+                            <div className="mobile:absolute mobile:bottom-[15%] mobile:left-1/2 mobile:-translate-x-1/2 tablet:absolute tablet:bottom-[10%] tablet:left-1/2 tablet:-translate-x-1/2">
+                              <ScrollButton />
+                            </div>
+                            <p className="text-24 text-textBody text-right w-[20vw] mobile:w-[80%] mobile:text-start mobile:order-1 para-anim tablet:w-[40vw] tablet:text-start tablet:order-1">
                                 <span>
-                                    From global branding trends to the nuances of digital storytelling, explore the world through our lens.
+                                    Born from a fervent desire to challenge the norms, our essence is rooted in innovation.
                                 </span>
                             </p>
                         </div>

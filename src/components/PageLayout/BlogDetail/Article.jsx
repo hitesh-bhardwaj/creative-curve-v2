@@ -4,13 +4,13 @@ const Article = () => {
   
     return (
         <>
-            <div id='article' className={`w-[75%] mobile:w-full mobile:pt-[15%] tablet:pt-[10%] tablet:w-full ${styles.blog}`}>
+            <div id='article' className={`w-[75%] mobile:w-full tablet:w-full ${styles.blog}`}>
                 <p className='fadeUp'>Branding has taken on a whole new meaning in today's digital world. With global consumers more connected than ever, brands must adapt and take advantage of digital channels to build awareness, connect with customers, and stay competitive. As a leading branding agency, Creative Curve has gleaned powerful insights into modern branding in the digital age.</p>
-                <h2 className='mobile:pt-[10%] heading-anim global-heading tablet:pt-[8%]'>The Importance of Digital Branding</h2>
+                <h2 className='heading-anim global-heading'>The Importance of Digital Branding</h2>
                 <div className={`${styles.imgContainer} fadeUp`}>
                     <img className={`cover parallaximg scale-[110%] translate-y-[-5%] mobile:scale-[120%] mobile:translate-y-[-10%]`} src='/images/blogs/blog-detail-1.png' alt='Blog Image'/>
                 </div>
-                <p className='mobile:pt-[10%] fadeUp tablet:pt-[8%]'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
+                <p className='fadeUp'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
                 <ul className='fadeUp'>
                     <li><strong>Global reach and visibility: </strong>Brands can rapidly scale beyond physical and geographic limitations using digital channels like social media and pay-per-click ads. This expanded reach exposes brands to new markets and opportunities.</li>
                     <li><strong>Hyper-targeting: </strong>Digital platforms provide rich consumer data and advanced targeting capabilities. Brands can zero in on niche audiences that are more likely to resonate with their messaging.</li>
@@ -18,7 +18,7 @@ const Article = () => {
                     <li><strong>Agility and optimization: </strong>Digital branding is highly measurable. Brands can quickly test strategies, creatives, and channels - and then optimize based on performance data.</li>
                     <li><strong>Cost-effectiveness: </strong>Digital branding provides strong ROI. Targeted digital ads are inexpensive compared to traditional media. The ability to track conversions also demonstrates concrete returns.</li>
                 </ul>
-                <h2 className='heading-anim global-heading tablet:pt-[5%]'>Crafting a Cohesive Digital Brand</h2>
+                <h2 className='heading-anim global-heading'>Crafting a Cohesive Digital Brand</h2>
                 <p className='fadeUp'>In the digital arena, branding goes beyond logos and visual identity. Customers engage with brands across many touchpoints - from ads and emails to web pages and product reviews. Consistency across these touchpoints is key, as is adapting branding to suit each digital environment.</p>
                 <ul className='fadeUp'>
                     <li>Maintaining the same visual identity and core messaging across all digital properties.</li>
@@ -27,7 +27,7 @@ const Article = () => {
                     <li>Providing utility and entertainment - not just sales pitches - through digital content.</li>
                     <li>Ensuring flawless user experience across the brand's digital footprint.</li>
                 </ul>
-                <h2 className='heading-anim global-heading tablet:pt-[5%]'>Data-Driven Decisions</h2>
+                <h2 className='heading-anim global-heading'>Data-Driven Decisions</h2>
                 <p className='fadeUp'>Digital branding opens up endless data points for understanding target audiences and fine-tuning strategies. By actively gathering and analyzing data, brands can:</p>
                 <ul className='fadeUp'>
                     <li>Identify ideal customer demographics, behaviours, needs, and shopping habits.</li>
@@ -36,10 +36,10 @@ const Article = () => {
                     <li>Personalize experiences using CRM and behavioural data.</li>
                     <li>Monitor performance daily to pivot ineffective efforts and double down on what works.</li>
                 </ul>
-                <div className={`${styles.imgContainer} fadeUp tablet:mt-[8%]`}>
+                <div className={`${styles.imgContainer} fadeUp`}>
                     <img className='cover cover parallaximg scale-[110%] translate-y-[-5%] mobile:scale-[120%] mobile:translate-y-[-10%]' src='/images/blogs/blog-detail-2.png' alt='Blog Image'/>
                 </div>
-                <p className='mobile:mt-[10%] fadeUp tablet:pt-[7%]'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
+                <p className='fadeUp'>Digital branding allows companies to tap into new demographics, geos, and psychographics. With 4.66 billion active internet users worldwide, establishing a digital brand presence is no longer optional - it's imperative. Digital branding enables:</p>
                 <ul className='fadeUp'>
                     <li><strong>Global reach and visibility: </strong>Brands can rapidly scale beyond physical and geographic limitations using digital channels like social media and pay-per-click ads. This expanded reach exposes brands to new markets and opportunities.</li>
                     <li><strong>Hyper-targeting: </strong>Digital platforms provide rich consumer data and advanced targeting capabilities. Brands can zero in on niche audiences that are more likely to resonate with their messaging.</li>
@@ -47,7 +47,7 @@ const Article = () => {
                     <li><strong>Agility and optimization: </strong>Digital branding is highly measurable. Brands can quickly test strategies, creatives, and channels - and then optimize based on performance data.</li>
                     <li><strong>Cost-effectiveness: </strong>Digital branding provides strong ROI. Targeted digital ads are inexpensive compared to traditional media. The ability to track conversions also demonstrates concrete returns.</li>
                 </ul>
-                <h2 className='heading-anim global-heading tablet:pt-[7%]'>An Omnichannel Approach</h2>
+                <h2 className='heading-anim global-heading'>An Omnichannel Approach</h2>
                 <p className='fadeUp'>In the digital arena, branding goes beyond logos and visual identity. Customers engage with brands across many touchpoints - from ads and emails to web pages and product reviews. Consistency across these touchpoints is key, as is adapting branding to suit each digital environment.</p>
                 <ul className='fadeUp'>
                     <li>Maintaining the same visual identity and core messaging across all digital properties.</li>

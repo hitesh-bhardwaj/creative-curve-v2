@@ -67,7 +67,7 @@ import {
   
     return (
       <>
-        <div className="hidden mobile:block">
+        <div className="hidden mobile:block tablet:block">
           <Accordion type="single" collapsible className="space-y-[4vw]">
             {serviceData.map((service) => (
               <AccordionItem key={service.id} value={service.id} className="fadeUp">

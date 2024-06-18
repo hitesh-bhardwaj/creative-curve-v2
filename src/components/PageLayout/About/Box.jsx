@@ -35,11 +35,10 @@ const Box = () => {
     });
 
     useGSAP(() => {
-
         const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
+        const boxPara = text.current.querySelectorAll(".line .word .char");
 
-        if(globalThis.innerWidth<541){
-
+        if(globalThis.innerWidth<640){
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -64,7 +63,7 @@ const Box = () => {
                 delay: -7,
                 duration: 2,
             })
-            .from(document.querySelectorAll(".story-para .line .word .char"), {
+            .from(boxPara, {
                 filter: "blur(10px)",
                 opacity: 0,
                 y: 20,
@@ -72,9 +71,7 @@ const Box = () => {
                 stagger: 0.1,
                 delay: -4,
             });
-
-        }
-        if(globalThis.innerWidth<1024){
+        } else if (globalThis.innerWidth<1024) {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -99,7 +96,7 @@ const Box = () => {
                 delay: -8,
                 duration: 2,
             })
-            .from(document.querySelectorAll(".story-para .line .word .char"), {
+            .from(boxPara, {
                 filter: "blur(10px)",
                 opacity: 0,
                 y: 20,
@@ -107,9 +104,7 @@ const Box = () => {
                 stagger: 0.1,
                 delay: -5,
             });
-
-        }
-        else{
+        } else {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -134,7 +129,7 @@ const Box = () => {
                 delay: -7,
                 duration: 2,
             })
-            .from(document.querySelectorAll(".story-para .line .word .char"), {
+            .from(boxPara, {
                 filter: "blur(10px)",
                 opacity: 0,
                 y: 20,
@@ -151,9 +146,9 @@ const Box = () => {
                 <div className="min-h-screen overflow-hidden">
                     <div className="h-screen relative flex justify-center items-center overflow-hidden">
                         <img ref={ele} src="/images/about/about-square.svg" alt="hero" className="absolute w-[20%] max-w-[1000%] pointer-events-none" />
-                        <div className="mx-auto w-[60%] mobile:w-[90%] tablet:w-[70%]">
-                            <h2 ref={text} className="space-grotesk text-white text-48 text-left story-para">
-                                <span>
+                        <div className="mx-auto w-[60%] mobile:w-[90%] tablet:w-[80%]">
+                            <h2 ref={text} className="space-grotesk text-white text-48 story-para tablet:text-[5vw]">
+                                <span className="text-center">
                                     Every Brand has a Story Waiting to be told, and at Creative Curve, we consider it our mission to tell it in the most impactful way possible. We don't just Create Campaigns; we build narratives. We don't just Design Visuals; We Evoke Emotions.
                                 </span>
                             </h2>

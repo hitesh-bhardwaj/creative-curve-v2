@@ -19,6 +19,19 @@
     transform: translateY(100%)
 }
 
+.service-list li{
+    font-size: 1.1vw;
+    padding-left: 4%;
+    position: relative;
+}
+.service-list li::before{
+    content: "+";
+    position: absolute;
+    left: 0;
+    font-size: 120%;
+    bottom: -1px;
+}
+
 .pushCarousel .puces {
     position: absolute;
     top: calc(100vh - 136px - var(--leftMargin));
@@ -220,7 +233,22 @@
     opacity: 0
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+    .pushCarousel .leCarou{
+        height: 100%;
+    }
+    .pushCarousel .puces{
+        top: unset;
+        bottom: 0;
+    }
+    .service-list li{
+        font-size: 2.2vw;
+        padding-left: 4%;
+        position: relative;
+    }
+}
+
+@media (max-width: 640px) {
     .pushCarousel {
         margin:0
     }
@@ -245,7 +273,7 @@
 
     .pushCarousel .parentEntree {
         display: flex;
-        padding: 0 30px;
+        padding: 0 10px;
         width: 100vw;
         white-space: nowrap;
         overflow-x: scroll;
@@ -257,10 +285,11 @@
     }
 
     .pushCarousel .entree {
-        flex: 0 0 var(--wrapper);
-        background: black;
-        border-radius: 6px;
-        padding: 74px 30px 70px;
+        flex: 0 0 80vw;
+        border: 1px solid #4d4d4d;
+        background-color: #1f1f1fab;
+        border-radius: 10px;
+        padding: 10%;
         white-space: initial
     }
 
@@ -276,9 +305,17 @@
     }
 
     .pushCarousel .entree h3 {
-        font-size: 26px;
-        line-height: 30px;
-        max-width: 50%
+        font-size: 6vw;
+        max-width: 100%;
+        width: 100%;
+    }
+    .pushCarousel .entree p{
+        font-size: 4vw;
+    }
+    .service-list li{
+        font-size: 3.5vw;
+        padding-left: 6%;
+        position: relative;
     }
 
     .pushCarousel .numSlide {

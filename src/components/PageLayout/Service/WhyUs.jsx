@@ -75,8 +75,8 @@ const WhyUs = () => {
     return (
         <>
             <section className="why-us">
-                <div className="container py-[10%] mobile:py-[20%]">
-                    <div className="mb-[4vw]">
+                <div className="container py-[10%] mobile:py-[20%] tablet:py-[15%]">
+                    <div className="mb-[4vw] tablet:mb-[6vw]">
                         <h2 className="text-140 space-grotesk heading-anim">
                             <span>
                                 Why Choose Us
@@ -84,9 +84,9 @@ const WhyUs = () => {
                         </h2>
                     </div>
 
-                    <div className="flex justify-between items-start w-full h-full mobile:flex-col">
-                        <div className="flex flex-col gap-[12vw] items-start w-[40%] py-[1vw] mobile:w-full mobile:order-1">
-                            <div className="space-y-[2vw]">
+                    <div className="flex justify-between items-start w-full h-full mobile:flex-col tablet:relative tablet:pb-[30vw] mobile:relative mobile:pb-[50vw]">
+                        <div className="flex flex-col gap-[12vw] items-start w-[40%] py-[1vw] tablet:w-1/2 mobile:w-full mobile:order-1">
+                            <div className="space-y-[2vw] tablet:space-y-[5vw] mobile:space-y-[5vw]">
                                 <p className="text-24 para-animations">
                                     We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
                                 </p>
@@ -94,10 +94,10 @@ const WhyUs = () => {
                                     We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
                                 </p>
                             </div>
-                            <div className="w-full space-y-[2vw] mobile:hidden">
-                                
+
+                            <div className="w-full space-y-[2vw] tablet:absolute tablet:bottom-0 mobile:absolute mobile:bottom-0">
                                 <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="">
-                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%] fadeUp pb-[2%]">
+                                    <div className="px-[1vw] flex justify-between items-center w-full tablet:px-[4%] tablet:py-[2%] mobile:py-[3%] mobile:px-[2%] fadeUp pb-[2%]">
                                         <h4 className="text-96 font-medium relative overflow-hidden pr-[2.5vw] mobile:pr-[5vw] leading-[1.2]">
                                             <div className="split-text-1">
                                                 <span className="move inline-block">5</span>
@@ -118,13 +118,13 @@ const WhyUs = () => {
                                                 </span>
                                             </div>
                                         </h4>
-                                        <p className="text-24 w-[7vw] mobile:w-[25vw]">Customer <br /> Reviews</p>
+                                        <p className="text-24 w-[7vw] tablet:w-fit mobile:w-[25vw]">Customer <br /> Reviews</p>
                                     </div>
                                     <span className="block w-full h-[1px] bg-black/20 lineDraw origin-left" />
                                 </div>
 
                                 <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="">
-                                    <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[8%] fadeUp pb-[2%]">
+                                    <div className="px-[1vw] flex justify-between items-center w-full tablet:px-[4%] tablet:py-[2%] mobile:py-[3%] mobile:px-[2%] fadeUp pb-[2%]">
                                         <h4 className="text-96 font-medium relative overflow-hidden pr-[2.5vw] mobile:pr-[5vw] leading-[1.2]">
                                             <div className="split-text-1">
                                                 <span className="move inline-block">9</span>
@@ -141,14 +141,14 @@ const WhyUs = () => {
                                                 </span>
                                             </div>
                                         </h4>
-                                        <p className="text-24 w-[7vw] mobile:w-[25vw]">Satisfied <br /> Customers</p>
+                                        <p className="text-24 w-[7vw] tablet:w-fit mobile:w-[25vw]">Satisfied <br /> Customers</p>
                                     </div>
                                     <span className="block w-full h-[1px] bg-black/20 lineDraw origin-left"/>
                                 </div>
                             </div>
 
-                           
                         </div>
+
                         <div className="w-[48%] h-[45vw] relative overflow-hidden rounded-[20px] mobile:order-2 mobile:w-full mobile:h-[100vw] mobile:rounded-[10px] mobile:mt-[10%] fadeUp">
                             <Image
                                 src="/images/service/why-us.webp"
@@ -157,7 +157,8 @@ const WhyUs = () => {
                                 className="object-cover scale-[120%] translate-y-[-10%] why-img mobile:scale-[110%] mobile:translate-y-[-5%]"
                             />
                         </div>
-                        <div className="w-full space-y-[2vw] mobile:order-3 hidden mobile:block mobile:mt-[10%]">
+                        
+                        {/* <div className="w-full space-y-[2vw] mobile:order-3 hidden mobile:block mobile:mt-[10%]">
                                 <div className="fadeUp">
                                     <div className="px-[1vw] flex justify-between items-center w-full mobile:pb-[6%]">
                                         <h4 className="text-96 font-medium overflow-hidden relative after:absolute after:block after:content-['+'] after:top-[10%] after:right-[0] pr-[2.5vw] after:h-[3vw] after:w-[3vw] after:leading-[0.4] after:font-normal mobile:after:w-[5vw] mobile:pr-[5vw]">
@@ -182,7 +183,7 @@ const WhyUs = () => {
                                     </div>
                                     <span className="block w-full h-[1px] bg-black/20" />
                                 </div>
-                            </div>
+                            </div> */}
                     </div>
                 </div>
             </section>

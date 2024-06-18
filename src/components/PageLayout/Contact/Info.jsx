@@ -15,7 +15,7 @@ const Info = () => {
                     <div className="border-y-[0.5px] border-[#999999] flex w-full justify-center items-center mobile:flex-col mobile:border-y-0">
                         <div className="text-center w-1/2 border-r-[0.5px] border-[#999] flex flex-col items-center py-[3vw] mobile:w-full mobile:border-r-[0px] mobile:border-b-[0.5px] mobile:border-t-0 mobile:py-[7vw]">
                             <h3 className="text-20 text-[#888888]">Phone</h3>
-                            <Link href="tel:+91 9810007195" className="text-44 block group overflow-hidden w-fit">
+                            <Link href="tel:+91 9810007195" className="text-44 block group overflow-hidden w-fit tablet:text-[3vw]">
                                 <span  data-cursor-size="60px" data-content="+91 9810007195" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                     +91 9810007195
                                 </span>
@@ -24,7 +24,7 @@ const Info = () => {
 
                         <div className="text-center w-1/2 border-l-[0.5px] border-[#999] flex flex-col items-center ml-[-0.5px] py-[3vw] mobile:w-full mobile:border-l-[0px] mobile:border-b-[0.5px] mobile:border-t-0 mobile:py-[7vw]">
                             <h3 className="text-20 text-[#888888]">Email</h3>
-                            <Link href="mailto:info@creative-curve.co.in" className="text-44 block group overflow-hidden w-fit">
+                            <Link href="mailto:info@creative-curve.co.in" className="text-44 block group overflow-hidden w-fit tablet:text-[3vw]">
                                 <span data-cursor-size="60px" data-content="info@creative-curve.co.in" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                                     info@creative-curve.co.in
                                 </span>

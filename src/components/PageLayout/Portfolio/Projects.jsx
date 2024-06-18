@@ -3,7 +3,6 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -41,17 +40,17 @@ const Projects = () => {
     return (
         <>
             <section id="second-section" className="bg-black text-white" data-cursor-color="#fff">
-                <div className="container py-[9%] mobile:py-[20%] tablet:py-[10%]">
-                    <div className="text-center mx-auto w-3/4 mobile:w-full mobile:text-start">
-                        <p className="space-grotesk text-48 mobile:text-[5vw] para-animations leading-[1.3]">
+                <div className="container py-[9%] mobile:py-[20%] tablet:py-[15%]">
+                    <div className="text-center mx-auto w-3/4 tablet:w-full mobile:w-full mobile:text-start">
+                        <p className="space-grotesk text-48 tablet:text-[4vw] mobile:text-[5vw] para-animations leading-[1.3]">
                             Explore our case studies and see how Creative Curve evolves brands for a changing world, ensuring cultural relevance and future readiness
                         </p>
                     </div>
-                    <div className="mt-[8vw] mobile:mt-[15vw]">
+                    <div className="mt-[8vw] mobile:mt-[15vw] tablet:mt-[15vw]">
                         <div className="grid grid-cols-10 gap-[40px] mobile:flex mobile:flex-col">
                             <div className="col-span-5 fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-bharti-lg.webp"
@@ -62,12 +61,12 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Bharti Foundation</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Bharti Foundation</h3>
                                 </Link>
                             </div>
-                            <div className="col-span-5 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-5 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-wfp-lg.webp"
@@ -78,13 +77,13 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">World Food Programme</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">World Food Programme</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-6 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[30vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-wwf-lg.webp"
@@ -95,14 +94,14 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">World Wildlife Fund</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">World Wildlife Fund</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
-                                        <Image 
+                            <div className="col-span-4 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[55vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
+                                        <Image    
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-stc-lg.webp"
                                             alt="Portfolio Image"
@@ -112,13 +111,13 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Save the Children</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Save the Children</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-4 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[55vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-unicef-lg.webp"
@@ -129,13 +128,13 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Unicef</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Unicef</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-6 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[30vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-oxfam-lg.webp"
@@ -146,13 +145,13 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Oxfam</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Oxfam</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-6 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-6 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-ap-lg.webp"
@@ -163,13 +162,13 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Asian Paints</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Asian Paints</h3>
                                 </Link>
                             </div>
 
-                            <div className="col-span-4 mobile:mt-[5vw] fadeUp">
-                                <Link href="#" className="space-y-[1vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
-                                    <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh]">
+                            <div className="col-span-4 fadeUp">
+                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                    <div className="w-full h-[70vh] relative rounded-[40px] overflow-hidden mobile:h-[45vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="scale-[110%] group-hover:saturate-0 cover transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
                                             src="/images/projects/project-canon-lg.webp"
@@ -180,7 +179,7 @@ const Projects = () => {
                                             quality={100}
                                         />
                                     </div>
-                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] mobile:text-[5vw] pl-[2vw] mobile:pt-[2vh]">Canon</h3>
+                                    <h3 className="space-grotesk group-hover:-translate-y-[6vw] transition-all duration-500 ease-out text-[2.2vw] tablet:text-[3vw] mobile:text-[5vw] pl-[2vw] mobile:pl-[8vw] mobile:group-hover:-translate-y-[15vw] tablet:group-hover:-translate-y-[8vw]">Canon</h3>
                                 </Link>
                             </div>
 

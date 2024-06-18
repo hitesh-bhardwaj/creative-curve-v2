@@ -32,46 +32,50 @@
 .blog strong{
     font-weight: 500;
 }
-@media screen and (max-width: 541px) {
+
+@media screen and (max-width: 1023px) {
     .blog p {
         font-size: var(--24);
-        line-height: 1.1;
-        padding-bottom: 2.5vw;
-    }
-    
-    .blog h2{
-        font-size: var(--48);
-        padding-bottom: 2.5vw;
-        font-family: 'SpaceGrotesk';
-    }
-    
-    .blog .imgContainer {
-        border-radius: 3vw;
-        height: 22vh;
-        
-        overflow: hidden;
-        margin-bottom: 2.5vw;
-        margin-top: 3vh
-    } 
-
-    .blog .img{
-        scale: 110% !important;
-        transform: translateY(-5%) !important;
-    }
-    
-    .blog ul{
-        padding-bottom: 0.5vw;
-    }
-    
-    .blog li{
-        font-size: var(--24);
         line-height: 1.3;
-        list-style-type: disc;
-        margin-left: 1vw;
-        padding-bottom: 8vw;
+        padding-bottom: 4vw;
     }
-    
-    .blog strong{
-        font-weight: 500;
+    .blog h2{
+        font-size: 5vw;
+        padding-bottom: 4vw;
+    }
+    .blog .imgContainer {
+        height: 35vh;
+        margin-bottom: 5vw;
+    } 
+    .blog ul{
+        padding-bottom: 1vw;
+    }
+    .blog li{
+        line-height: 1.3;
+        padding-bottom: 3vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .blog p {
+        font-size: var(--18);
+        line-height: 1.3;
+        padding-bottom: 5vw;
+    }
+    .blog h2{
+        font-size: 6vw;
+        padding-bottom: 5vw;
+    }
+    .blog .imgContainer {
+        height: 25vh;
+        margin-bottom: 5vw;
+    } 
+    .blog ul{
+        padding-bottom: 1vw;
+    }
+    .blog li{
+        font-size: var(--18);
+        padding-bottom: 4vw;
+        margin-left: 5vw;
     }
 }

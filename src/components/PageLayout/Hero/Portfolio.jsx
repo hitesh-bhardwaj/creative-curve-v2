@@ -136,28 +136,27 @@ function Portfolio() {
         className="py-[10%] bg-black relative mobile:py-[20%]"
         id="second-section"
       >
-        <div className="container grid grid-cols-11 items-center gap-y-[3vw] mobile:flex mobile:flex-col ">
+        <div className="container grid grid-cols-11 items-center gap-y-[3vw] tablet:gap-y-[6vw] mobile:gap-[10vw] mobile:flex mobile:flex-col ">
           <div
             ref={pin}
             className="text-white absolute top-[10%] w-[45%] mobile:w-full mobile:static tablet:col-span-11 tablet:row-start-1 tablet:static tablet:w-full"
           >
-            <p className="text-24 mb-[1vw] fadeUp mobile:font-light mobile:mb-[4vw]">
+            <p className="text-24 mb-[1vw] fadeUp mobile:mb-[5vw] tablet:mb-[3vw]">
               Our Portfolio
             </p>
             <div className="w-full h-fit overflow-hidden">
-              <h2 className="text-96 leading-[1] mb-[1vw] font-regular space-grotesk heading-anim mobile:mt-[2vh] tablet:mt-[1.5vh]">
+              <h2 className="text-96 leading-[1] mb-[1vw] font-regular space-grotesk heading-anim mobile:mb-[5vw] tablet:mb-[3vw]">
                 Featured Works
               </h2>
             </div>
-            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:font-thin mobile:mt-[3vh] tablet:mt-[2vh] ">
+            <p className="text-22 w-[60%] mb-[2vw] para-animations mobile:w-[90%] mobile:mb-[6vw] tablet:mb-[4vw]">
               Dive into a world where design meets strategy, only at Creative
               Curve. Our creative designing services are more than just
               aesthetics.
             </p>
-            <div className="fadeUp">
+            <div className="fadeUp tablet:mb-[3vw] mobile:mb-[5vw]">
               <ButtonDark btnText="View All Works" link="/portfolio"/>
             </div> 
-            
           </div>
 
           <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1">
@@ -165,7 +164,7 @@ function Portfolio() {
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[10vh] tablet:rounded-[15px] tablet:mt-[5vh]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -180,12 +179,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 tablet:row-start-3">
+          <Link href="#" className="col-span-5 tablet:col-start-7">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px] tablet:mt-[4vh]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg2 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -200,12 +199,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-3">
+          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
+              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg3 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -220,12 +219,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 tablet:row-start-4">
+          <Link href="#" className="col-span-5 tablet:col-start-7">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
+              className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg4 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -240,12 +239,12 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-4">
+          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
               data-parallax-img
-              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] mobile:mt-[2vh] tablet:rounded-[15px]"
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
                 className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -260,6 +259,28 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
+
+          <Link href="#" className="col-span-5 col-start-7 hidden tablet:block mobile:block">
+            <div
+              data-cursor-text="Discover"
+              data-cursor-size="100px"
+              data-parallax-img
+              className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
+            >
+              <Image
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                src="/images/home/canon.webp"
+                height={1000}
+                width={1000}
+                alt="Portfolio Image"
+                loading="lazy"
+              />
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+                Canon
+              </h3>
+            </div>
+          </Link>
+
         </div>
       </section>
     </>

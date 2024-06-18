@@ -36,7 +36,7 @@ const Testimonial = () => {
   return (
     <>
       <section id="testimonial" className="bg-white">
-        <div className="container relative pt-[5%] pb-[10%] mobile:pt-[10%] mobile:pb-[20%]">
+        <div className="container relative pt-[5%] pb-[10%] mobile:pt-[10%] mobile:pb-[20%] tablet:py-[10%]">
           <Swiper
             speed={1000}
             pagination={{ type: "fraction" }}
@@ -50,7 +50,7 @@ const Testimonial = () => {
             modules={[Pagination, Autoplay, Parallax]}
             className="mySwiper"
           >
-            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%] mobile:top-[11%] mobile:gap-[10vw] mobile:right-[5%] tablet:gap-[6vw] tablet:right-[15%]">
+            <div className="absolute right-[20%] flex justify-center items-center gap-[4.2vw] top-[24%] mobile:top-[11%] mobile:gap-[11vw] mobile:right-[5%] tablet:gap-[7vw] tablet:top-[17%] tablet:right-[2%]">
                 <PrevButton />
                 <NextButton />
             </div>

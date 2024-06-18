@@ -1,11 +1,7 @@
-.service-head .line:nth-child(2){
-    margin-left: 40%;
-}
 @media  screen and (max-width:540px) {
     .service-head .line:nth-child(2){
         margin-left: 0%;
     }
-    
 }
 @media screen and (min-width:541px) {
     .ser-grid-item {

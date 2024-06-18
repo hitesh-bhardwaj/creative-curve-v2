@@ -8,17 +8,17 @@ export default function MenuLink({ linkText, link }) {
                 <span data-content={linkText} className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
                     {linkText}
                 </span>
-                <div className="w-[1vw] h-fit text-black overflow-hidden mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
+                <div className="w-[1vw] h-fit text-black overflow-hidden mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]">
                     <div className="w-[200%] gap-[5%] flex items-center translate-x-[-55%] group-hover:translate-x-[0] transition-all duration-500 ease-out tablet:gap-0">
                         <Image 
-                            className="w-[1vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
+                            className="w-[1vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
                             src="/images/icons/arrow-right.svg"
                             alt="Arrow Right"
                             width={30}
                             height={30}
                         />
                         <Image 
-                            className="w-[1vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]"
+                            className="w-[1vw] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[3vw] tablet:h-[3vw]"
                             src="/images/icons/arrow-right.svg"
                             alt="Arrow Right"
                             width={30}

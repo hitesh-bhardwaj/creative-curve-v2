@@ -33,12 +33,12 @@ export default function Footer() {
             <footer 
                 data-cursor-exclusion
                 id="footer" 
-                className="relative h-[50vw] mobile:h-[130vh] bg-black"
+                className="relative h-[50vw] mobile:h-[130vh] bg-black tablet:h-[110vw]"
                 style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
             >
-                <div className='fixed bottom-0 h-[50vw] w-full mobile:static mobile:py-[10%]'>
+                <div className='fixed bottom-0 h-[50vw] w-full mobile:static mobile:py-[10%] tablet:h-[110vw]'>
                     <Content>
-                        <div ref={headingRef} className="footer-creative-curve space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] overflow-hidden creative mobile:text-[23vw] mobile:text-center mobile:leading-[1]" id="text-anim">
+                        <div ref={headingRef} className="footer-creative-curve space-grotesk text-[#A9ABB5] text-[13vw] tracking-[-5px] leading-[0.8] overflow-hidden creative mobile:text-[23vw] mobile:text-center mobile:leading-[1] tablet:text-[13.5vw]" id="text-anim">
                             Creative Curve
                         </div>
                     </Content>

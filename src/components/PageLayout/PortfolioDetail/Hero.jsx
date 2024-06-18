@@ -60,6 +60,7 @@ const Hero = ({ heading, subheading, imgSrc }) => {
         })
     }, []);
 
+    if(globalThis.innerWidth>640){
     useGSAP(()=> {
         const headAnim = headingRef.current.querySelectorAll(".line .word");
 
@@ -86,13 +87,14 @@ const Hero = ({ heading, subheading, imgSrc }) => {
             delay: -0.8,
             ease: "power2.in"
         });
-      }, []);
+      });
+    }
 
     return (
         <>
-            <section className="h-[85vh] bg-black" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero" data-cursor-exclusion>
-                <div className="fixed top-0 left-0 w-full h-full">
-                    <div className="h-[85vh] relative">
+            <section className="h-[85vh] mobile:h-screen bg-black" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+                <div className="fixed top-0 left-0 w-full h-[85vh] mobile:h-screen mobile:static">
+                    <div className="w-full h-full mobile:relative tablet:relative">
                         <div className="w-full h-full absolute top-0 left-0">
                             <Image ref={imgRef} className="cover" src={imgSrc} alt={`${heading} Background Image`} fill priority={true}/>
                         </div>
@@ -101,11 +103,12 @@ const Hero = ({ heading, subheading, imgSrc }) => {
                                 {heading}
                             </h1>
 
-                            <div className="flex justify-between w-full items-end absolute bottom-[15%] mobile:flex-col mobile:static tablet:flex-col tablet:static tablet:gap-[50vw]">
-                                <div onClick={handleSmoothScroll} data-cursor-size="60px" className="scroll-btn uppercase cursor-pointer text-24 text-white mobile:order-2 mobile:absolute mobile:bottom-[10%] mobile:left-[30%] tablet:order-2 tablet:absolute tablet:bottom-[10%] tablet:left-0 ">
-                                    <span className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out">Scroll Down</span>
+                            <div className="flex justify-between w-full items-end mt-[5%] tablet:flex-col tablet:items-start mobile:flex-col mobile:items-start">
+                                <div className="mobile:absolute mobile:bottom-[15%] mobile:left-1/2 mobile:-translate-x-1/2 tablet:absolute tablet:bottom-[10%] tablet:left-1/2 tablet:-translate-x-1/2">
+                                    <div data-cursor-size="60px" data-cursor-exclusion onClick={handleSmoothScroll} className="scroll-btn uppercase cursor-pointer text-24 mb-2 text-textBody">
+                                        <span className="relative text-white after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out">Scroll Down</span>
+                                    </div>
                                 </div>
-
                                 <p ref={paraRef} className="text-24 drop-shadow-2xl text-white text-right w-[25vw] mobile:order-1 mobile:w-full mobile:text-center mobile:mt-[4vh] tablet:order-1 tablet:w-full tablet:text-center tablet:mt-[4vh]">
                                     {subheading}
                                 </p>

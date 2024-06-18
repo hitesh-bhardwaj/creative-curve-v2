@@ -24,7 +24,6 @@ const FeaturedArticle = () => {
               start: "20% bottom",
               end: "bottom top",
               scrub: true,
-              // markers: true
             },
           });
         });
@@ -40,13 +39,13 @@ const FeaturedArticle = () => {
               start: "20% bottom",
               end: "bottom top",
               scrub: true,
-              // markers: true
             },
           });
         });
     }
   });
 
+  if(globalThis.innerWidth>1023){
   useGSAP(()=> {
     gsap.from(textSec.current, {
       scrollTrigger: {
@@ -59,16 +58,17 @@ const FeaturedArticle = () => {
       duration: 2,
     }) 
   })
+}
  
   return (
     <>
       <section id="second-section" className="bg-black text-white" data-cursor-exclusion>
-        <div className="container py-[8%] mobile:py-[20%]">
+        <div className="container py-[8%] tablet:py-[15%] mobile:py-[20%]">
           <div className="w-[45%] relative mobile:w-full tablet:w-full">
             <h2 className="text-140 leading-[1.1] space-grotesk mb-[1vw] heading-anim text-white overflow-hidden">
               <span>
                 Featured
-              </span>
+              </span>{" "}
               <span>
                 Work
               </span>
@@ -82,7 +82,7 @@ const FeaturedArticle = () => {
           </div>
 
           <div className="flex justify-between items-start mt-[6vw] mobile:flex-col mobile:mt-[10vw] tablet:flex-col tablet:items-center " ref={textContainer}>
-            <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px] tablet:h-[50vh] tablet:w-[80vw]">
+            <div className="h-[80vh] w-[55%] relative rounded-[40px] overflow-hidden mobile:w-full mobile:h-[40vh] mobile:rounded-[20px] tablet:h-[50vh] tablet:w-full">
               <Image
                 src="/images/blogs/featured.webp"
                 fill

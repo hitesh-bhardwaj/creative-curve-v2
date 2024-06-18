@@ -15,8 +15,8 @@ const Listing = () => {
     return (
         <>
             <section id="listing">
-                <div className="container pt-[8%] pb-[10%] mobile:pt-[20%] mobile:pb-[30%]">
-                    <div className='mb-[5vw]'>
+                <div className="container pt-[8%] pb-[10%] tablet:py-[15%] mobile:pt-[20%] mobile:pb-[25%]">
+                    <div className='mb-[5vw] mobile:mb-[8vw]'>
                         <h4 className="text-140 space-grotesk leading-[1.2] text-textHead heading-anim overflow-hidden">
                             <span className='block'>
                                 Latest Blogs
@@ -24,14 +24,14 @@ const Listing = () => {
                         </h4>
                     </div>
 
-                    <div ref={btnContainer} className="flex justify-start items-start gap-[2.5vw] mb-[5vw] mobile:justify-between">
+                    <div ref={btnContainer} className="flex justify-start items-start gap-[2.5vw] mb-[5vw] mobile:flex-wrap mobile:mb-[10vw]">
                         {categories.map((category, index) => (
                             <button 
                                 key={index} 
-                                className={`cat-button text-textHead hover:text-white overflow-hidden border border-textHead px-[1.5vw] py-[0.8vw] min-w-[7vw] mobile:px-[2vw] mobile:pt-[0.01vw] mobile:pb-[0.4vw] rounded-full hover:animate-scale-up transition-all duration-500 ease-out relative group ${activeCategory === category ? 'active' : ''}`}
+                                className={`cat-button text-textHead hover:text-white overflow-hidden border border-textHead px-[1.5vw] py-[0.8vw] min-w-[7vw] mobile:px-[5vw] mobile:py-[1vw] rounded-full hover:animate-scale-up transition-all duration-500 ease-out relative group ${activeCategory === category ? 'active' : ''}`}
                                 onClick={() => setActiveCategory(category)}
                             >
-                                <span className="text-24 space-grotesk mobile:text-[2.5vw]">
+                                <span className="text-24 space-grotesk mobile:text-[4vw]">
                                     {category}
                                 </span>
                                 <span className="w-full h-full block absolute z-[-1] right-0 scale-y-0 group-hover:scale-y-[1] origin-bottom transition-all duration-300 ease-out left-0 bg-textBody top-0 bottom-0" />
@@ -40,7 +40,7 @@ const Listing = () => {
                     </div>
 
                     {filteredBlogs.length > 0 ? (
-                        <div id='blogContainer' ref={blogContainer} className="grid grid-cols-2 gap-x-[4vw] gap-y-[6vw] mt-8 mobile:flex mobile:flex-col">
+                        <div id='blogContainer' ref={blogContainer} className="grid grid-cols-2 gap-x-[4vw] gap-y-[6vw] mobile:flex mobile:flex-col mobile:gap-[10vw]">
                             {filteredBlogs.map((blog) => (
                                 <BlogCard
                                     key={blog.id}

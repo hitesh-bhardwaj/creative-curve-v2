@@ -128,8 +128,8 @@ function Hero() {
                 </span>
               </div>
               <div className="overflow-hidden text-anim flex justify-center gap-x-[2vw] mobile:flex-col mobile:mt-[4vh] tablet:flex-col tablet:mt-[2vh]">
-                <span ref={we}> We</span>
-                <span ref={transform}> Transform</span>
+                <span ref={we} className="mobile:overflow-hidden"> We</span>
+                <span ref={transform} className="mobile:overflow-hidden"> Transform</span>
               </div>
               <div className="w-full text-right pr-[5vw] text-anim overflow-hidden mobile:text-center tablet:text-center">
                 <span ref={brands} className="block">
@@ -151,7 +151,7 @@ function Hero() {
                 funds across industries and continents.
               </p>
             </div>
-            <div onClick={handleSmoothScroll} className="scroll-btn uppercase text-24 cursor-pointer text-textBody absolute mt-[5vw] left-1/2 -translate-x-1/2 mobile:static mobile:translate-x-0 mobile:mt-[9vh]">
+            <div onClick={handleSmoothScroll} className="scroll-btn uppercase text-24 cursor-pointer text-textBody absolute mt-[5vw] left-1/2 -translate-x-1/2 mobile:static mobile:translate-x-0 mobile:mt-[9vh] tablet:static tablet:translate-x-0 tablet:mt-[9vh]">
               <span data-cursor-size="60px" data-cursor-exclusion className="relative after:absolute after:bg-current after:w-full after:h-[2px] after:block after:scale-x-100 cursor-pointer hover:after:scale-x-0 after:duration-300 after:ease-out after:left-0">
                 Scroll Down
               </span>

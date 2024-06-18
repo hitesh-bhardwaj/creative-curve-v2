@@ -1,9 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -86,11 +84,11 @@ export default function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-[2vw] contact-form"
+        className="space-y-[2vw] contact-form tablet:space-y-[4vw] mobile:space-y-[8vw]"
       >
         {/* Form fields */}
 
-        <div className="space-y-[-1px] mobile:mb-[2vh]">
+        <div className="space-y-[-1px]">
           {/* Name field */}
           <FormField
             control={form.control}

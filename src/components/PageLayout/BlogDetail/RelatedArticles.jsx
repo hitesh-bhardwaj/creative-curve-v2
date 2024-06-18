@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import blogData from "@/components/PageLayout/Blog/blogdata.json";
 import ButtonWhite from "@/components/Button/ButtonWhite";
 
@@ -9,10 +8,10 @@ const RelatedArticles = () => {
 
   const BlogCard = ({ title, category, img, link }) => {
     return (
-      <div className="col-span-1 blog-card h-full mobile:mt-[3vh] tablet:mt-[3vh]">
+      <div className="col-span-1 blog-card h-full">
         <Link href={link} className="w-full relative h-fit group/blog">
           <div
-            className="h-[28vw] w-full rounded-[1vw] overflow-hidden mobile:h-[80vw] mobile:rounded-[10px] tablet:h-[50vw]"
+            className="h-[28vw] w-full rounded-[1vw] overflow-hidden mobile:h-[60vw] mobile:rounded-[10px] tablet:rounded-2xl tablet:h-[50vw]"
             data-cursor-color="#fff"
             data-cursor-size="100px"
             data-cursor-text="Read More"
@@ -29,7 +28,7 @@ const RelatedArticles = () => {
           <h5 className="text-30 leading-[1.2] aeonik text-textHead mt-[1.2vw] mobile:mt-[2vh] para-animations">
             {title}
           </h5>
-          <p className="text-20 space-grotesk pointer-events-none text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-8 left-8 mobile:top-3 mobile:left-3 mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[2vw] tablet:left-2 tablet:top-2">
+          <p className="text-20 space-grotesk pointer-events-none text-white bg-textHead px-[1.2vw] py-[0.8vw] rounded-full absolute top-8 left-8 mobile:top-3 mobile:left-3 mobile:text-[3.5vw] mobile:px-[5vw] mobile:py-[2vw] tablet:px-[3vw] tablet:text-[3vw] tablet:left-[4%] tablet:top-[5%]">
             {category}
           </p>
           <p className="uppercase flex items-center group gap-[10px] mt-[1vw] mobile:mt-[2vh] tablet:mt-[1vh]">
@@ -57,19 +56,19 @@ const RelatedArticles = () => {
   return (
     <>
       <section>
-        <div className="container py-[8%] mobile:py-[20%]">
-          <div className="flex justify-between items-end mb-[5vw] mobile:flex-col mobile:items-start">
+        <div className="container py-[8%] mobile:py-[20%] tablet:py-[15%]">
+          <div className="flex justify-between items-end mb-[5vw] tablet:flex-col tablet:items-start tablet:gap-[2vw] mobile:flex-col mobile:items-start mobile:gap-[5vw] mobile:mb-[10vw]">
             <h2 className="text-140 leading-[1] space-grotesk text-textHead w-[50%] mobile:text-[10vw] mobile:w-full heading-anim">
-              <span>Related</span>
+              <span>Related</span>{" "}
               <span>Articles</span>
             </h2>
 
-            <div className="fadeUp">
+            <div className="fadeUp tablet:flex tablet:justify-end tablet:w-full">
               <ButtonWhite link={"/blog"} btnText={"View All Blogs"}/>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-[1vw] w-full mobile:flex mobile:flex-col tablet:grid-cols-1">
+          <div className="grid grid-cols-3 gap-[1vw] w-full tablet:grid-cols-1 tablet:gap-[6vw] mobile:grid-cols-1 mobile:gap-[10vw]">
             {filteredBlogs.map((blog) => (
               <BlogCard
                 key={blog.id}

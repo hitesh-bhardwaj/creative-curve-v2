@@ -131,7 +131,7 @@ const ServiceDesktop = () => {
 
     return (
         <>
-        <div className="grid grid-cols-2 grid-rows-3 gap-[1.5vw] mobile:flex-col mobile:hidden">
+        <div className="grid grid-cols-2 grid-rows-3 gap-[1.5vw] mobile:flex-col mobile:hidden tablet:hidden">
             <div
               ser-slot="1"
               className="relative pointer-events-auto z-[99] fadeUp ser-grid-slot is--active col-span-1 col-start-1 row-span-3 row-start-1"

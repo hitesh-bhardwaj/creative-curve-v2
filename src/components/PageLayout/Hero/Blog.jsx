@@ -45,11 +45,11 @@ export default function Blog() {
     return(
         <>
             <section id="Blog" className="bg-dark relative z-[1]">
-                <div className="container py-[10%] mobile:py-[20%] tablet:py-[15%]">
 
+                <div className="container py-[10%] mobile:py-[20%] tablet:py-[15%]">
                     <div className="w-[55%] mobile:w-full tablet:w-full">
-                        <p className="text-24 mb-[1vw] fadeUp">Our Blogs</p>
-                        <h2 className="text-96 space-grotesk mb-[1vw] heading-anim mobile:leading-[1]">
+                        <p className="text-24 mb-[1vw] fadeUp mobile:mb-[5vw] tablet:mb-[3vw]">Our Blogs</p>
+                        <h2 className="text-96 space-grotesk mb-[1vw] heading-anim mobile:leading-[1] mobile:mb-[5vw] tablet:mb-[3vw]">
                             <span className="block overflow-hidden">
                                 Dive Into Our
                             </span>
@@ -57,7 +57,7 @@ export default function Blog() {
                                 Creative Musings
                             </span>
                         </h2>                    
-                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] mobile:mt-[2vh] table:w-[75%] tablet:mt-[1.2vh] ">
+                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] table:w-[80%] mobile:mb-[6vw] tablet:mb-[4vw]">
                             <span>
                                 A curated collection of thoughts, ideas, and inspirations. Join us in this exploration, where every word is crafted with passion.
                             </span>

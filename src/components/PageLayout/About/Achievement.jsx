@@ -85,24 +85,23 @@ const Achievement = () => {
 
     return (
         <>
-            <section id="achievement" className="pt-[10%] pb-[10%] bg-white">
+            <section id="achievement" className="pt-[10%] pb-[10%] bg-white mobile:py-[15%] tablet:py-[15%]">
                 <div className="container">
                     
-                    <div className="w-[55%] mobile:w-full overflow-hidden tablet:w-full">
-                        <p className="text-20 mb-[1vw] fadeUp about-ach-small ">Our Achievements</p>
-                        <h2 className="text-96 leading-[1] space-grotesk text-textHead mb-[1vw] heading-anim">
-                            <span className="">Check Recent
-                                </span>
+                    <div className="w-[55%] mobile:w-full overflow-hidden tablet:w-[80%]">
+                        <p className="text-20 mb-[1vw] fadeUp about-ach-small mobile:mb-[3vw]">Our Achievements</p>
+                        <h2 className="text-96 leading-[1] space-grotesk text-textHead mb-[1vw] heading-anim mobile:mb-[3vw]">
+                            <span className="">Check Recent</span>
                             <span className=""> Achievements</span>
                         </h2>
-                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] mobile:mt-[2vh] overflow-hidden">
+                        <p className="text-22 w-[65%] mb-[2vw] para-animations mobile:w-[90%] overflow-hidden">
                         <span className="block">
                             We forge meaningful connections that translate into tangible results. Our marketing solutions are crafted with a deep understanding.
                         </span>
                         </p>
                     </div>
 
-                    <div className="w-full flex justify-end -mt-[2%] mobile:mt-[5vh]">
+                    <div className="w-full flex justify-end -mt-[2%] mobile:mt-[5vh] tablet:mt-[5vh]">
                         <div className="w-1/3 text-left mobile:w-[80%] mobile:text-right tablet:text-right tablet:w-[60%] ">
                             <p className="text-24 para-animations overflow-hidden">
                                 <span className="block">
@@ -112,7 +111,7 @@ const Achievement = () => {
                         </div>
                     </div>
 
-                    <div ref={containerRef} className="w-full grid grid-cols-2 text-textHead grid-rows-5 gap-x-[3vw] gap-y-[4vw] mt-[5vw] mobile:flex mobile:flex-col mobile:gap-[2vh] about-ach-block-container">
+                    <div ref={containerRef} className="w-full grid grid-cols-2 text-textHead grid-rows-5 gap-x-[3vw] gap-y-[4vw] mt-[5vw] mobile:flex mobile:flex-col mobile:mt-[10vw] mobile:gap-[2vh] about-ach-block-container">
                         
                         <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F6FFE7] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left tablet:h-[30vw] tablet:rounded-[20px]">
                             <div className="h-[5.5vw] overflow-hidden">

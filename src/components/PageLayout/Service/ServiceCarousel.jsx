@@ -12,9 +12,10 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const ServiceCarousel = () => {
   const carouselRef = useRef(null);
 
+  if(globalThis.innerWidth>=640) {
   useGSAP(()=>{
       const carousel = carouselRef.current;
-  let nbCartes = carousel.querySelectorAll('.leCarou .innerImg').length;
+      let nbCartes = carousel.querySelectorAll('.leCarou .innerImg').length;
       let numeroSlide = 0;
       let onUpdateLesPuces = true;
       let animEnCours = false;
@@ -303,17 +304,19 @@ const ServiceCarousel = () => {
       }
 
   }, [carouselRef]);
+}
 
   return (
     <>
-      <div ref={carouselRef} className="parentCarou mt-[8vw]">
-        <div className="pushCarousel mobile:hidden">
-          <div className="flex justify-between innerCarou">
-            <div className="w-[40%] pt-[5vw] flex justify-between relative mobile:w-full fadeUp">
+      <div ref={carouselRef} className="parentCarou mt-[8vw] tablet:mt-[15vw]">
+        <div className="pushCarousel">
+          <div className="flex tablet:flex-col-reverse justify-between innerCarou">
+            
+            <div className="w-[40%] pt-[5vw] flex justify-between relative fadeUp tablet:w-[80%] tablet:ml-[10%] mobile:margin-0 mobile:w-screen mobile:flex-wrap">
               <div className="relative parentEntree">
-                <div className="entree current space-y-[2vw]">
-                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">
-                    Creative <br /> Design
+                <div className="entree current space-y-[2vw] mobile:space-y-[5vw]">
+                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%] tablet:w-full">
+                    Creative Design
                   </h3>
                   <p className="text-24">
                     Dive into a world where design meets strategy, only at
@@ -331,8 +334,8 @@ const ServiceCarousel = () => {
                     <li>Packaging & Label Design</li>
                   </ul>
                 </div>
-                <div className="entree space-y-[2vw]">
-                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">Public <br /> Relations</h3>
+                <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
+                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%] tablet:w-full">Public Relations</h3>
                   <p className="text-22">
                     Our Public Relations services are not just about getting
                     your brand in the news; they're about crafting the right
@@ -348,8 +351,8 @@ const ServiceCarousel = () => {
                     <li>Media Training & Workshops</li>
                   </ul>
                 </div>
-                <div className="entree space-y-[2vw]">
-                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">Audio <br /> Visual</h3>
+                <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
+                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%] tablet:w-full">Audio Visual</h3>
                   <p className="text-22">
                     Step into the realm of compelling storytelling. We believe
                     in the power of sight and sound to evoke emotions and drive
@@ -365,8 +368,8 @@ const ServiceCarousel = () => {
                     <li>Interactive Video Content</li>
                   </ul>
                 </div>
-                <div className="entree space-y-[2vw]">
-                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%]">Digital <br /> Marketing</h3>
+                <div className="entree space-y-[2vw] mobile:space-y-[5vw]">
+                  <h3 className="h3 text-76 space-grotesk leading-[1.2] w-[60%] tablet:w-full">Digital Marketing</h3>
                   <p className="text-22">
                     Embark on a digital journey where innovation meets impact.
                     Our Digital Marketing services are tailored to navigate the
@@ -384,7 +387,9 @@ const ServiceCarousel = () => {
                 </div>
               </div>
             </div>
-            <div className="imgs w-[45%] relative fadeUp">
+
+            <div className="imgs w-[45%] relative fadeUp tablet:w-[80%] tablet:ml-[10%] tablet:h-[45vh]">
+              
               <div className="puces flex items-center">
                 <ul className="flex items-center">
                   <li className="toSlide relative">
@@ -427,6 +432,7 @@ const ServiceCarousel = () => {
                   </div>
                 </div>
               </div>
+
               <div className="leCarou">
                 <div className="innerImg">
                   <div className="img">
@@ -469,6 +475,7 @@ const ServiceCarousel = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

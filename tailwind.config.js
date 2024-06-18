@@ -18,7 +18,6 @@ module.exports = {
     },
     extend: {
       screens: {
-        
         'mobile':{'max':'540px'},
         'tablet':{'min':'541px','max':'1024px'}
       },

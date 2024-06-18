@@ -5,16 +5,16 @@ const Content = ({children}) => {
    
     return( 
         <>
-            <div className="container pt-[4%] pb-[2%] footer-container h-full">
+            <div className="container pt-[4%] pb-[2%] tablet:pt-[10%] tablet:pb-[5%] footer-container h-full">
                     <div className="grid grid-cols-12 mobile:flex mobile:flex-col">
                         {/* CTA */}
-                        <div className="col-span-12 border-b-[0.5px] mb-[5vw]">
+                        <div className="col-span-12 border-b-[0.5px] mb-[5vw] tablet:mb-[10vw]">
                             <Link href="#" className="relative group flex py-[0.6vw] justify-between items-center w-full hover:px-5 transition-all duration-300 ease-out">
-                                <h5 className="text-96 space-grotesk text-white relative z-20 mobile:text-[8vw]">
+                                <h5 className="text-96 space-grotesk text-white relative z-20 mobile:text-[8vw] tablet:text-[10vw]">
                                     Let's Talk!
                                 </h5>
-                                <div className="rounded-full relative z-20 border border-white flex justify-center items-center h-[6vw] w-[6vw] mobile:h-[10vw] mobile:w-[10vw] mobile:border-[0.1vw]">
-                                    <span className="w-[2vw] h-[2vw] block overflow-hidden scale-[0.8] mobile:w-[5vw] mobile:h-[5vw]">
+                                <div className="rounded-full relative z-20 border border-white flex justify-center items-center h-[6vw] w-[6vw] mobile:h-[10vw] mobile:w-[10vw] tablet:h-[10vw] tablet:w-[10vw] mobile:border-[0.1vw]">
+                                    <span className="w-[2vw] h-[2vw] block overflow-hidden scale-[0.8] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
                                         <div className="w-[100%] flex -translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-out">
                                             <Image
                                                 className="w-full h-full group-hover:scale-100 scale-0 transition-all duration-300 ease-out"
@@ -37,11 +37,11 @@ const Content = ({children}) => {
                             </Link>
                         </div>
 
-                        <div className="lg:col-span-2 col-span-12 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[2vh] mobile:mt-[4vh]">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
+                        <div className="col-span-2 tablet:col-span-6 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[2vh] mobile:mt-[4vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw] tablet:text-[3vw] tablet:mb-[4vw]">
                                 Get In Touch
                             </h6>
-                            <ul className="text-white space-y-[1.5vw] text-[1.25vw] mobile:text-[5vw] mobile:w-full mobile:items-center mobile:flex mobile:flex-col mobile:gap-[2vh]">
+                            <ul className="text-white space-y-[1.5vw] text-[1.25vw] mobile:text-[5vw] mobile:w-full mobile:items-center mobile:flex mobile:flex-col mobile:gap-[2vh] tablet:text-[3.2vw] tablet:space-y-[2vw]">
                                 <li className="">
                                     <Link data-cursor-size="60px" href="tel:9810007195" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="+91 981 000 7195" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
@@ -59,11 +59,11 @@ const Content = ({children}) => {
                             </ul>
                         </div>
 
-                        <div className="col-span-2 col-start-10 mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:mt-[4vh]">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
+                        <div className="col-span-2 col-start-10 tablet:col-span-3 tablet:col-start-8 mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:mt-[4vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw] tablet:text-[3vw] tablet:mb-[4vw]">
                                 Company
                             </h6>
-                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
+                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh] tablet:text-[3.2vw] tablet:space-y-[2vw">
                                 <li className="mobile:flex mobile:justify-center">
                                     <Link scroll={false} data-cursor-size="60px" href="/about" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="About" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
@@ -95,11 +95,11 @@ const Content = ({children}) => {
                             </ul>
                         </div>
 
-                        <div className="col-span-1 mobile:flex mobile:flex-col mobile:w-full mobile:items-center mobile:mt-[5vh]">
-                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw]">
+                        <div className="col-span-1 mobile:flex mobile:flex-col tablet:col-span-2 mobile:w-full mobile:items-center mobile:mt-[5vh]">
+                            <h6 className="text-gray-2 text-[1.1vw] mb-[1vw] mobile:text-[6vw] tablet:text-[3vw] tablet:mb-[4vw]">
                                 Follow Us
                             </h6>
-                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh]">
+                            <ul className="text-white space-y-[1vw] text-[1.25vw] mobile:text-[5vw] mobile:mt-[1.5vh] mobile:flex mobile:flex-col mobile:gap-[1.2vh] tablet:text-[3.2vw] tablet:space-y-[2vw">
                                 <li className="mobile:flex mobile:justify-center">
                                     <Link data-cursor-size="60px" href="#" className="leading-[1.4] w-fit block group overflow-hidden">
                                         <span data-content="Facebook" className="relative block link-transition group-hover:-translate-y-[105%] after:absolute after:content-[attr(data-content)] after:top-full after:block after:h-full after:w-full after:left-0">
@@ -131,11 +131,11 @@ const Content = ({children}) => {
                             </ul>
                         </div>
 
-                        <div className="col-span-12 flex justify-between items-center my-[4vw] text-gray-1 mobile:mt-[5vh]">
-                            <p className="mobile:text-[3vw]">
+                        <div className="col-span-12 flex justify-between items-center my-[4vw] tablet:my-[15%] text-gray-1 mobile:mt-[5vh] ">
+                            <p className="mobile:text-[3vw] tablet:text-2xl">
                                 © 2024 | Alrights reserved by Creative Curve
                             </p>
-                            <p className="mobile:text-[3vw]">
+                            <p className="mobile:text-[3vw] tablet:text-2xl">
                                 By: <Link data-cursor-size="60px" href="https://weareenigma.com" className="relative after:absolute after:block after:bottom-[-20%] after:left-0 after:w-full after:h-[1px] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300">Enigma</Link>
                             </p>
                         </div>
