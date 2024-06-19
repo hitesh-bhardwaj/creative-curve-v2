@@ -85,7 +85,7 @@ const Achievement = () => {
 
     return (
         <>
-            <section id="achievement" className="pt-[10%] pb-[10%] bg-white mobile:py-[15%] tablet:py-[15%]">
+            <section data-cursor-color="#000" id="achievement" className="pt-[10%] pb-[10%] bg-white mobile:py-[15%] tablet:py-[15%]">
                 <div className="container">
                     
                     <div className="w-[55%] mobile:w-full overflow-hidden tablet:w-[80%]">

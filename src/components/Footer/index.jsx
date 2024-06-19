@@ -10,27 +10,27 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 export default function Footer() {
     const headingRef = useRef(null);
 
-
     useGSAP(() => {
         splitInLine(headingRef.current);
         const refText = document.querySelectorAll(".footer-creative-curve .line .word .char");
-        gsap.from(refText, { 
+        gsap.to(refText, { 
             scrollTrigger: {
                 trigger: "#footer", 
-                scrub: 1, 
+                scrub: true, 
                 start: "35% bottom", 
                 end: "80% bottom",
                 invalidateOnRefresh: true
             }, 
-            yPercent: 100, 
+            y: 0, 
             duration: 1,
-            stagger: 0.05
+            stagger: 0.1,
         });
     })
     
     return (
         <>
-            <footer 
+            <footer
+                data-cursor-color="#fff"
                 data-cursor-exclusion
                 id="footer" 
                 className="relative h-[50vw] mobile:h-[130vh] bg-black tablet:h-[110vw]"

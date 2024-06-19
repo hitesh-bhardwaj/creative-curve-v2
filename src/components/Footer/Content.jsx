@@ -8,12 +8,12 @@ const Content = ({children}) => {
             <div className="container pt-[4%] pb-[2%] tablet:pt-[10%] tablet:pb-[5%] footer-container h-full">
                     <div className="grid grid-cols-12 mobile:flex mobile:flex-col">
                         {/* CTA */}
-                        <div className="col-span-12 border-b-[0.5px] mb-[5vw] tablet:mb-[10vw]">
-                            <Link href="#" className="relative group flex py-[0.6vw] justify-between items-center w-full hover:px-5 transition-all duration-300 ease-out">
-                                <h5 className="text-96 space-grotesk text-white relative z-20 mobile:text-[8vw] tablet:text-[10vw]">
+                        <div className="col-span-12 mb-[5vw] tablet:mb-[10vw]">
+                            <Link href="/contact" className="relative group flex py-[0.6vw] justify-between items-center w-full hover:px-5 transition-all duration-300 ease-out">
+                                <h5 className="text-96 space-grotesk text-white group-hover:invert transition-all duration-300 ease-out relative z-20 mobile:text-[8vw] tablet:text-[10vw]">
                                     Let's Talk!
                                 </h5>
-                                <div className="rounded-full relative z-20 border border-white flex justify-center items-center h-[6vw] w-[6vw] mobile:h-[10vw] mobile:w-[10vw] tablet:h-[10vw] tablet:w-[10vw] mobile:border-[0.1vw]">
+                                <div className="rounded-full relative z-20 border border-white group-hover:invert flex justify-center items-center h-[6vw] w-[6vw] mobile:h-[10vw] mobile:w-[10vw] tablet:h-[10vw] tablet:w-[10vw] mobile:border-[0.1vw]">
                                     <span className="w-[2vw] h-[2vw] block overflow-hidden scale-[0.8] mobile:w-[5vw] mobile:h-[5vw] tablet:w-[4vw] tablet:h-[4vw]">
                                         <div className="w-[100%] flex -translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-out">
                                             <Image
@@ -33,7 +33,7 @@ const Content = ({children}) => {
                                         </div>
                                     </span>
                                 </div>
-                                <span className="absolute z-10 top-0 left-0 h-full w-full block bg-accent ease-out scale-y-0 transition-all duration-300 group-hover:scale-y-100 origin-bottom" />
+                                <span className="absolute z-10 top-0 left-0 h-full w-full block scale-y-[0.005] bg-white group-hover:rounded-full ease-out transition-all duration-300 group-hover:scale-y-100 origin-bottom" />
                             </Link>
                         </div>
 

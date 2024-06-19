@@ -95,7 +95,7 @@ const Story = () => {
 
   return (
     <>
-      <section ref={container} className="bg-black text-white">
+      <section data-cursor-exclusion ref={container} className="bg-black text-white">
         <div className="container min-h-[80vw] tablet:min-h-[190vw] mobile:min-h-[135vh]">
           <div className="story-main text-white">
             <div

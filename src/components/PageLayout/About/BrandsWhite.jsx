@@ -86,8 +86,7 @@ function BrandsWhite() {
 
   return (
     <>
-      <section ref={brands} className="pt-[5%] pb-[10%] mobile:pt-[15%] mobile:pb-[25%] tablet:pt-[15%] tablet:pb-[15%] bg-white" id="brands" data-cursor-color="#fff">
-        
+      <section data-cursor-color="#000" ref={brands} className="pt-[5%] pb-[10%] mobile:pt-[15%] mobile:pb-[25%] tablet:pt-[15%] tablet:pb-[15%] bg-white" id="brands">
         <div className="container">
           <div className="w-[55%] mobile:w-full tablet:w-full">
             <p className="text-24 mb-[1vw] fadeUp text-textBody mobile:mb-[5vw]">Our Clients</p>

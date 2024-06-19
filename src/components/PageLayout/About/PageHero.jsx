@@ -84,7 +84,7 @@ const PageHero = () => {
   }    
     return (
         <>
-            <section className="h-[75vh] mobile:h-screen tablet:h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
+            <section data-cursor-exclusion className="h-[75vh] mobile:h-screen tablet:h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">
                 <div className="fixed top-0 left-0 w-full h-[75vh] mobile:h-screen mobile:static tablet:static tablet:h-[85vh]">
                     <div className="container h-full w-full mobile:relative tablet:relative">
                         <div className="flex flex-col justify-end h-full w-full items-start tablet:justify-center mobile:justify-start mobile:pt-[40%]">

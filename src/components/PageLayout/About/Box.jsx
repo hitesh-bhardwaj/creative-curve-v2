@@ -142,7 +142,7 @@ const Box = () => {
 
     return (
         <>
-            <section id="second-section" className="story-container h-full" ref={container}>
+            <section data-cursor-exclusion id="second-section" className="story-container h-full" ref={container}>
                 <div className="min-h-screen overflow-hidden">
                     <div className="h-screen relative flex justify-center items-center overflow-hidden">
                         <img ref={ele} src="/images/about/about-square.svg" alt="hero" className="absolute w-[20%] max-w-[1000%] pointer-events-none" />

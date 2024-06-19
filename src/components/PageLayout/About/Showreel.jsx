@@ -1,7 +1,9 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
+import { useLenis } from "@studio-freight/react-lenis";
+import VideoPlayer from "@/components/Showreel/VideoPlayer";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -10,6 +12,8 @@ const Showreel = () => {
     const container = useRef(null);
     const ele = useRef(null);
     const video = useRef(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const lenis = useLenis();
 
     useGSAP(() => {
 
@@ -36,9 +40,20 @@ const Showreel = () => {
         })
     });
 
+    const handlePlayReelClick = () => {
+        setIsModalOpen(true);
+        lenis.stop();
+    };
+
+    const handleClose = () => {
+        setIsModalOpen(false);
+        lenis.start();
+    };
+
+
     return (
         <>
-            <section ref={container} id="showreel" className="bg-black">
+            <section ref={container} id="showreel" className="bg-black" data-cursor-exclusion data-cursor-color="#fff">
                 <div className="min-h-screen w-screen relative flex items-center justify-center mobile:min-h-[50vh] tablet:min-h-[60vh]">
                     <div ref={video} className="overflow-hidden w-full h-full absolute">
                         <video 
@@ -52,10 +67,10 @@ const Showreel = () => {
                         </video>
                     </div>
                     <div ref={ele} className="container w-full flex items-center justify-center gap-[2vw] relative z-10">
-                        <h4 className="text-white text-[10vw]">
+                        <h4 className="text-white text-[10vw]" onClick={handlePlayReelClick}>
                             Play
                         </h4>
-                        <h4 className="text-white text-[10vw]">
+                        <h4 className="text-white text-[10vw]" onClick={handlePlayReelClick}>
                             Reel
                         </h4>
                     </div>
@@ -66,6 +81,11 @@ const Showreel = () => {
                     </div>
                 </div>
             </section>
+            <VideoPlayer
+                isOpen={isModalOpen}
+                onClose={handleClose}
+                videoSrc="/showreel.mp4"
+            />
         </>
     )
 }

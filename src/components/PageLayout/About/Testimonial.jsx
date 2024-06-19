@@ -35,7 +35,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <section id="testimonial" className="bg-white">
+      <section data-cursor-color="#000" id="testimonial" className="bg-white">
         <div className="container relative pt-[5%] pb-[10%] mobile:pt-[10%] mobile:pb-[20%] tablet:py-[10%]">
           <Swiper
             speed={1000}
@@ -54,7 +54,7 @@ const Testimonial = () => {
                 <PrevButton />
                 <NextButton />
             </div>
-            <SwiperSlide>
+            <SwiperSlide data-cursor-size="100px" data-cursor-text="Drag" data-cursor-color="#dcf3ff">
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
                         <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
@@ -69,7 +69,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide data-cursor-size="100px" data-cursor-text="Drag" data-cursor-color="#dcf3ff">
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
                         <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
@@ -84,7 +84,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide data-cursor-size="100px" data-cursor-text="Drag" data-cursor-color="#dcf3ff">
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
                         <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
@@ -99,7 +99,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide data-cursor-size="100px" data-cursor-text="Drag" data-cursor-color="#dcf3ff">
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
                         <Image className="h-auto w-[2vw]  mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>
@@ -114,7 +114,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide data-cursor-size="100px" data-cursor-text="Drag" data-cursor-color="#dcf3ff">
                 <div className="p-[2vw] space-y-[2vw] text-textHead">
                     <div className="flex items-center gap-2" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
                         <Image className="h-auto w-[2vw] mobile:w-[5vw]" width={25} height={30} loading="lazy" src="/images/icons/quote.svg" alt="quote icon"/>

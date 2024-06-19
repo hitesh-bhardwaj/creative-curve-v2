@@ -84,7 +84,7 @@ export default function PortfolioDetail({}) {
             <Hero 
                 heading={"White Ribbon Alliance"}
                 subheading={"Most women and girls are never asked to inform the decisions that are made about their bodies, health, or minds."}
-                imgSrc={"/images/projects/wra/hero.webp"}
+                imgSrc={"/images/projects/wra/hero.png"}
             />
 
             <Overview 

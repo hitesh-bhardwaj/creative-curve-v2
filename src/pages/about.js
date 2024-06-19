@@ -12,7 +12,7 @@ import Transition from "@/components/Transition";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { Cursor } from "react-creative-cursor";
+import { ReactCursor } from "@/components/ReactCursor";
 import 'react-creative-cursor/dist/styles.css';
 import SplitType from "split-type";
 
@@ -88,8 +88,8 @@ export default function aboutPage() {
 
     return (
         <>
-        <Cursor cursorSize={10} animationDuration={0.5}/>
-        <main data-cursor-exclusion>
+        <ReactCursor cursorSize={10} animationDuration={0.5}/>
+        <main>
             <Header />
             <PageHero />
             <Box />

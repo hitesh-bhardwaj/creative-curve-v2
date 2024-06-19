@@ -52,7 +52,7 @@ const Marquee = () => {
 
     return (
         <>
-            <section id="marquee" ref={container} className="overflow-hidden bg-white">
+            <section data-cursor-color="#000" id="marquee" ref={container} className="overflow-hidden">
                 <div className="h-[50vw] flex justify-center items-center mobile:h-[80vw] mobile:my-[10%] tablet:my-[10%]">
                     <div className="">
                         <div ref={slider} className="text-textHead flex w-max relative rotate-[15deg] mobile:rotate-[12deg]">

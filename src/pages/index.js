@@ -9,7 +9,8 @@ import Services from "@/components/PageLayout/Hero/Services";
 import Transition from "@/components/Transition";
 import gsap from "gsap";
 
-import { Cursor } from 'react-creative-cursor';
+// import { Cursor } from 'react-creative-cursor';
+import { ReactCursor } from "@/components/ReactCursor";
 import 'react-creative-cursor/dist/styles.css';
 
 export default function Index () {
@@ -20,7 +21,7 @@ export default function Index () {
   
   return (
     <>
-      <Cursor cursorSize={10} animationDuration={0.5}/>
+      <ReactCursor cursorSize={10} animationDuration={0.5}/>
       <main>
         <Header />
         <Hero />

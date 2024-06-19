@@ -81,6 +81,9 @@ html.lenis, html.lenis body {
 main::before{
     pointer-events: none;
 }
+.footer-creative-curve .line .char {
+    transform: translate3d(0, 100%, 0);
+}
 
 /* Header CSS Start */
 .three_canvas{
@@ -210,6 +213,9 @@ main::before{
     position: relative;
 }
 
+.modal-fixed{
+    position: fixed !important;
+}
 /* Main CSS end */
 
 /* Testimonial SwiperCSS Start */

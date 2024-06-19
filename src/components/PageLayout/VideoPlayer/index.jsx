@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+
 const VideoPlayer = ({ src, poster }) => {
   const videoRef = useRef();
   const [isPlaying, setIsPlaying] = useState(true);
