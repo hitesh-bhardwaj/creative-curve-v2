@@ -213,6 +213,7 @@ main::before{
     position: relative;
 }
 
+
 .modal-fixed{
     position: fixed !important;
 }

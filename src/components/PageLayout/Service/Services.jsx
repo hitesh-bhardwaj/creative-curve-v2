@@ -1,9 +1,5 @@
 import ServiceCarousel from "./ServiceCarousel"
-import gsap from "gsap";
 
-import { useGSAP } from "@gsap/react";
-
-import SplitType from "split-type";
 
 const Services = () => {
     

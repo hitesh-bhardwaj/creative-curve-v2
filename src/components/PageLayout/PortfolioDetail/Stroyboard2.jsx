@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import SplitType from "split-type";
+
 
 const Storyboard2 = ({ className, img1, img2, img3, img4, img5, img6 }) => {
    

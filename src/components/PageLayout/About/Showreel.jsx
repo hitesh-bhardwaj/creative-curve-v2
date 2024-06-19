@@ -15,22 +15,21 @@ const Showreel = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const lenis = useLenis();
 
-    useGSAP(() => {
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 80%",
+        end: "50% 50%",
+        markers: false,
+        scrub: true,
+      },
+    });
 
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: container.current,
-                start: "top 80%",
-                end: "50% 50%",
-                markers: false,
-                scrub: true,
-            },
-        });
-
-        tl.from(video.current, {
-            scale: 0.5,
-            duration: 2,
-        });
+    tl.from(video.current, {
+      scale: 0.5,
+      duration: 2,
+    });
 
         tl.from(ele.current, {
             duration: 2,
@@ -90,4 +89,4 @@ const Showreel = () => {
     )
 }
 
-export default Showreel
+export default Showreel;

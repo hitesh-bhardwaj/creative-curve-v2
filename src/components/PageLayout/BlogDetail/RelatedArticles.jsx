@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import blogData from "@/components/PageLayout/Blog/blogdata.json";
 import ButtonWhite from "@/components/Button/ButtonWhite";
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const VideoPlayer = ({ src, poster }) => {
   const videoRef = useRef();
@@ -34,25 +34,25 @@ const VideoPlayer = ({ src, poster }) => {
         {isPlaying ? 
         (
           <button
-          className={`absolute rounded-full border bg-black/10 backdrop-blur-lg w-[10vw] h-[10vw] buttonanim`}
+          className={`absolute rounded-full border bg-black/10 backdrop-blur-lg w-[10vw] h-[10vw] buttonanim mobile:w-[20vw] mobile:h-[20vw] tablet:w-[15vw] tablet:h-[15vw]`}
         >
           <div
-            className="flex w-full h-full justify-center items-center gap-[0.5vw]"
+            className="flex w-full h-full justify-center items-center gap-[0.5vw] mobile:gap-[1.5vw] tablet:gap-[1vw]"
           >
-            <span className="w-[2vw]">
+            <span className="w-[2vw] mobile:w-[4vw] tablet:w-[3vw]">
               <img src="/images/icons/play.svg" alt="play-icon" />
             </span>
-            <p className="text-24 text-white uppercase">Play</p>
+            <p className="text-24 text-white uppercase mobile:text-[3.5vw]">Play</p>
           </div>
         </button>
         ) : (
-            <button className={`absolute rounded-full border bg-black/10 backdrop-blur-lg w-[10vw] h-[10vw] buttonanim opacity-0 hover:opacity-100 transition-all duration-1000`}>
+            <button className={`absolute rounded-full border bg-black/10 backdrop-blur-lg w-[10vw] h-[10vw] buttonanim opacity-0 hover:opacity-100 transition-all duration-1000 mobile:w-[20vw] mobile:h-[20vw] tablet:w-[15vw] tablet:h-[15vw]`}>
             <div
-                className="flex w-full h-full justify-center items-center gap-[0.5vw]">
-              <span className="w-[2vw]">
+                className="flex w-full h-full justify-center items-center gap-[0.5vw] mobile:gap-[1.5vw] tablet:gap-[1vw]">
+              <span className="w-[2vw] mobile:w-[4vw] tablet:w-[3vw]">
                 <img src="/images/icons/pause-icon.svg" alt="pause-icon" />
               </span>
-              <p className="text-24 text-white uppercase">Pause</p>
+              <p className="text-24 text-white uppercase mobile:text-[3.5vw]">Pause</p>
             </div>
           </button>
         )}

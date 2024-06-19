@@ -1,8 +1,6 @@
 import ContactForm from "./ContactForm"
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
 gsap.registerPlugin(ScrollTrigger);
 
 const FormContainer = () => {

@@ -5,7 +5,15 @@ import Menu from "./Menu";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [buttonDisabled, setButtonDisabled] = useState(false);
-
+    // function linkclose(){
+    //     setButtonDisabled(true);
+    
+    //     // Toggle the menu
+    //     setMenuOpen((prevState) => !prevState);
+    // }
+   
+    
+   
     const handleMenuButtonClick = () => {
         // Disable the button
         setButtonDisabled(true);
@@ -33,7 +41,7 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-                <Menu menuOpen={menuOpen}/>
+                <Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
             </div>
 
             <header className="fixed top-0 bottom-0 right-0 left-0 w-full z-[201] mix-blend-exclusion pointer-events-none">

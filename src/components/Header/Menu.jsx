@@ -7,7 +7,7 @@ import gsap from "gsap";
 
 gsap.registerPlugin(useGSAP);
 
-export default function Menu({ menuOpen }) {
+export default function Menu({ menuOpen, setMenuOpen }) {
   const menuRef = useRef(null);
   const linksRef = useRef([]);
   const emailRef = useRef(null);
@@ -20,6 +20,7 @@ export default function Menu({ menuOpen }) {
     { id: 1, text: "Blog", href: "/blog" },
     { id: 3, text: "Contact", href: "/contact" },
   ]
+  
 
   useGSAP(() => {
     const social = document.querySelectorAll(".social-links")
@@ -85,6 +86,10 @@ export default function Menu({ menuOpen }) {
                   key={index}
                   className="text-[1.35vw] w-full text-black mobile:text-[6vw] tablet:text-[3vw]"
                   ref={(el) => (linksRef.current[index] = el)}
+                  onClick={()=>{
+                    setMenuOpen(false)
+                  }}
+                  
                 >
                   <MenuLink link={link.href} linkText={link.text} />
                 </li>
@@ -160,6 +165,7 @@ export default function Menu({ menuOpen }) {
                   height={30}
                   alt={icon.alt}
                   loading="lazy"
+                  className="hover:opacity-50 transition-all ease-out duration-500 hover:scale-[1.15]"
                 />
               </Link>
             ))}

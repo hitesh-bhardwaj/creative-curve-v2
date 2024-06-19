@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import SplitType from "split-type";
+
 
 
 const Campaign = ({ className, secSubHead, title, img1, img2, img3, content1, content2 }) => {

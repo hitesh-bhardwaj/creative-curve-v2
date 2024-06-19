@@ -39,6 +39,7 @@
     "react-dom": "^18.2.0",
     "react-email": "^2.1.4",
     "react-hook-form": "^7.51.5",
+    "react-modal-video": "^2.0.2",
     "resend": "^3.2.0",
     "sharp": "^0.33.4",
     "split-type": "^0.3.4",

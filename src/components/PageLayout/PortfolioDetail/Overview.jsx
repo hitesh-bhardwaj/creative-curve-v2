@@ -1,8 +1,8 @@
 import VideoPlayer from "../VideoPlayer"
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
@@ -30,7 +30,7 @@ const Overview = ({ videoSrc, videoPoster, content1, content2 }) => {
                     </div>
 
                     {videoSrc && (
-                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[70vh] mobile:mt-[15%] fadeUp">
+                        <div className="w-full mt-[8%] rounded-[40px] overflow-hidden mobile:h-[22vh] mobile:mt-[15%] mobile:rounded-[15px] fadeUp">
                             <VideoPlayer 
                                 src={videoSrc}
                                 poster={videoPoster}

@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
-import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import ButtonWhite from "@/components/Button/ButtonWhite";
 
