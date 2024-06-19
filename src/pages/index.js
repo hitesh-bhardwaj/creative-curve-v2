@@ -8,10 +8,18 @@ import Portfolio from "@/components/PageLayout/Hero/Portfolio";
 import Services from "@/components/PageLayout/Hero/Services";
 import Transition from "@/components/Transition";
 import gsap from "gsap";
+import styles from "@/components/Transition/index.module.css";
 
-// import { Cursor } from 'react-creative-cursor';
 import { ReactCursor } from "@/components/ReactCursor";
 import 'react-creative-cursor/dist/styles.css';
+import Loader from "@/components/Loader";
+import { motion } from "framer-motion";
+
+const calculateRandomBlockDelay = (rowIndex, totalRows) => {
+  const blockDelay = Math.random() * 0.5;
+  const rowDelay = (totalRows - rowIndex - 1) * 0.05;
+  return blockDelay + rowDelay;
+};
 
 export default function Index () {
 
@@ -21,7 +29,8 @@ export default function Index () {
   
   return (
     <>
-      <ReactCursor cursorSize={10} animationDuration={0.5}/>
+      <Loader />
+      <ReactCursor />
       <main>
         <Header />
         <Hero />
@@ -32,7 +41,27 @@ export default function Index () {
         <Blog />
         <Footer />
       </main>
-      <Transition />
+      {/* <Transition /> */}
+      <div className={`${styles.blocksContainer} ${styles.transitionOut}`}>
+        {Array.from({ length: 10 }).map((_, rowIndex) => (
+          <div className={styles.row} key={rowIndex}>
+            {Array.from({ length: 11 }).map((_, blockIndex) => (
+              <motion.div
+                key={blockIndex}
+                className={styles.block}
+                initial={{ scaleY: 0 }}
+                animate={{ scaleY: 0 }}
+                exit={{ scaleY: 1 }}
+                transition={{
+                  duration: 0.25,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: calculateRandomBlockDelay(rowIndex, 10),
+                }}
+              ></motion.div>
+            ))}
+          </div>
+        ))}
+      </div>
     </>
   )
 }

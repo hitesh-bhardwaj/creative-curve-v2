@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Pr from "@/components/PageLayout/PortfolioDetail/Pr";
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +10,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
 import Transition from "@/components/Transition";
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 export default function PortfolioDetail({}) {
@@ -77,13 +77,13 @@ export default function PortfolioDetail({}) {
       }, []);
     return (
         <>
-          <Cursor cursorSize={10} animationDuration={0.5}/>
+          <ReactCursor />
           <main>
               <Header />
               <Hero 
                   heading={"KHPT"}
                   subheading={"KHPT's model is comprised of three engines that demonstrate pathways to create scalable impact. We deploy the model through our multiple themes."}
-                  imgSrc={"/images/projects/khpt/hero.webp"}
+                  imgSrc={"/images/projects/khpt/hero.png"}
               />
 
               <Overview 

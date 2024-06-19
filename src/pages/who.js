@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Storyboard from "@/components/PageLayout/PortfolioDetail/Stroyboard";
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +10,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
 import Transition from "@/components/Transition";
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -81,13 +81,13 @@ export default function PortfolioDetail({}) {
 
     return (
         <>
-        <Cursor cursorSize={10} animationDuration={0.5}/>
+        <ReactCursor />
         <main>
             <Header />
             <Hero 
                 heading={"WHO"}
                 subheading={"WHO leads global efforts to expand universal health coverage. We direct and coordinate the world's response to health emergencies."}
-                imgSrc={"/images/projects/who/hero.webp"}
+                imgSrc={"/images/projects/who/hero.png"}
             />
 
             <Overview 

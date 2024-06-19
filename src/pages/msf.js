@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Storyboard2 from "@/components/PageLayout/PortfolioDetail/Stroyboard2";
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +10,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
 import Transition from "@/components/Transition";
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -81,13 +81,13 @@ export default function PortfolioDetail({}) {
 
   return (
         <>
-          <Cursor cursorSize={10} animationDuration={0.5}/>
+          <ReactCursor />
           <main>
               <Header />
               <Hero 
                   heading={"MSF"}
                   subheading={"MSF may speak out publicly to bring a forgotten crisis into view, or to denounce abuses, or challenge the diversion of assistance."}
-                  imgSrc={"/images/projects/msf/hero.webp"}
+                  imgSrc={"/images/projects/msf/hero.png"}
               />
               <Overview 
                   content1={"With more than 40 years of field experience as an emergency and humanitarian aid organisation, and as part of our need to reflect critically on our actions and improve our ways of working, several reflection centres have been set up within MSF."}

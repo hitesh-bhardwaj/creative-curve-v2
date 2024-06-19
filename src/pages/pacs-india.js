@@ -3,7 +3,6 @@ import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import Events from "@/components/PageLayout/PortfolioDetail/Events";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +10,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
 import Transition from "@/components/Transition";
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -78,13 +78,13 @@ export default function PortfolioDetail({}) {
       }, []);
     return (
       <>
-        <Cursor cursorSize={10} animationDuration={0.5}/>
+        <ReactCursor />
         <main>
             <Header />
             <Hero 
                 heading={"PACS INDIA"}
                 subheading={"Primary Agricultural Credit Societies are the grass root level arms of the short-term co-operative credit structure."}
-                imgSrc={"/images/projects/pacs-india/hero.webp"}
+                imgSrc={"/images/projects/pacs-india/hero.png"}
             />
 
             <Overview 

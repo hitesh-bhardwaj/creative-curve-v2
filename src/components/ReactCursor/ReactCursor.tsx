@@ -76,7 +76,7 @@ interface CursorProps {
 
 export const ReactCursor: FC<CursorProps> = ({
   isGelly = false,
-  animationDuration = 1.25,
+  animationDuration = 0.5,
   animationEase = Expo.easeOut,
   gellyAnimationAmount = 50,
   stickAnimationAmount = 0.09,
@@ -93,7 +93,7 @@ export const ReactCursor: FC<CursorProps> = ({
   sizeAnimationDuration = 0.5,
   textAnimationEase = Expo.easeOut,
   textAnimationDuration = 1,
-  cursorSize = 48,
+  cursorSize = 10,
   cursorBackgrounColor = '#000',
   exclusionBackgroundColor = '#fff',
   cursorInnerColor = '#fff',

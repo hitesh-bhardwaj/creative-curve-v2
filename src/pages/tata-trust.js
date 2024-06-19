@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/PageLayout/PortfolioDetail/Hero";
 import Overview from "@/components/PageLayout/PortfolioDetail/Overview";
 import VideoPlayer from "@/components/PageLayout/VideoPlayer";
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,6 +10,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SplitType from "split-type";
 import Transition from "@/components/Transition";
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -81,13 +81,13 @@ export default function PortfolioDetail({}) {
 
     return (
         <>
-          <Cursor cursorSize={10} animationDuration={0.5}/>
+          <ReactCursor />
           <main>
             <Header />
             <Hero 
                 heading={"Tata Trust"}
                 subheading={"The journey of a million smiles began in 1892 with Jamsetji Tata, the pioneer, visionary and founder of the Tata Group."}
-                imgSrc={"/images/projects/tata-trust/hero.webp"}
+                imgSrc={"/images/projects/tata-trust/hero.png"}
             />
 
             <Overview 

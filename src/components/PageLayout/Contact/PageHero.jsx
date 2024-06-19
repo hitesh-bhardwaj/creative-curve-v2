@@ -53,8 +53,8 @@ const PageHero = () => {
         })
     }, []);
 
-    if(globalThis.innerWidth>640){
     useGSAP(()=> {
+        if(globalThis.innerWidth>640){
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: "#hero",
@@ -81,8 +81,8 @@ const PageHero = () => {
           duration: 0.8,
           delay: -0.7,ease: "power2.in",
         })
-      });
     }
+      });
 
     return (
         <>

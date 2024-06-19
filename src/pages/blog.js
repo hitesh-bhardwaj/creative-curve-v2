@@ -9,8 +9,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from "split-type";
 
-import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
+import { ReactCursor } from "@/components/ReactCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -78,7 +78,7 @@ export default function blogPage() {
       }, []);
     return (
         <>
-        <Cursor cursorSize={10} animationDuration={0.5}/>
+        <ReactCursor />
         <main>
             <Header />
             <PageHero />

@@ -12,7 +12,7 @@ function Hero() {
     const handleSmoothScroll = () => {
         gsap.to(window, {
             duration: 1.5,
-            scrollTo: {y: "#second-section", offsetY: 50},
+            scrollTo: {y: "#second-section", offsetY: 0},
             ease: "power3.inOut",
         });
     };
@@ -31,7 +31,7 @@ function Hero() {
       tl.from(we.current, {
           duration: 1,
           xPercent: -150,
-          delay: 1,
+          delay: 4.3,
           ease: "power3.out"
       })
       .from(transform.current, {
@@ -75,42 +75,44 @@ function Hero() {
       })
   }, []);
 
-  useGSAP(()=> {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#hero",
-        start: "top top",
-        end: "bottom 40%",
-        scrub: true,
-      }
+    useGSAP(()=> {
+    if(globalThis.innerWidth>640) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "bottom 40%",
+          scrub: true,
+        }
+      });
+  
+      tl.to(worldwide.current, {
+        yPercent: 100,
+        duration: 0.8,
+        ease: "power2.in",
+      }).to(brands.current, {
+        yPercent: 100,
+        duration: 0.8,
+        delay: -0.7,ease: "power2.in",
+      }).to(".para-anim", {
+        yPercent: 100,
+        duration: 0.8,
+        delay: -0.7,ease: "power2.in",
+      }).to(transform.current, {
+        yPercent: 100,
+        duration: 0.8,
+        delay: -0.7,ease: "power2.in",
+      }).to(we.current, {
+        yPercent: 100,
+        duration: 0.8,
+        delay: -0.7,ease: "power2.in",
+      }).to(small.current, {
+        yPercent: 100,
+        duration: 0.8,
+        delay: -0.7,ease: "power2.in",
+      })
+    }
     });
-
-    tl.to(worldwide.current, {
-      yPercent: 100,
-      duration: 0.8,
-      ease: "power2.in",
-    }).to(brands.current, {
-      yPercent: 100,
-      duration: 0.8,
-      delay: -0.7,ease: "power2.in",
-    }).to(".para-anim", {
-      yPercent: 100,
-      duration: 0.8,
-      delay: -0.7,ease: "power2.in",
-    }).to(transform.current, {
-      yPercent: 100,
-      duration: 0.8,
-      delay: -0.7,ease: "power2.in",
-    }).to(we.current, {
-      yPercent: 100,
-      duration: 0.8,
-      delay: -0.7,ease: "power2.in",
-    }).to(small.current, {
-      yPercent: 100,
-      duration: 0.8,
-      delay: -0.7,ease: "power2.in",
-    })
-  }, []);
 
   return (
     <>

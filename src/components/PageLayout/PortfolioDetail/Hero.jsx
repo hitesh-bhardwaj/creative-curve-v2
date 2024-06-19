@@ -60,8 +60,8 @@ const Hero = ({ heading, subheading, imgSrc }) => {
         })
     }, []);
 
-    if(globalThis.innerWidth>640){
     useGSAP(()=> {
+        if(globalThis.innerWidth>640){
         const headAnim = headingRef.current.querySelectorAll(".line .word");
 
         const tl = gsap.timeline({
@@ -87,8 +87,8 @@ const Hero = ({ heading, subheading, imgSrc }) => {
             delay: -0.8,
             ease: "power2.in"
         });
-      });
     }
+      });
 
     return (
         <>

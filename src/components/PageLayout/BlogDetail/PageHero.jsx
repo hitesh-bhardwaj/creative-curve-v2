@@ -45,8 +45,8 @@ const PageHero = () => {
         })
     }, []);
 
-    if(globalThis.innerWidth>640){
     useGSAP(()=> {
+    if(globalThis.innerWidth>640){
         const textWords = heading.current.querySelectorAll(".word")
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -74,8 +74,8 @@ const PageHero = () => {
             delay: -0.2,
             ease: "power2.in"
         });
-      });
     }
+      });
        
     return (
         <>

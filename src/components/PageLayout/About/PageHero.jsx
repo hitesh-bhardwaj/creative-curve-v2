@@ -52,8 +52,8 @@ const PageHero = () => {
       });
   }, []);
 
-  if(globalThis.innerWidth>1023){
   useGSAP(()=> {
+  if(globalThis.innerWidth>1023){
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -80,8 +80,9 @@ const PageHero = () => {
         duration: 0.8,
         delay: -0.7,ease: "power2.in",
       });
-    });
-  }    
+    }    
+  });
+  
     return (
         <>
             <section data-cursor-exclusion className="h-[75vh] mobile:h-screen tablet:h-[85vh]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}} id="hero">

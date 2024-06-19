@@ -114,7 +114,7 @@ const Achievement = () => {
                     <div ref={containerRef} className="w-full grid grid-cols-2 text-textHead grid-rows-5 gap-x-[3vw] gap-y-[4vw] mt-[5vw] mobile:flex mobile:flex-col mobile:mt-[10vw] mobile:gap-[2vh] about-ach-block-container">
                         
                         <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F6FFE7] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left tablet:h-[30vw] tablet:rounded-[20px]">
-                            <div className="h-[5.5vw] overflow-hidden">
+                            <div className="h-[5.5vw] overflow-hidden mobile:h-[5.5vh]">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     1270
                                     <span className="text-[80%] h-fit overflow-hidden translate-y-[-10%] font-normal mobile:text-[10vw]">
@@ -137,7 +137,7 @@ const Achievement = () => {
                         </div>
 
                         <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#F3F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-2 row-start-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right tablet:h-[30vw] tablet:rounded-[20px]">
-                            <div className="h-[5.5vw] overflow-hidden">
+                            <div className="h-[5.5vw] overflow-hidden mobile:h-[5.5vh]">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     130
                                     <span className="text-[80%] h-fit overflow-hidden translate-y-[-10%] font-normal mobile:text-[10vw]">
@@ -159,7 +159,7 @@ const Achievement = () => {
                         </div>
 
                         <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#E8F2FF] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 col-start-1 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-left tablet:h-[30vw] tablet:rounded-[20px]">
-                            <div className="h-[5.5vw] overflow-hidden">
+                            <div className="h-[5.5vw] overflow-hidden mobile:h-[5.5vh]">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     8
                                     <span className="text-[80%] h-fit overflow-hidden translate-y-[-10%] font-normal mobile:text-[10vw]">
@@ -181,7 +181,7 @@ const Achievement = () => {
                         </div>
 
                         <div onMouseEnter={handleHover} onMouseLeave={handleHoverExit} className="bg-[#FFF3ED] p-[7%] border border-black/10 h-[25vw] col-span-1 row-span-2 rounded-[40px] flex justify-between flex-col items-end mobile:h-[60vw] mobile:rounded-[12px] ach-block-right tablet:h-[30vw] tablet:rounded-[20px]">
-                            <div className="h-[5.5vw] overflow-hidden">
+                            <div className="h-[5.5vw] overflow-hidden mobile:h-[5.5vh]">
                                 <p ref={text} className="text-[5.65vw] leading-[1] flex w-full font-medium mobile:text-[12vw] split-text split-text-1">
                                     20
                                     <span className="text-[80%] h-fit overflow-hidden translate-y-[-10%] font-normal mobile:text-[10vw]">

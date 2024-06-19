@@ -78,13 +78,13 @@ export default function PortfolioDetail({}) {
       }, []);
     return (
       <>
-        <ReactCursor cursorSize={10} animationDuration={0.5}/>
+        <ReactCursor />
         <main>
             <Header />
             <Hero 
                 heading={"ICMR"}
                 subheading={"The Indian Council of Medical Research (ICMR), New Delhi, the apex body in India for the formulation."}
-                imgSrc={"/images/projects/icmr/hero.webp"}
+                imgSrc={"/images/projects/icmr/hero.png"}
             />
 
             <Overview 

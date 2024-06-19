@@ -1,0 +1,96 @@
+/* Preloader */
+.overlay {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    will-change: transform;
+    z-index: 15;
+    background: #000;
+    z-index: 999;
+  }
+  
+  @media screen and (min-width:750px) {
+    .overlay {
+        z-index: 999
+    }
+  }
+  
+  .background {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: 999
+  }
+  
+  .cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .background .cover {
+    pointer-events: none
+  }
+  
+  .div{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000;
+  }
+  
+  .preloader {
+    box-shadow: inset 0 0 0 0 #000;
+    height: 100vw;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    z-index: 2
+  }
+  
+  .preloader .bar {
+    background: #000;
+    box-shadow: 0 0 0 2px #000;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transform-origin: right;
+    width: 100%;
+    z-index: 1
+  }
+  
+  .preloader .logo {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(calc(-100% + 10px)) translateY(calc(-100% + 10px))
+  }
+  
+  .preloader .dot {
+    background: #fff;
+    bottom: 3px;
+    height: 14px;
+    opacity: 0;
+    position: absolute;
+    right: 3px;
+    transform-origin: bottom;
+    width: 14px;
+    z-index: 1
+  }
+  
+  .preloader .icon {
+    display: inline-block;
+    height: 5.5rem;
+    opacity: 0;
+    font-size: 96px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Aeonik';
+    line-height: 1;
+  }

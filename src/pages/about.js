@@ -88,7 +88,7 @@ export default function aboutPage() {
 
     return (
         <>
-        <ReactCursor cursorSize={10} animationDuration={0.5}/>
+        <ReactCursor />
         <main>
             <Header />
             <PageHero />
