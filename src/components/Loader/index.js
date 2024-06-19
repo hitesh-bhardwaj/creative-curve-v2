@@ -45,11 +45,19 @@ export default function Loader() {
                 x: "150%",
                 ease: "power2.inOut"
             }, "-=1");
-            tl.to(".dot", {
-                duration: 1,
-                x: "23rem",
-                ease: "power2.inOut"
-            }, "-=1");
+            if(globalThis.innerWidth>1023){
+                tl.to(".dot", {
+                    duration: 1,
+                    x: "23rem",
+                    ease: "power2.inOut"
+                }, "-=1");
+            } else {
+                tl.to(".dot", {
+                    duration: 1,
+                    x: "40vw",
+                    ease: "power2.inOut"
+                }, "-=1");
+            }
             tl.to(".dot", {
                 duration: 1,
                 scaleX: 1.14,

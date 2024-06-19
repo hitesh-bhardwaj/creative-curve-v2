@@ -5,7 +5,6 @@
     position: fixed;
     width: 100vw;
     will-change: transform;
-    z-index: 15;
     background: #000;
     z-index: 999;
   }
@@ -88,9 +87,27 @@
     display: inline-block;
     height: 5.5rem;
     opacity: 0;
-    font-size: 96px;
+    font-size: 6vw;
     color: #fff;
     font-weight: 500;
     font-family: 'Aeonik';
     line-height: 1;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .preloader .icon {
+      font-size: 10vw;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .preloader .icon {
+      height: fit-content;
+      font-size: 10vw;
+    }
+    .preloader .dot {
+      height: 9px;
+      width: 9px;
+    }
   }
