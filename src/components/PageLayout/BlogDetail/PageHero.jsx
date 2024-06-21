@@ -46,7 +46,7 @@ const PageHero = () => {
     }, []);
 
     useGSAP(()=> {
-    if(globalThis.innerWidth>640){
+    if(globalThis.innerWidth>540){
         const textWords = heading.current.querySelectorAll(".word")
         const tl = gsap.timeline({
           scrollTrigger: {

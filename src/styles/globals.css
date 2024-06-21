@@ -336,7 +336,7 @@ main::before{
         display: none !important;
     }
 }
-@media  screen and (min-width:541px) and (max-width:1024px) {
+@media  screen and (min-width:541px) and (max-width:1023px) {
     :root{
         --accent: #ff7300;
         --black: #000000;

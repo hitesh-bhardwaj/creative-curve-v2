@@ -38,7 +38,7 @@ const Box = () => {
         const splitText = new SplitType(text.current, { types: 'lines, words, chars' });
         const boxPara = text.current.querySelectorAll(".line .word .char");
 
-        if(globalThis.innerWidth<640){
+        if(globalThis.innerWidth<540){
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
@@ -76,7 +76,7 @@ const Box = () => {
                 scrollTrigger: {
                     trigger: container.current,
                     start: "top top",
-                    end: "+=2000 top",
+                    end: "+=2500 top",
                     markers: false,
                     scrub: true,
                     pin: true,
@@ -87,7 +87,7 @@ const Box = () => {
                 height: "800vw",
                 rotate: "180deg",
                 ease: "power1.out",
-                duration: 20,
+                duration: 10,
             })
             .fromTo(document.querySelector("body"), {
                 backgroundColor: "#fff",

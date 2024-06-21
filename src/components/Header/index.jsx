@@ -5,12 +5,7 @@ import Menu from "./Menu";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [buttonDisabled, setButtonDisabled] = useState(false);
-    // function linkclose(){
-    //     setButtonDisabled(true);
     
-    //     // Toggle the menu
-    //     setMenuOpen((prevState) => !prevState);
-    // }
    
     
    

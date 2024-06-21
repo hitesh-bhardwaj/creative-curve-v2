@@ -8,7 +8,7 @@ const ScrollButton = () => {
     const handleSmoothScroll = () => {
         gsap.to(window, {
             duration: 1.5,
-            scrollTo: {y: "#second-section", offsetY: 50},
+            scrollTo: {y: "#second-section"},
             ease: "power3.inOut",
         });
     };

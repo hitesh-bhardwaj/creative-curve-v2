@@ -132,10 +132,10 @@ const Content = ({children}) => {
                         </div>
 
                         <div className="col-span-12 flex justify-between items-center my-[4vw] tablet:my-[15%] text-gray-1 mobile:mt-[5vh] ">
-                            <p className="mobile:text-[3vw] tablet:text-2xl">
+                            <p className="mobile:text-[3vw] tablet:text-[2.5vw]">
                                 © 2024 | Alrights reserved by Creative Curve
                             </p>
-                            <p className="mobile:text-[3vw] tablet:text-2xl">
+                            <p className="mobile:text-[3vw] tablet:text-[2.5vw]">
                                 By: <Link data-cursor-size="60px" href="https://weareenigma.com" className="relative after:absolute after:block after:bottom-[-20%] after:left-0 after:w-full after:h-[1px] after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300">Enigma</Link>
                             </p>
                         </div>

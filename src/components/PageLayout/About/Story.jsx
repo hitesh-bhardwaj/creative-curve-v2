@@ -38,7 +38,7 @@ const Story = () => {
             height: "30vw",
         })
       });
-    } else if (globalThis.innerWidth>640) {
+    } else if (globalThis.innerWidth>540) {
       useGSAP(()=> {
         gsap.to(img1.current, {
             scrollTrigger: {
@@ -96,7 +96,7 @@ const Story = () => {
   return (
     <>
       <section data-cursor-exclusion ref={container} className="bg-black text-white">
-        <div className="container min-h-[80vw] tablet:min-h-[190vw] mobile:min-h-[135vh]">
+        <div className="container min-h-[80vw] tablet:min-h-[190vw] mobile:min-h-[135vh] pb-[15%]">
           <div className="story-main text-white">
             <div
               ref={accordion1}

@@ -109,6 +109,8 @@ const VideoPlayer = ({ isOpen, onClose, videoSrc }) => {
             </button>
           </div>
         </div>
+        <div className="w-[8vw] h-[8vw] mobile:w-[10vw] hidden tablet:block mobile:block absolute right-[7%] top-[5%] mobile:right-[5%] mobile:top-[5%]" onClick={onClose}><img src="/images/icons/close-cursor.svg" alt="close-cursor"/></div>
+
       </div>
     </div>
   );

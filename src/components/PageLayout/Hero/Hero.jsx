@@ -71,12 +71,12 @@ function Hero() {
         y: 30,
         opacity: 0,
         ease: "power3.out",
-        delay: -0.4
+        delay: -0.6
       })
   }, []);
 
     useGSAP(()=> {
-    if(globalThis.innerWidth>640) {
+    if(globalThis.innerWidth>540) {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",

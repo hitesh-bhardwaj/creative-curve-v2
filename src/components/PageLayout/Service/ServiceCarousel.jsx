@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const ServiceCarousel = () => {
   const carouselRef = useRef(null);
 
-  if(globalThis.innerWidth>=640) {
+  if(globalThis.innerWidth>=540) {
   useGSAP(()=>{
       const carousel = carouselRef.current;
       let nbCartes = carousel.querySelectorAll('.leCarou .innerImg').length;

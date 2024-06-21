@@ -1,12 +1,17 @@
 import gsap from "gsap";
 import styles from './styles.module.css';
 import { useGSAP } from "@gsap/react";
+import { useLenis } from "@studio-freight/react-lenis";
+import { useEffect } from "react";
 
 gsap.registerPlugin(useGSAP);
 
 export default function Loader() {
 
-    useGSAP(() => {
+    const lenis = useLenis();
+
+    useEffect(() => {
+
             const tl = gsap.timeline();
 
             if(globalThis.innerWidth>1023){
@@ -14,6 +19,7 @@ export default function Loader() {
                     duration: 1,
                     delay: 0,
                     boxShadow: `inset 0 0 0 49.5vw rgb(0, 0, 0)`,
+                  
                     onComplete: () => {
                          gsap.set(".bar", {
                             opacity: 1,
@@ -126,7 +132,7 @@ export default function Loader() {
                     });
                 }
             }, "-=0");
-    });
+    }, [lenis]);
 
     return(
         <>

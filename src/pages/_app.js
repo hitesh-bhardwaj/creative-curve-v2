@@ -77,7 +77,7 @@ export default function App({ Component, pageProps, router }) {
         }}
       />
 
-      <ReactLenis root lerp={0.01}>
+      <ReactLenis root>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
           <Analytics />

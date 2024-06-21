@@ -54,7 +54,7 @@ const PageHero = () => {
     }, []);
   
     useGSAP(()=> {
-    if(globalThis.innerWidth>640){
+    if(globalThis.innerWidth>540){
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
