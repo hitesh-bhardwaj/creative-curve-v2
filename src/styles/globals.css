@@ -84,6 +84,18 @@ main::before{
 .footer-creative-curve .line .char {
     transform: translate3d(0, 100%, 0);
 }
+.under-multi{
+  text-decoration: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0)), linear-gradient(#000000, #000000);
+  background-size: 100% 0px, 0% 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat, no-repeat;
+  transition: all 0.5s ease-out; 
+}
+
+.under-multi-parent:hover .under-multi {
+  background-size: 100% 0px, 100% 1px;
+}
 
 /* Header CSS Start */
 .three_canvas{

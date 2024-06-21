@@ -1,10 +1,11 @@
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import Flip from "gsap/dist/Flip";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import ButtonDark from "@/components/Button/ButtonDark";
+import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(Flip);
+gsap.registerPlugin(Flip, ScrollTrigger, useGSAP);
 
 var gridItemClickListeners = [];
 function repositionItems(clickedItem) {
@@ -119,22 +120,42 @@ function destroyServices() {
 
 const ServiceDesktop = () => {
 
-    useEffect(() => {
+      useGSAP(() => {
         if(globalThis.innerWidth<541){
         }else{
           initServices();
+          const fadeUps = document.querySelectorAll(".serviceFadeUp");
+          fadeUps.forEach((fadeUp) => {
+          gsap.fromTo(
+            fadeUp,
+            {
+              opacity: 0,
+              y: 50,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.6,
+              ease: "Power3.out",
+              scrollTrigger: {
+                trigger: fadeUp,
+                start: "top 85%",
+              },
+            }
+          );
+        });
         return () => {
           destroyServices();
-        };
         }
+      };
       }, []);
 
     return (
         <>
-        <div className="grid grid-cols-2 grid-rows-3 gap-[1.5vw] mobile:flex-col mobile:hidden tablet:hidden">
+        <div className="grid grid-cols-2 grid-rows-3 gap-[1.5vw] mobile:flex-col mobile:hidden tablet:hidden min-h-[46vw]">
             <div
               ser-slot="1"
-              className="relative pointer-events-auto z-[99] fadeUp ser-grid-slot is--active col-span-1 col-start-1 row-span-3 row-start-1"
+              className="relative pointer-events-auto z-[99] serviceFadeUp ser-grid-slot is--active col-span-1 col-start-1 row-span-3 row-start-1"
             >
               <div className="ser-grid-item is--active">
                 <div className="ser-grid-item-div mobile:border-[0.1vh] mobile:border-white mobile:p-[5%] mobile:h-full mobile:rounded-[10px]">
@@ -212,7 +233,7 @@ const ServiceDesktop = () => {
 
             <div
               ser-slot="2"
-              className="relative pointer-events-auto z-[99] fadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-1 mobile:mt-[2vh]"
+              className="relative pointer-events-auto z-[99] serviceFadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-1 mobile:mt-[2vh]"
             >
               <div className="ser-grid-item">
                 <div className="ser-grid-item-div mobile:border-[0.1vh] mobile:border-white mobile:p-[5%] mobile:h-full mobile:rounded-[10px]">
@@ -291,7 +312,7 @@ const ServiceDesktop = () => {
 
             <div
               ser-slot="3"
-              className="relative pointer-events-auto z-[99] fadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-2 mobile:mt-[2vh]"
+              className="relative pointer-events-auto z-[99] serviceFadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-2 mobile:mt-[2vh]"
             >
               <div className="ser-grid-item">
                 <div className="ser-grid-item-div mobile:border-[0.1vh] mobile:border-white mobile:p-[5%] mobile:h-full mobile:rounded-[10px]">
@@ -370,7 +391,7 @@ const ServiceDesktop = () => {
 
             <div
               ser-slot="4"
-              className="relative pointer-events-auto z-[99] fadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-3 mobile:mt-[2vh]"
+              className="relative pointer-events-auto z-[99] serviceFadeUp ser-grid-slot col-span-1 col-start-2 row-span-1 row-start-3 mobile:mt-[2vh]"
             >
               <div className="ser-grid-item">
                 <div className="ser-grid-item-div mobile:border-[0.1vh] mobile:border-white mobile:p-[5%] mobile:h-full mobile:rounded-[10px]">

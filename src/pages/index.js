@@ -41,6 +41,7 @@ export default function Index () {
         <Blog />
         <Footer />
       </main>
+      
       {/* <Transition /> */}
       <div className={`${styles.blocksContainer} ${styles.transitionOut}`}>
         {Array.from({ length: 10 }).map((_, rowIndex) => (

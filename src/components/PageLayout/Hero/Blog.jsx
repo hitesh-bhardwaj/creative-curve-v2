@@ -69,15 +69,35 @@ export default function Blog() {
                     {/* <!-- Blog Grid --> */}
                         <div className="flex items-center justify-between gap-x-[2vw] pt-[8vw] mobile:flex-col mobile:pt-[12vw]" ref={trigger}>
 
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-1 mobile:w-full tablet:w-1/2" ref={item1}>
-                                <div className="space-y-[1.2vw] mobile:space-y-[2vw]">
-                                    <div className="post-prev-2-img overflow-hidden rounded-[20px] mobile:mb-[4vw]">
-                                        <a href="#">
-                                            <img src="/images/blogs/blog-1.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                            <div className="w-1/3 cursor-none blog-item-1 mobile:w-full tablet:w-1/2 group under-multi-parent" ref={item1}>
+                                <div className="space-y-[1.2vw] mobile:space-y-[2vw] fadeUp">
+                                    <div className="post-prev-2-img mobile:mb-[4vw]">
+                                        <a href="#" className="">
+                                            <div 
+                                                className="overflow-hidden h-[18vw] tablet:h-[28vw] mobile:h-[60vw] rounded-[20px] w-full"
+                                                data-cursor-color="#fff" 
+                                                data-cursor-text="Read More" 
+                                                data-cursor-size="100px" 
+                                                >
+                                                <img 
+                                                    src="/images/blogs/blog-1.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 scale-y-[2] translate-y-1/2 opacity-0 blur group-hover:opacity-100 group-hover:blur-[0] group-hover:translate-y-0 group-hover:scale-y-[1]" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                /> 
+                                                <img 
+                                                    src="/images/blogs/blog-1.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 group-hover:scale-y-[2] group-hover:-translate-y-1/2 group-hover:blur group-hover:opacity-0" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                />
+                                            </div>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24">
-                                        <a href="#">Global Branding in a Digital Age: Insights from Creative Curve</a>
+                                        <a href="#" className="under-multi">Global Branding in a Digital Age: Insights from Creative Curve</a>
                                     </h4>
                                     <div className="text-[1.25vw] px-[0.5vw] text-20">
                                         Branding . 19 June 2023
@@ -85,15 +105,35 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="w-1/3 cursor-none blog-item-2 mobile:w-full mobile:mt-[5vh] tablet:w-1/2 " ref={item2}>
-                                <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
-                                    <div className="post-prev-2-img overflow-hidden rounded-[20px]">
-                                        <a href="#">
-                                            <img src="/images/blogs/blog-2.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                            <div className="w-1/3 cursor-none blog-item-2 mobile:w-full mobile:mt-[5vh] tablet:w-1/2 group under-multi-parent" ref={item2}>
+                            <div className="space-y-[1.2vw] mobile:space-y-[2vw] fadeUp">
+                                    <div className="post-prev-2-img mobile:mb-[4vw]">
+                                        <a href="#" className="">
+                                            <div 
+                                                className="overflow-hidden h-[18vw] tablet:h-[28vw] mobile:h-[60vw] rounded-[20px] w-full"
+                                                data-cursor-color="#fff" 
+                                                data-cursor-text="Read More" 
+                                                data-cursor-size="100px" 
+                                                >
+                                                <img 
+                                                    src="/images/blogs/blog-2.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 scale-y-[2] translate-y-1/2 opacity-0 blur group-hover:opacity-100 group-hover:blur-[0] group-hover:translate-y-0 group-hover:scale-y-[1]" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                /> 
+                                                <img 
+                                                    src="/images/blogs/blog-2.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 group-hover:scale-y-[2] group-hover:-translate-y-1/2 group-hover:blur group-hover:opacity-0" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                />
+                                            </div>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
-                                        <a href="#">The Power of Psychology in UX Design: Unlocking the Human</a>
+                                        <a href="#" className="under-multi">The Power of Psychology in UX Design: Unlocking the Human</a>
                                     </h4>
                                     <div className="text-[1.25vw] px-[0.5vw] text-20 mobile:mt-[1vh]">
                                         UX Design . 20 June 2023
@@ -101,15 +141,35 @@ export default function Blog() {
                                 </div>                                
                             </div>
                             
-                            <div data-cursor-color="#fff" data-cursor-text="Read More" data-cursor-size="100px" className="cursor-none w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh] tablet:hidden" ref={item3}>
-                                <div className="space-y-[1.2vw] mobile:space-y-[4vw]">
-                                    <div className="post-prev-2-img overflow-hidden rounded-[20px]">
-                                        <a href="#">
-                                            <img src="/images/blogs/blog-3.webp" className="w-full h-full object-cover" alt="Blog Image" title="Blog Image" loading="lazy"/>
+                            <div className="cursor-none w-1/3 blog-item-3 mobile:w-full mobile:mt-[5vh] tablet:hidden group under-multi-parent" ref={item3}>
+                            <div className="space-y-[1.2vw] mobile:space-y-[2vw] fadeUp">
+                                    <div className="post-prev-2-img mobile:mb-[4vw]">
+                                        <a href="#" className="">
+                                            <div 
+                                                className="overflow-hidden h-[18vw] tablet:h-[28vw] mobile:h-[60vw] rounded-[20px] w-full"
+                                                data-cursor-color="#fff" 
+                                                data-cursor-text="Read More" 
+                                                data-cursor-size="100px" 
+                                                >
+                                                <img 
+                                                    src="/images/blogs/blog-1.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 scale-y-[2] translate-y-1/2 opacity-0 blur group-hover:opacity-100 group-hover:blur-[0] group-hover:translate-y-0 group-hover:scale-y-[1]" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                /> 
+                                                <img 
+                                                    src="/images/blogs/blog-1.webp" 
+                                                    className="absolute top-0 h-full w-full left-0 right-0 bottom-0 object-cover transition-all duration-500 group-hover:scale-y-[2] group-hover:-translate-y-1/2 group-hover:blur group-hover:opacity-0" 
+                                                    alt="Blog Image" 
+                                                    title="Blog Image" 
+                                                    loading="lazy"
+                                                />
+                                            </div>
                                         </a>
                                     </div>
                                     <h4 className="font-medium text-[1.55vw] text-textHead leading-[1.2] px-[0.5vw] text-24 mobile:mt-[2vh]">
-                                        <a href="#">How to manage a talented and successful design team</a>
+                                        <a href="#" className="under-multi">How to manage a talented and successful design team</a>
                                     </h4>
                                     <div className="text-[1.25vw] px-[0.5vwpx] text-20 mobile:mt-[1vh]">
                                         UI Design . 29 June 2023

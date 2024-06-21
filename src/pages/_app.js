@@ -6,11 +6,26 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import useWindowSize from '@/components/useWindowSize';
 import { DefaultSeo } from 'next-seo';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const WebGl_Canvas = dynamic(() => import('@/components/WebglBackground'), { ssr: false });
 
 export default function App({ Component, pageProps, router }) {
   const { width } = useWindowSize();
+  const nextRouter = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0);
+    };
+
+    nextRouter.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      nextRouter.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [nextRouter.events]);
 
   return (
     <>
@@ -62,7 +77,7 @@ export default function App({ Component, pageProps, router }) {
         }}
       />
 
-      <ReactLenis root duration={2}>
+      <ReactLenis root lerp={0.01}>
         <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
           <Analytics />

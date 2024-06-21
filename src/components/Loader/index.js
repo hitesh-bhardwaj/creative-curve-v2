@@ -9,29 +9,52 @@ export default function Loader() {
     useGSAP(() => {
             const tl = gsap.timeline();
 
-            tl.to('.preloader', {
-                duration: 1,
-                delay: 0,
-                boxShadow: `inset 0 0 0 49.2vw rgb(0,0,0)`,
-                onComplete: () => {
-                    gsap.set(".background", {
-                        opacity: 0,
-                        visibility: 'hidden'
-                    }), gsap.set(".bar", {
-                        opacity: 1,
-                        visibility: 'visible'
-                    }), gsap.set(".dot", {
-                        opacity: 1,
-                        visibility: 'visible'
-                    }), gsap.set('.icon', {
-                        opacity: 1,
-                        visibility: 'visible'
-                    }), gsap.set('.preloader', {
-                        boxShadow: `inset 0 0 0 0px rgb(266, 266, 266)`
-                    });
-                }
-            });
-
+            if(globalThis.innerWidth>1023){
+                tl.to('.preloader', {
+                    duration: 1,
+                    delay: 0,
+                    boxShadow: `inset 0 0 0 49.5vw rgb(0, 0, 0)`,
+                    onComplete: () => {
+                         gsap.set(".bar", {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set(".dot", {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set('.icon', {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set('.overlay', {
+                            backgroundColor: '#000'
+                        }), gsap.set('.preloader', {
+                            boxShadow: `inset 0 0 0 0px rgb(0, 0, 0)`
+                        });
+                    }
+                });
+            } else {
+                tl.to('.preloader', {
+                    duration: 1,
+                    delay: 0,
+                    boxShadow: `inset 0 0 0 49.5vh rgb(0, 0, 0)`,
+                    onComplete: () => {
+                         gsap.set(".bar", {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set(".dot", {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set('.icon', {
+                            opacity: 1,
+                            visibility: 'visible'
+                        }), gsap.set('.overlay', {
+                            backgroundColor: '#000'
+                        }), gsap.set('.preloader', {
+                            boxShadow: `inset 0 0 0 0px rgb(0, 0, 0)`
+                        });
+                    }
+                });
+            }
+            
              tl.fromTo('.icon', {
                 x: "100%"
             }, {
@@ -48,7 +71,7 @@ export default function Loader() {
             if(globalThis.innerWidth>1023){
                 tl.to(".dot", {
                     duration: 1,
-                    x: "23rem",
+                    x: "19vw",
                     ease: "power2.inOut"
                 }, "-=1");
             } else {
@@ -108,9 +131,6 @@ export default function Loader() {
     return(
         <>
          <div className={`${styles.overlay} overlay`}>
-            <div className={` ${styles.background} background`}>
-                <video className={` ${styles.cover} cover`} autoPlay loop playsInline muted src="/images/loader/bg-1.mp4"/>
-            </div>
             <div className={`${styles.preloader} preloader`}>
                 <div className={`${styles.logo} logo`}>
                     <div className={`${styles.bar} bar`} />

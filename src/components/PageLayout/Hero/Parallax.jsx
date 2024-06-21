@@ -63,8 +63,8 @@ function Parallax() {
     return (
         <>
             <section id="parallax">
-                <div className="container py-[10%] relative mobile:py-[40%] tablet:py-[25%]">
-                    <h3 ref={textbreak} className="text-120 aeonik leading-[1.2] w-[81.5%] section-break text-textHead mobile:leading-[1.2] mobile:w-full textbreak tablet:w-[90%]">
+                <div className="container py-[10%] relative mobile:py-[40%] tablet:py-[25%] min-h-[95vw]">
+                    <h3 ref={textbreak} className="text-120 aeonik leading-[1.2] w-[82%] section-break text-textHead mobile:leading-[1.2] mobile:w-full textbreak tablet:w-[90%]">
                         Creative Curve has grown into a global powerhouse, recognized for its unique blend of innovation and expertise. Our diverse team, hailing from various corners of the world
                     </h3>
                     <div data-parallax-down className="absolute h-[22vw] top-[10%] right-[20%] invert mix-blend-exclusion mobile:h-[60vw] mobile:right-0 mobile:top-[7%] tablet:h-[40vw] tablet:top-[15%]">

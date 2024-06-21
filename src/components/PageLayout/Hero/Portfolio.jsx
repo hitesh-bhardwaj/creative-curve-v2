@@ -159,7 +159,7 @@ function Portfolio() {
             </div> 
           </div>
 
-          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1">
+          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -167,19 +167,19 @@ function Portfolio() {
               className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/wwf.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 World Wildlife Fund
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 tablet:col-start-7">
+          <Link href="#" className="col-span-5 tablet:col-start-7 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -187,19 +187,19 @@ function Portfolio() {
               className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg2 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/bharti.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 Bharti Foundation
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1">
+          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -207,19 +207,19 @@ function Portfolio() {
               className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg3 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/wfp.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 World Food Programme
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 tablet:col-start-7">
+          <Link href="#" className="col-span-5 tablet:col-start-7 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -227,19 +227,19 @@ function Portfolio() {
               className="h-[35vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg4 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/unicef.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 Unicef
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1">
+          <Link href="#" className="col-span-5 col-start-7 tablet:col-start-1 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -247,20 +247,20 @@ function Portfolio() {
               className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/stc.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 Save The Children
               </h3>
             </div>
           </Link>
 
-          <Link href="#" className="col-span-5 col-start-7 hidden tablet:block mobile:block">
+          <Link href="#" className="col-span-5 col-start-7 hidden tablet:block mobile:block fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -268,14 +268,14 @@ function Portfolio() {
               className="h-[45vw] cursor-none overflow-hidden rounded-[50px] relative mobile:w-[90vw] mobile:h-[100vw] mobile:rounded-[25px] tablet:rounded-[15px]"
             >
               <Image
-                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg5 parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
+                className="w-full h-full object-cover scale-[110%] translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%] group-hover:saturate-0"
                 src="/images/home/canon.webp"
                 height={1000}
                 width={1000}
                 alt="Portfolio Image"
                 loading="lazy"
               />
-              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw]">
+              <h3 className="uppercase text-white absolute left-[10%] bottom-[5%] text-[2vw] drop-shadow para-animations mobile:text-[4vw] before:block before:bg-current before:w-[2vw] before:h-[3px] before:top-1/2 before:absolute before:scale-x-0 before:origin-left group-hover:before:scale-x-100 before:transition-all before:duration-500 group-hover:translate-x-[2vw] before:left-[-4px] group-hover:before:translate-x-[-2vw] transition-all duration-500">
                 Canon
               </h3>
             </div>
