@@ -5,9 +5,6 @@ import Menu from "./Menu";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [buttonDisabled, setButtonDisabled] = useState(false);
-    
-   
-    
    
     const handleMenuButtonClick = () => {
         // Disable the button
