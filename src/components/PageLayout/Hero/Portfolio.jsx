@@ -159,7 +159,7 @@ function Portfolio() {
             </div> 
           </div>
 
-          <Link href="#" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1 fadeUp group">
+          <Link href="/portfolio/world-wildlife-fund" className="col-span-5 col-start-7 tablet:row-start-2 tablet:col-start-1 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"
@@ -219,7 +219,7 @@ function Portfolio() {
               </h3>
             </div>
           </Link>
-          <Link href="#" className="col-span-5 tablet:col-start-7 fadeUp group">
+          <Link href="/portfolio/unicef" className="col-span-5 tablet:col-start-7 fadeUp group">
             <div
               data-cursor-text="Discover"
               data-cursor-size="100px"

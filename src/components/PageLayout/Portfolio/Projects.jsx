@@ -82,7 +82,7 @@ const Projects = () => {
                             </div>
 
                             <div className="col-span-6 fadeUp">
-                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                <Link href="/portfolio/world-wildlife-fund" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
                                     <div className="w-full h-[85vh] relative rounded-[40px] overflow-hidden mobile:h-[30vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
@@ -116,7 +116,7 @@ const Projects = () => {
                             </div>
 
                             <div className="col-span-4 fadeUp">
-                                <Link href="#" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
+                                <Link href="/portfolio/unicef" className="space-y-[1vw] tablet:space-y-[2vw] mobile:space-y-[2vw] group portfolio-img-div" data-cursor-text="Discover" data-cursor-size="100px">
                                     <div className="w-full h-[75vh] relative rounded-[40px] overflow-hidden mobile:h-[55vh] mobile:rounded-[20px] tablet:h-[35vh] tablet:rounded-2xl">
                                         <Image 
                                             className="cover scale-[110%] group-hover:saturate-0 transition-all duration-500 ease-out translate-y-[-5%] parallaximg mobile:scale-[120%] mobile:translate-y-[-10%]"
